@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Exeter Maria" uuid="9070f056-65d8-4c64-b3d6-2cadca0708e9">
+      <driver-ref>mariadb</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.mariadb.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mariadb://emps-sql.ex.ac.uk:3306/wjph202</jdbc-url>
+    </data-source>
+  </component>
+</project>
