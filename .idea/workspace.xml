@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5485a46-36b6-4ccb-af10-a605db3be6a5" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQL" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQL" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQL" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="wjph202: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YLNBldWEgEV4VQOJmxOV7xvviW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Will\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Development\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="validate.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/assets/js/validate.js" working-dir="$PROJECT_DIR$/src/assets/js">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.validate.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:SQL" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="root:SQL" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@6c32e01d" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5485a46-36b6-4ccb-af10-a605db3be6a5" name="Default Changelist" comment="" />
+      <created>1582717781107</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582717781107</updated>
+      <workItem from="1582717782515" duration="13000" />
+      <workItem from="1584007381748" duration="1720000" />
+      <workItem from="1584040943044" duration="3000" />
+      <workItem from="1584997496264" duration="114000" />
+      <workItem from="1585739739649" duration="2750000" />
+      <workItem from="1585756415481" duration="79000" />
+      <workItem from="1585825662449" duration="8533000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="234" y="1" key="#Deployment" timestamp="1585838440013">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="234" y="1" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1585838440013" />
+    <state x="234" y="1" key="#Notifications" timestamp="1585825677190">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="234" y="1" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1585825677190" />
+    <state x="234" y="1" key="#Options" timestamp="1585839959163">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="234" y="1" key="#Options/0.0.1280.680@0.0.1280.680" timestamp="1585839959163" />
+    <state x="234" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585756486479">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="234" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585756486479" />
+    <state x="372" y="89" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585743751619">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="372" y="89" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1585743751619" />
+    <state x="94" y="94" width="1093" height="493" key="DirDiffDialog" timestamp="1585744091108">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="94" y="94" width="1093" height="493" key="DirDiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1585744091108" />
+    <state x="422" y="97" key="FileChooserDialogImpl" timestamp="1585756492551">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="422" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585756492551" />
+    <state width="845" height="163" key="GridCell.Tab.0.bottom" timestamp="1585827059027">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1585827059027" />
+    <state width="845" height="163" key="GridCell.Tab.0.center" timestamp="1585827059027">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1585827059027" />
+    <state width="845" height="163" key="GridCell.Tab.0.left" timestamp="1585827059027">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1585827059027" />
+    <state width="845" height="163" key="GridCell.Tab.0.right" timestamp="1585827059027">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585827059027" />
+    <state x="477" y="266" key="NewPhpFileDialog" timestamp="1585828155314">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="477" y="266" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1585828155313" />
+    <state x="151" y="0" key="SettingsEditor" timestamp="1585744216540">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="151" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1585744216540" />
+    <state x="478" y="241" key="WebDeployment.AddServerDialog.v.1" timestamp="1584007694879">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="478" y="241" key="WebDeployment.AddServerDialog.v.1/0.0.1280.680@0.0.1280.680" timestamp="1584007694879" />
+    <state x="478" y="112" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1585827057614">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="478" y="112" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.680@0.0.1280.680" timestamp="1585827057614" />
+    <state x="478" y="73" key="ftp.server.browser" timestamp="1584007799703">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="478" y="73" key="ftp.server.browser/0.0.1280.680@0.0.1280.680" timestamp="1584007799703" />
+    <state x="478" y="235" key="publish.login" timestamp="1584997595220">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="478" y="235" key="publish.login/0.0.1280.680@0.0.1280.680" timestamp="1584997595220" />
+  </component>
+</project>
