@@ -18,25 +18,35 @@ session_start();
 </head>
 
 <body>
+
 <!-- Navigation bar -->
-<nav>
-    <ul>
-        <li><a href="../../index.php">🏠 Home</a></li>
-        <li><a href="login.php">🚪🚶 Login</a></li>
-    </ul>
-</nav>
-<label>Username:
-    <input name="username" id="username" type="text" />
-</label>
-<br>
-    <label>Password:
-        <input name="password" id="password" type="password" />
-    </label>
-<br>
-    <label>Confirm password:
-        <input type="password" name="confirm_password" id="confirm_password" />
+
+<ul class="topnav">
+    <li><a href="../../index.php">🏠 Home</a></li>
+    <li><a href="inc/logoff.inc.php">🔐 Login</a></li>
+</ul>
+
+
+<!-- Sign up form -->
+<main>
+    <form action="inc/signup.inc.php" method="post" name="signup_form">
+        <label>Username
+            <input type="text" name="username" placeholder="Username" pattern="^[A-Za-z0-9_-]{3,15}$">
+        </label>
+        <br>
+        <label>Password:
+            <input type="password" name="password" placeholder="Password">
+        </label>
+        <br>
+        <label>Confirm Password:
+            <input type="password" name="confirm_password" placeholder="Repeat Password">
+        </label>
+        <br>
         <span id='message'></span>
-    </label>
+        <button type="submit" name="signup_btn" value="SUBMIT">Sign up</button>
+    </form>
+</main>
+
 </body>
-<script  src="../js/validate.js"></script>
+<!--<script  src="../js/validate.js"></script>-->
 </html>

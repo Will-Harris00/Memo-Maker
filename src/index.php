@@ -22,13 +22,12 @@ session_start();
 
 <body>
 <!-- Navigation bar -->
-<nav>
-    <ul>
-        <li><a href="index.php">🏠 Home</a></li>
-        <li><a href="assets/db/signup.php">🙋 Sign Up</a></li>
-        <li><a href="assets/db/login.php">🚪🚶 Login</a></li>
-    </ul>
-</nav>
+<ul class="topnav">
+    <li><a href="index.php">🏠 Home</a></li>
+    <li><a href="assets/db/signup.php">🙋 Sign Up</a></li>
+    <li><a href="assets/db/login.php">🔐 Login</a></li>
+    <li><a href="assets/db/inc/logoff.inc.php">🚪🚶 Logoff</a></li>
+</ul>
 
 </body>
 </html>

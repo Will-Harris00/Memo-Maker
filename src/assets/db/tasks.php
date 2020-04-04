@@ -25,6 +25,7 @@ require "header.php";
         echo '<p>You are logged in!</p>';
     } else {
         echo '<p>You are logged out!</p>';
+        header("Location: ../../index.php");
     }
     ?>
 </main>

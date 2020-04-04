@@ -1,5 +1,7 @@
 var  timerId;
-var  confirm_pass  =  document.getElementById('confirm_password');
+var confirm_pass = document.getElementById("confirm_password");
+console.log(confirm_pass);
+
 // Event listener on the input box
 confirm_pass.addEventListener('input', function() {
     // Debounces check method

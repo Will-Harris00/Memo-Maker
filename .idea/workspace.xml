@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f5485a46-36b6-4ccb-af10-a605db3be6a5" name="Default Changelist" comment="" />
+    <list default="true" id="f5485a46-36b6-4ccb-af10-a605db3be6a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/Coursework - Web Dev.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Coursework - Web Development.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7fe8ed4-9bcd-44b6-ab9e-8fb1047cf680.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b7fe8ed4-9bcd-44b6-ab9e-8fb1047cf680/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/db/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/db/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/db/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/db/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/db/inc/logoff.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/db/inc/logoff.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/db/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/db/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/db/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/db/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/db/tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/db/tasks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,26 +69,42 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YLNBldWEgEV4VQOJmxOV7xvviW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JunctionX/JunctionXmaster/assets/db2/header.php" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../JunctionX/JunctionXmaster/assets/db2/header.php" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Will\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Will\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\assets\db" />
+      <recent name="C:\Users\Will\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\assets\db\inc" />
+      <recent name="C:\Users\Will\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\assets\includes" />
+      <recent name="C:\Users\Will\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\assets" />
       <recent name="C:\Users\Will\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Development\src" />
     </key>
   </component>
@@ -87,17 +123,7 @@
       <list>
         <serviceView>
           <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:SQL" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="root:SQL" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@6c32e01d" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </treeState>
         </serviceView>
@@ -120,42 +146,54 @@
       <workItem from="1584997496264" duration="114000" />
       <workItem from="1585739739649" duration="2750000" />
       <workItem from="1585756415481" duration="79000" />
-      <workItem from="1585825662449" duration="8533000" />
+      <workItem from="1585825662449" duration="28882000" />
+      <workItem from="1585934832566" duration="549000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="234" y="1" key="#Deployment" timestamp="1585838440013">
+    <state x="234" y="1" key="#Deployment" timestamp="1585916951792">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="1" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1585838440013" />
+    <state x="234" y="1" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1585916951792" />
     <state x="234" y="1" key="#Notifications" timestamp="1585825677190">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="234" y="1" key="#Notifications/0.0.1280.680@0.0.1280.680" timestamp="1585825677190" />
-    <state x="234" y="1" key="#Options" timestamp="1585839959163">
+    <state x="234" y="1" key="#Options" timestamp="1585915660263">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="1" key="#Options/0.0.1280.680@0.0.1280.680" timestamp="1585839959163" />
-    <state x="234" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585756486479">
+    <state x="234" y="1" key="#Options/0.0.1280.680@0.0.1280.680" timestamp="1585915660263" />
+    <state x="234" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585917175780">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585756486479" />
+    <state x="234" y="1" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585917175780" />
+    <state x="410" y="145" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585860891295">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="410" y="145" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1585860891295" />
     <state x="372" y="89" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585743751619">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="372" y="89" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1585743751619" />
+    <state x="94" y="94" width="1093" height="493" maximized="true" key="DiffContextDialog" timestamp="1585912014557">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="94" y="94" width="1093" height="493" maximized="true" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1585912014557" />
     <state x="94" y="94" width="1093" height="493" key="DirDiffDialog" timestamp="1585744091108">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="94" y="94" width="1093" height="493" key="DirDiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1585744091108" />
-    <state x="422" y="97" key="FileChooserDialogImpl" timestamp="1585756492551">
+    <state x="422" y="97" key="FileChooserDialogImpl" timestamp="1585911916605">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="422" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585756492551" />
+    <state x="422" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1585911916605" />
     <state width="845" height="163" key="GridCell.Tab.0.bottom" timestamp="1585827059027">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -172,10 +210,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="845" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1585827059027" />
-    <state x="477" y="266" key="NewPhpFileDialog" timestamp="1585828155314">
+    <state x="477" y="266" key="NewPhpFileDialog" timestamp="1585860611751">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="477" y="266" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1585828155313" />
+    <state x="477" y="266" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1585860611751" />
     <state x="151" y="0" key="SettingsEditor" timestamp="1585744216540">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

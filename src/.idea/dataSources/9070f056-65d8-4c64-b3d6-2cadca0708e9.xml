@@ -822,115 +822,81 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="206" parent="3" name="Enrolled"/>
-    <table id="207" parent="3" name="Modules"/>
-    <table id="208" parent="3" name="Students"/>
-    <table id="209" parent="3" name="users2"/>
-    <column id="210" parent="206" name="student_id">
+    <table id="206" parent="3" name="Tasks"/>
+    <table id="207" parent="3" name="Users"/>
+    <column id="208" parent="206" name="taskid">
       <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="209" parent="206" name="userid">
+      <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="211" parent="206" name="module_id">
-      <Position>2</Position>
-      <DataType>char(7)|0s</DataType>
+    <column id="210" parent="206" name="name">
+      <Position>3</Position>
+      <DataType>tinytext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="212" parent="206" name="module_id">
-      <ColNames>module_id</ColNames>
+    <column id="211" parent="206" name="description">
+      <Position>4</Position>
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="212" parent="206" name="state">
+      <Position>5</Position>
+      <DataType>tinyint(1)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="213" parent="206" name="userid">
+      <ColNames>userid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="213" parent="206" name="PRIMARY">
+    <key id="214" parent="206" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>student_id
-module_id</ColNames>
+      <ColNames>taskid
+userid</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="214" parent="206" name="Enrolled_ibfk_1">
-      <ColNames>student_id</ColNames>
-      <RefTableName>Students</RefTableName>
-      <RefColNames>student_id</RefColNames>
+    <foreign-key id="215" parent="206" name="Tasks_ibfk_1">
+      <ColNames>userid</ColNames>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>userid</RefColNames>
     </foreign-key>
-    <foreign-key id="215" parent="206" name="Enrolled_ibfk_2">
-      <ColNames>module_id</ColNames>
-      <RefTableName>Modules</RefTableName>
-      <RefColNames>module_id</RefColNames>
-    </foreign-key>
-    <column id="216" parent="207" name="module_id">
-      <Position>1</Position>
-      <DataType>char(7)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="217" parent="207" name="name">
-      <Position>2</Position>
-      <DataType>varchar(40)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="218" parent="207" name="description">
-      <Position>3</Position>
-      <DataType>text|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="219" parent="207" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>module_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="220" parent="208" name="student_id">
+    <column id="216" parent="207" name="userid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="221" parent="208" name="firstname">
-      <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="222" parent="208" name="lastname">
-      <Position>3</Position>
-      <DataType>varchar(30)|0s</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="223" parent="208" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>student_id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="224" parent="209" name="idUsers">
-      <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="225" parent="209" name="uidUsers">
+    <column id="217" parent="207" name="username">
       <Position>2</Position>
       <DataType>tinytext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="226" parent="209" name="pwdUsers">
+    <column id="218" parent="207" name="password">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="227" parent="209" name="pntUsers">
+    <column id="219" parent="207" name="salt">
       <Position>4</Position>
-      <DataType>int(11)|0s</DataType>
-      <DefaultExpression>0</DefaultExpression>
+      <DataType>longtext|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="228" parent="209" name="PRIMARY">
+    <key id="220" parent="207" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>idUsers</ColNames>
+      <ColNames>userid</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>

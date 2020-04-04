@@ -19,6 +19,15 @@ require "header.php";
 </head>
 
 <body>
-
+<main>
+    <?php
+    if (isset($_SESSION['userId'])) {
+        echo '<p>You are logged in!</p>';
+    } else {
+        echo '<p>You are logged out!</p>';
+        header("Location: ../../index.php");
+    }
+    ?>
+</main>
 </body>
 </html>

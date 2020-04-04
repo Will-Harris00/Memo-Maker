@@ -5,11 +5,9 @@ DROP TABLE Tasks;
 
 CREATE TABLE Users (
                     userid int not null auto_increment,
-                    username varchar(30),
-                    forename varchar(30),
-                    surname varchar(40),
-                    password varchar(32),
-                    salt varchar(64),
+                    username tinytext not null,
+                    password longtext not null,
+                    salt longtext not null,
                     primary key (userid)
 );
 
@@ -17,9 +15,9 @@ CREATE TABLE Users (
 CREATE TABLE Tasks (
                     taskid int not null auto_increment,
                     userid int not null,
-                    name varchar(32),
-                    description varchar(280),
+                    name tinytext not null,
+                    description longtext not null,
                     state boolean,
                     primary key (taskid, userid),
-                    foreign key (userid) references User(userid)
+                    foreign key (userid) references Users(userid)
 );

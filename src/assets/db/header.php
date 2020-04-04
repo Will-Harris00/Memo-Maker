@@ -19,13 +19,11 @@ session_start();
 
 <body>
 <!-- Navigation bar -->
-<nav>
-    <ul>
-        <li><a href="../../index.php">🏠 Home</a></li>
-        <li><a href="account.php">⚙️Account</a></li>
-        <li><a href="tasks.php">📝 Tasks</a></li>
-        <li><a href="inc/logoff.inc.php">Logoff 💨</a></li>
-    </ul>
-</nav>
+<ul class="topnav">
+    <li><a href="../../index.php">🏠 Home</a></li>
+    <li><a href="account.php">⚙️Account</a></li>
+    <li><a href="tasks.php">📝 Tasks</a></li>
+    <li><a href="inc/logoff.inc.php">Logoff 🚪🚶💨</a></li>
+</ul>
 </body>
 </html>

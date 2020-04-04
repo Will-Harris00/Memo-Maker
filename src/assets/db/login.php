@@ -19,12 +19,26 @@ session_start();
 
 <body>
 <!-- Navigation bar -->
-<nav>
-    <ul>
-        <li><a href="../../index.php">🏠 Home</a></li>
-        <li><a href="signup.php">🙋 Sign Up</a></li>
-    </ul>
-</nav>
+<ul class="topnav">
+    <li><a href="../../index.php">🏠 Home</a></li>
+    <li><a href="signup.php">🙋 Sign Up</a></li>
+</ul>
+
+<!-- Login form -->
+<main>
+    <form action="inc/login.inc.php" method="post" name="login_form">
+        <label>Username
+            <input type="text" name="username" placeholder="Username">
+        </label>
+        <br>
+        <label>Password:
+            <input type="password" name="password" placeholder="Password">
+        </label>
+        <br>
+        <span id='message'></span>
+        <button type="submit" name="login_btn" value="SUBMIT">Login</button>
+    </form>
+</main>
 </body>
 </html>
 

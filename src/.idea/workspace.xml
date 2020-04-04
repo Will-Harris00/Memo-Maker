@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a31e209-03b8-4db3-a844-c5669f787349" name="Default Changelist" comment="" />
+    <list default="true" id="1a31e209-03b8-4db3-a844-c5669f787349" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/Coursework - Web Dev.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/db/inc/login.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/db/inc/signup.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/secure/credentials.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/secure/pepper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Coursework - Web Development.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dataSources/b7fe8ed4-9bcd-44b6-ab9e-8fb1047cf680.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/dataSources/b7fe8ed4-9bcd-44b6-ab9e-8fb1047cf680/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9070f056-65d8-4c64-b3d6-2cadca0708e9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9070f056-65d8-4c64-b3d6-2cadca0708e9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/database/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/database/initialise.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/inc/dbh.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/handler.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/inc/logoff.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/logoff.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/tasks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/validate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,12 +77,18 @@
         <item name="Exeter Maria" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="wjph202: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="users2: table" type="dbc44a63:MariaImplModel$Table" />
+        <item name="Users: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1ZwJYzURRj7dBOsGpUFlSga6OMO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -58,6 +97,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -71,7 +111,17 @@
       <list>
         <serviceView>
           <treeState>
-            <expand />
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Exeter Maria: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Exeter Maria: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@478df93f" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
             <select />
           </treeState>
         </serviceView>
@@ -90,6 +140,15 @@
       <updated>1585744274095</updated>
       <workItem from="1585744275373" duration="3292000" />
       <workItem from="1585752078721" duration="3054000" />
+      <workItem from="1585934769285" duration="280000" />
+      <workItem from="1585935068753" duration="255000" />
+      <workItem from="1585952525458" duration="66000" />
+      <workItem from="1586006984650" duration="1795000" />
+      <workItem from="1586009660269" duration="1485000" />
+      <workItem from="1586011453684" duration="6058000" />
+      <workItem from="1586025934817" duration="40000" />
+      <workItem from="1586026098599" duration="1524000" />
+      <workItem from="1586027653994" duration="10013000" />
     </task>
     <servers />
   </component>
@@ -97,33 +156,85 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="234" y="1" key="#Deployment" timestamp="1585748889377">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="234" y="1" key="#Deployment" timestamp="1586009866570">
+      <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="234" y="1" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1585748889377" />
-    <state x="-84" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585752850169">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="234" y="1" key="#Deployment/0.0.1280.760@0.0.1280.760" timestamp="1586009866570" />
+    <state x="233" y="40" key="#Options" timestamp="1586010528170">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="233" y="40" key="#Options/0.0.1280.760@0.0.1280.760" timestamp="1586010528170" />
+    <state x="233" y="40" key="#SQL_Dialects" timestamp="1586027949635">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="233" y="40" key="#SQL_Dialects/0.0.1280.760@0.0.1280.760" timestamp="1586027949635" />
+    <state x="233" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585935316911">
+      <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="-84" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585752850169" />
-    <state x="94" y="94" width="1093" height="493" key="DirDiffDialog" timestamp="1585744471442">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="233" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1585935316911" />
+    <state x="321" y="117" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586025940893">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="321" y="117" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.760@0.0.1280.760" timestamp="1586025940893" />
+    <state x="110" y="120" width="935" height="520" key="DiffContextDialog" timestamp="1586009447526">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="110" y="120" width="935" height="520" key="DiffContextDialog/0.0.1280.760@0.0.1280.760" timestamp="1586009447526" />
+    <state x="94" y="105" width="1093" height="551" key="DirDiffDialog" timestamp="1586010321042">
+      <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="94" y="94" width="1093" height="493" key="DirDiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1585744471442" />
+    <state x="94" y="105" width="1093" height="551" key="DirDiffDialog/0.0.1280.760@0.0.1280.760" timestamp="1586010321042" />
+    <state x="421" y="136" key="FileChooserDialogImpl" timestamp="1586027931152">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="421" y="136" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1586027931152" />
+    <state width="845" height="189" key="GridCell.Tab.0.bottom" timestamp="1586039909115">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="845" height="189" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1586039909115" />
+    <state width="845" height="189" key="GridCell.Tab.0.center" timestamp="1586039909115">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="845" height="189" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1586039909115" />
+    <state width="845" height="189" key="GridCell.Tab.0.left" timestamp="1586039909115">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="845" height="189" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1586039909115" />
+    <state width="845" height="189" key="GridCell.Tab.0.right" timestamp="1586039909115">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="845" height="189" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1586039909115" />
     <state width="200" height="457" key="HiddenNamespacesPopup" timestamp="1585744687804">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="200" height="457" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1585744687804" />
-    <state x="157" y="266" key="NewPhpFileDialog" timestamp="1585748951448">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="157" y="297" key="NewPhpFileDialog" timestamp="1586011725902">
+      <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="157" y="266" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1585748951448" />
+    <state x="157" y="297" key="NewPhpFileDialog/0.0.1280.760@0.0.1280.760" timestamp="1586011725902" />
     <state x="478" y="241" key="WebDeployment.AddServerDialog.v.1" timestamp="1585744290371">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="478" y="241" key="WebDeployment.AddServerDialog.v.1/0.0.1280.680@0.0.1280.680" timestamp="1585744290371" />
+    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586039879845">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.760@0.0.1280.760" timestamp="1586039879845" />
     <state x="478" y="89" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1585744719849">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="478" y="89" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1280.680@0.0.1280.680" timestamp="1585744719849" />
+    <state x="348" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1585934787172">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="348" y="209" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1585934787172" />
+    <state x="511" y="275" key="publish.login" timestamp="1585935283230">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="511" y="275" key="publish.login/0.0.1280.760@0.0.1280.760" timestamp="1585935283230" />
   </component>
 </project>
