@@ -6,9 +6,9 @@ DROP TABLE Tasks;
 CREATE TABLE Users (
                     userid int not null auto_increment,
                     username varchar(30),
-                    firstname varchar(30),
+                    forename varchar(30),
                     surname varchar(40),
-                    password varchar,
+                    password varchar(32),
                     salt varchar(64),
                     primary key (userid)
 );
