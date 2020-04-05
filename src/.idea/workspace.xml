@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a31e209-03b8-4db3-a844-c5669f787349" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/db/inc/preferences.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies/printc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies0.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies5.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies6.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/printc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/setce.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Sessions Examples/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Sessions Examples/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Sessions Examples/secure.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Sessions Examples/sget.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Sessions Examples/sset.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Store Cookies/Exercise02.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Store Cookies/Exercise03-1a.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Store Cookies/Exercise03-1b.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/Store Cookies/Exercise03-2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/User Preferences Examples/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/User Preferences Examples/preferences.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9070f056-65d8-4c64-b3d6-2cadca0708e9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9070f056-65d8-4c64-b3d6-2cadca0708e9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/database/initialise.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/database/initialise.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/inc/login.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/login.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/db/inc/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/signup.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/signup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/tasks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,11 +95,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Exeter Maria: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@728f379e" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Exeter Maria: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
                 <item name="com.intellij.database.console.session.MessageBusSession@1d35da4e" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
@@ -164,7 +126,7 @@
       <workItem from="1586026098599" duration="1524000" />
       <workItem from="1586027653994" duration="10013000" />
       <workItem from="1586042051563" duration="68000" />
-      <workItem from="1586079041068" duration="16136000" />
+      <workItem from="1586079041068" duration="16264000" />
     </task>
     <servers />
   </component>

@@ -28,7 +28,7 @@ if (isset($_POST['signup_btn'])){
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../signup.php?error=sqlerror&user=" . $user);
+            header("Location: ../signup.php?error=sqlrequesterror&user=" . $user);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
             exit();
@@ -57,10 +57,27 @@ if (isset($_POST['signup_btn'])){
                     mysqli_stmt_bind_param($stmt, "sss", $user, md5($pass . $salt . pepper), $salt);
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
-                    header("Location: ../login.php?signup=success");
                     mysqli_stmt_close($stmt);
                     mysqli_close($conn);
-                    exit();
+
+                    $sql = "INSERT INTO Preferences
+                            (userid) 
+                            VALUES (?)";
+                    $stmt = mysqli_stmt_init($conn);
+                    if(!mysqli_stmt_prepare($stmt, $sql)) {
+                        header("Location: ../signup.php?error=sqlinserterror&user=" . $user);
+                        mysqli_stmt_close($stmt);
+                        mysqli_close($conn);
+                        exit();
+                    } else {
+                        mysqli_stmt_bind_param($stmt, "s", $userid);
+                        mysqli_stmt_execute($stmt);
+                        $_SESSION["userid"] = $userid;
+                        header("Location: ../login.php?signup=success");
+                        mysqli_stmt_close($stmt);
+                        mysqli_close($conn);
+                        exit();
+                    }
                 }
             }
         }
