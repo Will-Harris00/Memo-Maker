@@ -13,7 +13,7 @@ if (isset($_POST['change_preferences'])) {
 
     $stmt = mysqli_stmt_init($conn);
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("Location: ../account.php?error=sqlerror&foreground=" . $fg . "&background=" . $bg);
+        header("Location: ../account.php?error=sqlpreferencesupdateerror&foreground=" . $fg . "&background=" . $bg);
         mysqli_stmt_close($stmt);
         mysqli_close($conn);
         exit();

@@ -28,7 +28,7 @@ if (isset($_POST['signup_btn'])){
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../signup.php?error=sqlrequesterror&user=" . $user);
+            header("Location: ../signup.php?error=sqluserrequesterror&user=" . $user);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
             exit();
@@ -44,28 +44,27 @@ if (isset($_POST['signup_btn'])){
                 exit();
             } else {
                 $sql = "INSERT INTO Users
-                        (username, password, salt)
-                        VALUES (?, ?, ?)";
+                        (userid, username, password, salt)
+                        VALUES (?, ?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
                 if(!mysqli_stmt_prepare($stmt, $sql)) {
-                    header("Location: ../signup.php?error=sqlinserterror&user=" . $user);
+                    header("Location: ../signup.php?error=sqluserinserterror&user=" . $user);
                     mysqli_stmt_close($stmt);
                     mysqli_close($conn);
                     exit();
                 } else {
                     $salt = md5(rand());
-                    mysqli_stmt_bind_param($stmt, "sss", $user, md5($pass . $salt . pepper), $salt);
+                    mysqli_stmt_bind_param($stmt, "ssss", $userid, $user, md5($pass . $salt . pepper), $salt);
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
                     mysqli_stmt_close($stmt);
-                    mysqli_close($conn);
 
                     $sql = "INSERT INTO Preferences
                             (userid) 
                             VALUES (?)";
                     $stmt = mysqli_stmt_init($conn);
                     if(!mysqli_stmt_prepare($stmt, $sql)) {
-                        header("Location: ../signup.php?error=sqlinserterror&user=" . $user);
+                        header("Location: ../signup.php?error=sqlpreferencesinserterror&user=" . $user);
                         mysqli_stmt_close($stmt);
                         mysqli_close($conn);
                         exit();
@@ -73,7 +72,7 @@ if (isset($_POST['signup_btn'])){
                         mysqli_stmt_bind_param($stmt, "s", $userid);
                         mysqli_stmt_execute($stmt);
                         $_SESSION["userid"] = $userid;
-                        header("Location: ../login.php?signup=success");
+                        header("Location: ../signup.php?signup=success&userid=" . $userid);
                         mysqli_stmt_close($stmt);
                         mysqli_close($conn);
                         exit();

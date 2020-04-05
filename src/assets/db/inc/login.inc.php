@@ -11,14 +11,14 @@ if (isset($_POST['login_btn'])){
         mysqli_close($conn);
         exit();
     } else {
-        $sql = "SELECT userid, username, password, salt
+        $sql = "SELECT userid, password, salt
                 FROM Users
                 WHERE username=?";
 
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../login.php?error=sqlrequesterror&user=" . $user);
+            header("Location: ../login.php?error=sqluserrequesterror&user=" . $user);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
             exit();
@@ -26,7 +26,7 @@ if (isset($_POST['login_btn'])){
             mysqli_stmt_bind_param($stmt, "s", $user);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
-            mysqli_stmt_bind_result($stmt, $fetch_id, $fetch_user, $fetch_pass, $salt);
+            mysqli_stmt_bind_result($stmt, $fetch_id, $fetch_pass, $salt);
             if (mysqli_stmt_num_rows($stmt) > 0) {
                 mysqli_stmt_fetch($stmt);
                 $pepper = "56d211ada15f43c28b49436908d47468e9f7e25b5c89cd28d3880a100e385299";

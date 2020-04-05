@@ -1,8 +1,6 @@
 <?php
 session_start();
 header('Content-Type: text/css');
-// mysql_connect() here
-// mysql_query() here
 if (isset($_SESSION['userid'])) {
     require "../db/inc/handler.inc.php";
     $userid = $_SESSION['userid'];
@@ -14,7 +12,7 @@ if (isset($_SESSION['userid'])) {
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../login.php?error=sqlrequesterror&userid=" . $userid);
+            header("Location: ../login.php?error=sqlpreferencesrequesterror&userid=" . $userid);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
             exit();

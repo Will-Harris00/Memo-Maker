@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a31e209-03b8-4db3-a844-c5669f787349" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/inc/login.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/login.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/inc/preferences.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/preferences.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/db/inc/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/signup.inc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,6 +78,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/examples/Store Cookies" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -95,7 +100,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Exeter Maria: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@1d35da4e" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@126f311f" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -126,7 +131,8 @@
       <workItem from="1586026098599" duration="1524000" />
       <workItem from="1586027653994" duration="10013000" />
       <workItem from="1586042051563" duration="68000" />
-      <workItem from="1586079041068" duration="16264000" />
+      <workItem from="1586079041068" duration="17305000" />
+      <workItem from="1586102459644" duration="7149000" />
     </task>
     <servers />
   </component>
@@ -160,6 +166,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="321" y="117" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.760@0.0.1280.760" timestamp="1586025940893" />
+    <state x="389" y="237" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586102561502">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="389" y="237" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.760@0.0.1280.760" timestamp="1586102561502" />
     <state x="110" y="120" width="935" height="520" key="DiffContextDialog" timestamp="1586009447526">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -173,22 +183,22 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="421" y="136" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1586027931152" />
-    <state width="845" height="188" key="GridCell.Tab.0.bottom" timestamp="1586101086954">
+    <state width="845" height="188" key="GridCell.Tab.0.bottom" timestamp="1586106562371">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="845" height="188" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1586101086954" />
-    <state width="845" height="188" key="GridCell.Tab.0.center" timestamp="1586101086954">
+    <state width="845" height="188" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1586106562371" />
+    <state width="845" height="188" key="GridCell.Tab.0.center" timestamp="1586106562371">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="845" height="188" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1586101086954" />
-    <state width="845" height="188" key="GridCell.Tab.0.left" timestamp="1586101086954">
+    <state width="845" height="188" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1586106562371" />
+    <state width="845" height="188" key="GridCell.Tab.0.left" timestamp="1586106562371">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="845" height="188" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1586101086954" />
-    <state width="845" height="188" key="GridCell.Tab.0.right" timestamp="1586101086954">
+    <state width="845" height="188" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1586106562371" />
+    <state width="845" height="188" key="GridCell.Tab.0.right" timestamp="1586106562371">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="845" height="188" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1586101086954" />
+    <state width="845" height="188" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1586106562371" />
     <state width="200" height="457" key="HiddenNamespacesPopup" timestamp="1585744687804">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -202,10 +212,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="478" y="241" key="WebDeployment.AddServerDialog.v.1/0.0.1280.680@0.0.1280.680" timestamp="1585744290371" />
-    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586101074162">
+    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586106545945">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.760@0.0.1280.760" timestamp="1586101074162" />
+    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.760@0.0.1280.760" timestamp="1586106545945" />
     <state x="478" y="89" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1585744719849">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
