@@ -28,7 +28,7 @@ if (isset($_POST['signup_btn'])){
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../signup.php?error=sqluserrequesterror&user=" . $user);
+            header("Location: ../signup.php?error=sqlusernamerequesterror&user=" . $user);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
             exit();
@@ -36,6 +36,7 @@ if (isset($_POST['signup_btn'])){
             mysqli_stmt_bind_param($stmt, "s", $user);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
+            mysqli_stmt_close($stmt);
             $resultCheck = mysqli_stmt_num_rows($stmt);
             if ($resultCheck > 0) {
                 header("Location: ../signup.php?error=usertaken");
@@ -44,8 +45,8 @@ if (isset($_POST['signup_btn'])){
                 exit();
             } else {
                 $sql = "INSERT INTO Users
-                        (userid, username, password, salt)
-                        VALUES (?, ?, ?, ?)";
+                        (username, password, salt)
+                        VALUES (?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
                 if(!mysqli_stmt_prepare($stmt, $sql)) {
                     header("Location: ../signup.php?error=sqluserinserterror&user=" . $user);
@@ -54,28 +55,48 @@ if (isset($_POST['signup_btn'])){
                     exit();
                 } else {
                     $salt = md5(rand());
-                    mysqli_stmt_bind_param($stmt, "ssss", $userid, $user, md5($pass . $salt . pepper), $salt);
+                    mysqli_stmt_bind_param($stmt, "sss", $user, md5($pass . $salt . pepper), $salt);
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
                     mysqli_stmt_close($stmt);
 
-                    $sql = "INSERT INTO Preferences
-                            (userid) 
-                            VALUES (?)";
+
+                    $sql = "SELECT userid
+                            FROM Users
+                            WHERE username=?";
                     $stmt = mysqli_stmt_init($conn);
-                    if(!mysqli_stmt_prepare($stmt, $sql)) {
-                        header("Location: ../signup.php?error=sqlpreferencesinserterror&user=" . $user);
+                    if (!mysqli_stmt_prepare($stmt, $sql)) {
+                        header("Location: ../login.php?error=sqluseridrequesterror&user=" . $user);
                         mysqli_stmt_close($stmt);
                         mysqli_close($conn);
                         exit();
                     } else {
-                        mysqli_stmt_bind_param($stmt, "s", $userid);
+                        mysqli_stmt_bind_param($stmt, "s", $user);
                         mysqli_stmt_execute($stmt);
-                        $_SESSION["userid"] = $userid;
-                        header("Location: ../signup.php?signup=success&userid=" . $userid);
+                        mysqli_stmt_store_result($stmt);
+                        mysqli_stmt_bind_result($stmt, $userid);
+                        mysqli_stmt_fetch($stmt);
                         mysqli_stmt_close($stmt);
-                        mysqli_close($conn);
-                        exit();
+
+
+                        $sql = "INSERT INTO Preferences
+                            (userid) 
+                            VALUES (?)";
+                        $stmt = mysqli_stmt_init($conn);
+                        if(!mysqli_stmt_prepare($stmt, $sql)) {
+                            header("Location: ../signup.php?error=sqlpreferencesinserterror&user=" . $user);
+                            mysqli_stmt_close($stmt);
+                            mysqli_close($conn);
+                            exit();
+                        } else {
+                            mysqli_stmt_bind_param($stmt, "i", $userid);
+                            mysqli_stmt_execute($stmt);
+                            $_SESSION["userid"] = $userid;
+                            header("Location: ../tasks.php?signup=success");
+                            mysqli_stmt_close($stmt);
+                            mysqli_close($conn);
+                            exit();
+                        }
                     }
                 }
             }

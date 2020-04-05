@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a31e209-03b8-4db3-a844-c5669f787349" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/inc/login.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/login.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/inc/preferences.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/preferences.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/db/inc/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/signup.inc.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +128,7 @@
       <workItem from="1586027653994" duration="10013000" />
       <workItem from="1586042051563" duration="68000" />
       <workItem from="1586079041068" duration="17305000" />
-      <workItem from="1586102459644" duration="7149000" />
+      <workItem from="1586102459644" duration="7239000" />
     </task>
     <servers />
   </component>
