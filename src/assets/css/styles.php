@@ -1,3 +1,41 @@
+<?php
+session_start();
+header('Content-Type: text/css');
+// mysql_connect() here
+// mysql_query() here
+if (isset($_SESSION['userid'])) {
+    require "../db/inc/handler.inc.php";
+    $userid = $_SESSION['userid'];
+
+    $sql = "SELECT foreground, background
+                FROM Preferences
+                WHERE userid=?";
+
+    $stmt = mysqli_stmt_init($conn);
+
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+            header("Location: ../login.php?error=sqlrequesterror&userid=" . $userid);
+            mysqli_stmt_close($stmt);
+            mysqli_close($conn);
+            exit();
+    } else {
+        mysqli_stmt_bind_param($stmt, "s", $userid);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_store_result($stmt);
+        mysqli_stmt_bind_result($stmt, $bg, $fg);
+        header("Location: ../tasks.php?preferences_updated=success");
+        mysqli_stmt_close($stmt);
+        mysqli_close($conn);
+        exit();
+    }
+} else {
+    $bg = "#CCE0F5";
+    $fg = "#000000";
+}
+?>
+
+.text{color:<?php echo $fg;?>;}
+
 html {
     height: 100%;
     margin: 0;
@@ -16,7 +54,7 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgb(204, 224, 245);
+    background-color: <?php echo $bg;?>;
 ;
     /*background-image: linear-gradient(to bottom right, rgba(18, 180, 13, 0.45), #79a9ed);
     */

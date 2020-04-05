@@ -2,37 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a31e209-03b8-4db3-a844-c5669f787349" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/Coursework - Web Dev.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/db/inc/login.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/db/inc/signup.inc.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/secure/credentials.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/secure/pepper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/Coursework - Web Development.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources/b7fe8ed4-9bcd-44b6-ab9e-8fb1047cf680.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dataSources/b7fe8ed4-9bcd-44b6-ab9e-8fb1047cf680/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/db/inc/preferences.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies/printc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies0.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/cookies6.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/printc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Cookies Examples/setce.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Sessions Examples/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Sessions Examples/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Sessions Examples/secure.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Sessions Examples/sget.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Sessions Examples/sset.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Store Cookies/Exercise02.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Store Cookies/Exercise03-1a.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Store Cookies/Exercise03-1b.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/Store Cookies/Exercise03-2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/User Preferences Examples/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/User Preferences Examples/preferences.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/9070f056-65d8-4c64-b3d6-2cadca0708e9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9070f056-65d8-4c64-b3d6-2cadca0708e9.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/database/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/database/initialise.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/database/initialise.sql" beforeDir="false" afterPath="$PROJECT_DIR$/assets/database/initialise.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/db/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/db/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/inc/dbh.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/handler.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/db/inc/logoff.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/logoff.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/inc/login.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/login.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/db/inc/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/inc/signup.inc.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/db/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/db/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/signup.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/db/tasks.php" beforeDir="false" afterPath="$PROJECT_DIR$/assets/db/tasks.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/validate.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/validate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +79,7 @@
         <item name="Exeter Maria" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="wjph202: schema" type="ebfa3cd1:MariaImplModel$Schema" />
-        <item name="Users: table" type="dbc44a63:MariaImplModel$Table" />
+        <item name="Preferences: table" type="dbc44a63:MariaImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -104,7 +106,14 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/examples/Store Cookies" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wjhar\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\examples\Store Cookies" />
+      <recent name="C:\Users\wjhar\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\examples" />
+      <recent name="C:\Users\wjhar\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\cookies" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -119,7 +128,12 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Exeter Maria: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@478df93f" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@728f379e" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Exeter Maria: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@1d35da4e" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -149,6 +163,8 @@
       <workItem from="1586025934817" duration="40000" />
       <workItem from="1586026098599" duration="1524000" />
       <workItem from="1586027653994" duration="10013000" />
+      <workItem from="1586042051563" duration="68000" />
+      <workItem from="1586079041068" duration="16136000" />
     </task>
     <servers />
   </component>
@@ -174,6 +190,10 @@
     </state>
     <state x="-84" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585752850169" />
     <state x="233" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1585935316911" />
+    <state x="382" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586084659446">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="382" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1586084659446" />
     <state x="321" y="117" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586025940893">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -191,22 +211,22 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="421" y="136" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1586027931152" />
-    <state width="845" height="189" key="GridCell.Tab.0.bottom" timestamp="1586039909115">
+    <state width="845" height="188" key="GridCell.Tab.0.bottom" timestamp="1586101086954">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="845" height="189" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1586039909115" />
-    <state width="845" height="189" key="GridCell.Tab.0.center" timestamp="1586039909115">
+    <state width="845" height="188" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1586101086954" />
+    <state width="845" height="188" key="GridCell.Tab.0.center" timestamp="1586101086954">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="845" height="189" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1586039909115" />
-    <state width="845" height="189" key="GridCell.Tab.0.left" timestamp="1586039909115">
+    <state width="845" height="188" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1586101086954" />
+    <state width="845" height="188" key="GridCell.Tab.0.left" timestamp="1586101086954">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="845" height="189" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1586039909115" />
-    <state width="845" height="189" key="GridCell.Tab.0.right" timestamp="1586039909115">
+    <state width="845" height="188" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1586101086954" />
+    <state width="845" height="188" key="GridCell.Tab.0.right" timestamp="1586101086954">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state width="845" height="189" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1586039909115" />
+    <state width="845" height="188" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1586101086954" />
     <state width="200" height="457" key="HiddenNamespacesPopup" timestamp="1585744687804">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -220,10 +240,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="478" y="241" key="WebDeployment.AddServerDialog.v.1/0.0.1280.680@0.0.1280.680" timestamp="1585744290371" />
-    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586039879845">
+    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586101074162">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.760@0.0.1280.760" timestamp="1586039879845" />
+    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.760@0.0.1280.760" timestamp="1586101074162" />
     <state x="478" y="89" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1585744719849">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -236,5 +256,9 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="511" y="275" key="publish.login/0.0.1280.760@0.0.1280.760" timestamp="1585935283230" />
+    <state x="303" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1586087448913">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="303" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1586087448913" />
   </component>
 </project>

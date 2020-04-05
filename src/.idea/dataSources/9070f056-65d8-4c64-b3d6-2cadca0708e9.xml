@@ -822,79 +822,108 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="206" parent="3" name="Tasks"/>
-    <table id="207" parent="3" name="Users"/>
-    <column id="208" parent="206" name="taskid">
+    <table id="206" parent="3" name="Preferences"/>
+    <table id="207" parent="3" name="Tasks"/>
+    <table id="208" parent="3" name="Users"/>
+    <column id="209" parent="206" name="userid">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="210" parent="206" name="foreground">
+      <Position>2</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <DefaultExpression>&apos;#000000&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="211" parent="206" name="background">
+      <Position>3</Position>
+      <DataType>varchar(32)|0s</DataType>
+      <DefaultExpression>&apos;#CCE0F5&apos;</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="212" parent="206" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>userid</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="213" parent="206" name="Preferences_ibfk_1">
+      <ColNames>userid</ColNames>
+      <RefTableName>Users</RefTableName>
+      <RefColNames>userid</RefColNames>
+    </foreign-key>
+    <column id="214" parent="207" name="taskid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="209" parent="206" name="userid">
+    <column id="215" parent="207" name="userid">
       <Position>2</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="210" parent="206" name="name">
+    <column id="216" parent="207" name="name">
       <Position>3</Position>
       <DataType>tinytext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="211" parent="206" name="description">
+    <column id="217" parent="207" name="description">
       <Position>4</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="212" parent="206" name="state">
+    <column id="218" parent="207" name="state">
       <Position>5</Position>
       <DataType>tinyint(1)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="213" parent="206" name="userid">
+    <index id="219" parent="207" name="userid">
       <ColNames>userid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="214" parent="206" name="PRIMARY">
+    <key id="220" parent="207" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>taskid
 userid</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="215" parent="206" name="Tasks_ibfk_1">
+    <foreign-key id="221" parent="207" name="Tasks_ibfk_1">
       <ColNames>userid</ColNames>
       <RefTableName>Users</RefTableName>
       <RefColNames>userid</RefColNames>
     </foreign-key>
-    <column id="216" parent="207" name="userid">
+    <column id="222" parent="208" name="userid">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="217" parent="207" name="username">
+    <column id="223" parent="208" name="username">
       <Position>2</Position>
       <DataType>tinytext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="218" parent="207" name="password">
+    <column id="224" parent="208" name="password">
       <Position>3</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="219" parent="207" name="salt">
+    <column id="225" parent="208" name="salt">
       <Position>4</Position>
       <DataType>longtext|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="220" parent="207" name="PRIMARY">
+    <key id="226" parent="208" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>userid</ColNames>
       <Primary>1</Primary>

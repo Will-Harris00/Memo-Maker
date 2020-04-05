@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <title>Memo Maker</title>
-    <link rel="stylesheet" href="../../assets/css/styles.css">
+    <link rel="stylesheet" href="../css/styles.php">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
@@ -23,7 +23,7 @@ session_start();
     <li><a href="../../index.php">🏠 Home</a></li>
     <li><a href="account.php">⚙️Account</a></li>
     <li><a href="tasks.php">📝 Tasks</a></li>
-    <li><a href="inc/logoff.inc.php">Logoff 🚪🚶💨</a></li>
+    <li><a href="inc/logoff.inc.php">Logoff 🚪🚶</a></li>
 </ul>
 </body>
 </html>

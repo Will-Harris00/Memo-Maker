@@ -18,7 +18,7 @@ if (isset($_POST['login_btn'])){
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../login.php?error=sqlinserterror&user=" . $user);
+            header("Location: ../login.php?error=sqlrequesterror&user=" . $user);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
             exit();
@@ -36,7 +36,7 @@ if (isset($_POST['login_btn'])){
                     mysqli_close($conn);
                     exit();
                 } else {
-                    $_SESSION["userId"] = $fetch_id;
+                    $_SESSION["userid"] = $fetch_id;
                     header("Location: ../tasks.php?login=success");
                     mysqli_stmt_close($stmt);
                     mysqli_close($conn);
