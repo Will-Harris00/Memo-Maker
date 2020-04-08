@@ -1,38 +1,47 @@
 <?php
 session_start();
-header('Content-Type: text/css');
+$bg = "#CCE0F5";
+$fg = "#028090";
+header('Content-type: text/css');
+header('Cache-control: must-revalidate');
 if (isset($_SESSION['userid'])) {
     require "../db/inc/handler.inc.php";
     $userid = $_SESSION['userid'];
 
+    header("Location: broken.php");
     $sql = "SELECT foreground, background
-                FROM Preferences
-                WHERE userid=?";
+            FROM Preferences
+            WHERE userid=?";
 
     $stmt = mysqli_stmt_init($conn);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../login.php?error=sqlpreferencesrequesterror&userid=" . $userid);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
             exit();
     } else {
-        mysqli_stmt_bind_param($stmt, "s", $userid);
+        mysqli_stmt_bind_param($stmt, "i", $userid);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_store_result($stmt);
-        mysqli_stmt_bind_result($stmt, $bg, $fg);
-        header("Location: ../tasks.php?preferences_updated=success");
-        mysqli_stmt_close($stmt);
-        mysqli_close($conn);
-        exit();
+        mysqli_stmt_bind_result($stmt, $fg, $bg);
+        if (mysqli_stmt_num_rows($stmt) > 0) {
+            header("Location: test.php");
+            mysqli_stmt_fetch($stmt);
+            mysqli_stmt_close($stmt);
+            mysqli_close($conn);
+            exit();
+        }
+        else {
+            header("Location: magic.php");
+            mysqli_stmt_fetch($stmt);
+            mysqli_stmt_close($stmt);
+            mysqli_close($conn);
+            exit();
+        }
     }
-} else {
-    $bg = "#CCE0F5";
-    $fg = "#000000";
 }
 ?>
 
-.text{color:<?php echo $fg;?>;}
 
 html {
     height: 100%;
@@ -52,7 +61,7 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: <?php echo $bg;?>;
+    background-color: <?php echo $bg ?>;
 ;
     /*background-image: linear-gradient(to bottom right, rgba(18, 180, 13, 0.45), #79a9ed);
     */
@@ -120,7 +129,7 @@ Navigation Bar
 */
 
 .topnav {
-    background-color: #028090;
+    background-color: <?php echo $fg ?>;
     margin: 0px;
     z-index: 20;
 }
