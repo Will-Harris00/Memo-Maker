@@ -49,6 +49,7 @@ font: 16px Arial;
 
 /*the container must be positioned relative:*/
 .autocomplete {
+width: 300px;
 position: relative;
 display: inline-block;
 }

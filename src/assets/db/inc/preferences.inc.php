@@ -4,8 +4,8 @@ session_start();
 if (isset($_POST['change_preferences'])) {
     require "handler.inc.php";
     $userid = $_SESSION["userid"];
-    $fg=$_POST['foreground'];
-    $bg=$_POST['background'];
+    $fg = str_replace(' ', '', $_POST['foreground']);
+    $bg = str_replace(' ', '', $_POST['background']);
 
     $sql = "REPLACE INTO Preferences
         (userid, foreground, background)

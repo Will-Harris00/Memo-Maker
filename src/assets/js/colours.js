@@ -54,7 +54,7 @@ function autocomplete(inp, arr) {
             currentFocus--;
             /*and and make the current item more visible:*/
             addActive(x);
-        } else if (e.key ===  'enter') {
+        } else if (e.key === 'Enter') {
             /*If the ENTER key is pressed, prevent the form from being submitted,*/
             e.preventDefault();
             if (currentFocus > -1) {

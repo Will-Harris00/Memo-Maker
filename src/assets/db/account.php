@@ -23,15 +23,15 @@ require "header.php";
 
 <body>
 <main>
-    <form autocomplete="off" action="inc/preferences.inc.php">
-        <div class="autocomplete" style="width:300px;">
+    <form action="inc/preferences.inc.php" method="post" name="preferences_form" autocomplete="off">
+        <div class="autocomplete">
             <label>Background:
-                <input type="text" name="background" placeholder="Background Colour">
+                <input id="bginput" type="text" name="background" placeholder="Background Colour">
             </label>
         </div>
-        <div class="autocomplete" style="width:300px;">
+        <div class="autocomplete">
             <label>Foreground:
-                <input type="text" name="foreground" placeholder="Foreground Colour">
+                <input id="fginput" type="text" name="foreground" placeholder="Foreground Colour">
             </label>
         </div>
         <input type="submit" value="Change Preferences" name="change_preferences">
