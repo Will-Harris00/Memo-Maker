@@ -1,8 +1,4 @@
 <?php
-session_start();
-if (!(isset($_SESSION['userid']))) {
-    header("Location: ../../index.php");
-}
 require "header.php";
 ?>
 
@@ -10,7 +6,7 @@ require "header.php";
 <head>
     <meta charset="utf-8">
     <title>Memo Maker</title>
-    <!--<link rel="stylesheet" type='text/css' href="../css/style.php">-->
+    <link rel="stylesheet" type='text/css' href="../css/style.php">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">

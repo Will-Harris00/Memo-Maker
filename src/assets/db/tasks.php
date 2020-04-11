@@ -1,8 +1,4 @@
 <?php
-session_start();
-if (!(isset($_SESSION['userid']))) {
-    header("Location: ../../index.php");
-}
 require "header.php";
 ?>
 
@@ -26,17 +22,18 @@ require "header.php";
 <form action="inc/addtask.inc.php" method="post" id="new_task">
     <h3>Add a new task to the list</h3>
     <label> Name:
-        <input required="required" pattern="[a-zA-Z0-9\w\s\p{P}\p{S}].{1,18}" size="18" name="name" placeholder="Give this memo a name.">
+        <input name="name" placeholder="Give it a name." required="required" pattern="[a-zA-Z0-9\w\s\p{P}\p{S}].{1,18}" size="18" type="text">
     </label>
     <label>Date :
-        <input placeholder="When is it due?" name="date" type="text" size="12" required="required" min="1970-01-01" max="9999-12-31" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input name="date" placeholder="When is it due?" type="text" size="12" required="required" min="1970-01-01" max="9999-12-31" onfocus="(this.type='date')" onblur="(this.type='text')">
     </label>
     <label>Time :
-        <input placeholder="At what time?" name="time" type="text" size="8" required="required" onfocus="(this.type='time')" onblur="(this.type='text')">
+        <input name="time" placeholder="At what time?" type="text" size="8" required="required" onfocus="(this.type='time')" onblur="(this.type='text')">
     </label>
-    <input type="submit" name="new_task_btn" value="Add Task">
 </form>
-<textarea id="description" name="description" rows="4" cols="80" form="new_task" placeholder="Task description..."></textarea>
+    <label for="description">Description</label>
+    <textarea id="description" name="description" rows="4" cols="80" form="new_task" placeholder="What is the task about?"></textarea>
+    <button form="new_task" name="new_task_btn" type="submit" value="Add Task">Add Task</button>
 </main>
 </body>
 </html>

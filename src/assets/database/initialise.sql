@@ -30,8 +30,8 @@ CREATE TABLE Tasks (
 
 CREATE TABLE Preferences (
                        userid int not null,
-                       foreground varchar(32) DEFAULT '#028090',
-                       background varchar(32) DEFAULT '#CCE0F5',
+                       foreground varchar(32) DEFAULT 'PowderBlue',
+                       background varchar(32) DEFAULT 'AliceBlue',
                        primary key (userid),
                        foreign key (userid) references Users(userid)
 );

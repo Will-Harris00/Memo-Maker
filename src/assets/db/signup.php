@@ -30,19 +30,19 @@ session_start();
 <!-- Sign up form -->
 <main>
     <form action="inc/signup.inc.php" method="post" name="signup_form">
-        <label>Username
+        <label>
             <input type="text" name="username" placeholder="Username" pattern="^[A-Za-z0-9_-]{3,15}$">
         </label>
         <br>
-        <label>Password:
+        <label>
             <input type="password" name="password" placeholder="Password">
         </label>
         <br>
-        <label>Confirm Password:
+        <label>
             <input type="password" name="confirm_password" placeholder="Repeat Password">
         </label>
         <br>
-        <button type="submit" name="signup_btn" value="SUBMIT">Sign up</button>
+        <input type="submit" name="signup_btn" value="Sign up">
         <span id='message'></span>
     </form>
     <script src="../js/validate.js"></script>

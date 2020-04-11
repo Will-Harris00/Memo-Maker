@@ -1,9 +1,8 @@
 <?php
 session_start();
-$bg = "#CCE0F5";
-$fg = "#028090";
+$bg = "AliceBlue";
+$fg = "PowderBlue";
 header('Content-type: text/css; charset=utf-8' );
-header('Cache-control: must-revalidate');
 if (isset($_SESSION['userid'])) {
     require "../secure/credentials.php";
     // require "../db/inc/handler.inc.php";
@@ -29,77 +28,102 @@ if (isset($_SESSION['userid'])) {
         if (mysqli_stmt_num_rows($stmt) > 0) {
             mysqli_stmt_fetch($stmt);
             mysqli_stmt_close($stmt);
-            // mysqli_close($conn);
-            //exit();
+            mysqli_close($conn);
         } else {
-            $bg = "#CCE0F5";
-            $fg = "#028090";
+            $bg = "AliceBlue";
+            $fg = "PowderBlue";
         }
     }
 }
 ?>
 
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-font: 16px Arial;
+    font: 16px Arial;
 }
 
 /*the container must be positioned relative:*/
 .autocomplete {
-width: 300px;
-position: relative;
-display: inline-block;
+    width: 300px;
+    position: relative;
+    display: inline-block;
 }
 
 input {
-border: 1px solid transparent;
-background-color: #f1f1f1;
-padding: 10px;
-font-size: 16px;
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
 }
 
 input[type=text] {
-background-color: #f1f1f1;
-width: 100%;
+    background-color: SeaShell;
+    width: 100%;
+}
+
+textarea {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    background-color: SeaShell;
+    width: 100%;
+    resize: vertical;
+    min-height: 150px;
+}
+
+input[type=password] {
+    background-color: SeaShell;
+    width: 100%;
 }
 
 input[type=submit] {
-background-color: DodgerBlue;
-color: #fff;
-cursor: pointer;
+    background-color: DodgerBlue;
+    color: white;
+    cursor: pointer;
+}
+
+button {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    background-color: DodgerBlue;
+    color: white;
+    cursor: pointer;
 }
 
 .autocomplete-items {
-position: absolute;
-border: 1px solid #d4d4d4;
-border-bottom: none;
-border-top: none;
-z-index: 99;
-/*position the autocomplete items to be the same width as the container:*/
-top: 100%;
-left: 0;
-right: 0;
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
 }
 
 .autocomplete-items div {
-padding: 10px;
-cursor: pointer;
-background-color: #fff;
-border-bottom: 1px solid #d4d4d4;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
 }
 
 /*when hovering an item:*/
 .autocomplete-items div:hover {
-background-color: #e9e9e9;
+    background-color: #e9e9e9;
 }
 
 /*when navigating through the items using the arrow keys:*/
 .autocomplete-active {
-background-color: DodgerBlue !important;
-color: #ffffff;
+    background-color: DodgerBlue !important;
+    color: #ffffff;
 }
 
 html {
@@ -402,20 +426,6 @@ main {
     margin: auto;
     padding: 0.5rem;
     text-align: center;
-}
-
-button {
-    background-image: linear-gradient(to bottom right, #42e95d, #6767e7);
-    height: 30px;
-    width: 150px;
-    border: 0;
-    border-radius: 3px;
-    font-size: 1em;
-    overflow: hidden;
-    color: white;
-    letter-spacing: 0.5em;
-    font-weight: bold;
-    box-shadow: 0 8px 16px 0 #9b9b9b;
 }
 
 #myDIV {

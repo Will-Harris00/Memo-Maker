@@ -27,16 +27,16 @@ session_start();
 <!-- Login form -->
 <main>
     <form action="inc/login.inc.php" method="post" name="login_form">
-        <label>Username
+        <label>
             <input type="text" name="username" placeholder="Username">
         </label>
         <br>
-        <label>Password:
+        <label>
             <input type="password" name="password" placeholder="Password">
         </label>
         <br>
         <span id='message'></span>
-        <button type="submit" name="login_btn" value="SUBMIT">Login</button>
+        <input type="submit" name="login_btn" value="Login">
     </form>
 </main>
 </body>
