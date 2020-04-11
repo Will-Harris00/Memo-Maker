@@ -6,7 +6,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <title>Memo Maker</title>
-    <link rel="stylesheet" href="assets/css/styles.php">
+    <link rel="stylesheet" type='text/css' href="assets/css/style.php">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -16,8 +16,6 @@ session_start();
     <meta name="Description" content="Index page for task management system">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=on user-scalable=no">
 
-    <script src="assets/js/validate.js"></script>
-    <script src="assets/js/process.js"></script>
 </head>
 
 <body>

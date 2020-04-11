@@ -1,5 +1,8 @@
 var  timerId;
-var confirm_pass = document.getElementById("confirm_password");
+var inputs = document.signup_form;
+var pass = inputs.password;
+var confirm_pass = inputs.confirm_password;
+var signup_btn = inputs.signup_btn;
 console.log(confirm_pass);
 
 // Event listener on the input box
@@ -18,11 +21,12 @@ function debounceFunction(func, delay) {
 }
 
 function check() {
-    if (document.getElementById('password').value ===
-        document.getElementById('confirm_password').value) {
+    if (pass.value === confirm_pass.value) {
         document.getElementById('message').style.color = 'green';
         document.getElementById('message').innerHTML = 'matching';
+        signup_btn.disabled = false;
     } else {
+        signup_btn.disabled = true;
         document.getElementById('message').style.color = 'red';
         document.getElementById('message').innerHTML = 'not matching';
     }

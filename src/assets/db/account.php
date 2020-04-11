@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (!(isset($_SESSION['userid']))) {
+    header("Location: ../../index.php");
+}
 require "header.php";
 ?>
 
@@ -7,7 +10,7 @@ require "header.php";
 <head>
     <meta charset="utf-8">
     <title>Memo Maker</title>
-    <link rel="stylesheet" href="../css/styles.php">
+    <!--<link rel="stylesheet" type='text/css' href="../css/style.php">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
@@ -20,31 +23,20 @@ require "header.php";
 
 <body>
 <main>
-    <?php
-    if (!(isset($_SESSION['userid']))) {
-        header("Location: ../../index.php");
-    }
-    ?>
-    <form action = "inc/preferences.inc.php" method = "post">
-        <p>
+    <form autocomplete="off" action="inc/preferences.inc.php">
+        <div class="autocomplete" style="width:300px;">
             <label>Background:
-                <select name="background">
-                    <option value="black">Black</option>
-                    <option value="white" selected>White</option>
-                    <option value="red">Red</option>
-                    <option value="blue">Blue</option>
-                </select>
-            </label><br />
+                <input type="text" name="background" placeholder="Background Colour">
+            </label>
+        </div>
+        <div class="autocomplete" style="width:300px;">
             <label>Foreground:
-                <select name="foreground">
-                    <option value="black" selected>Black</option>
-                    <option value="white">White</option>
-                    <option value="red">Red</option>
-                    <option value="blue">Blue</option>
-                </select>
-            </label></p>
+                <input type="text" name="foreground" placeholder="Foreground Colour">
+            </label>
+        </div>
         <input type="submit" value="Change Preferences" name="change_preferences">
     </form>
+    <script src="../js/colours.js"></script>
 </main>
 </body>
 </html>

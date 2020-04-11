@@ -2,16 +2,18 @@
 session_start();
 $bg = "#CCE0F5";
 $fg = "#028090";
-header('Content-type: text/css');
+header('Content-type: text/css; charset=utf-8' );
 header('Cache-control: must-revalidate');
 if (isset($_SESSION['userid'])) {
-    require "../db/inc/handler.inc.php";
+    require "../secure/credentials.php";
+    // require "../db/inc/handler.inc.php";
     $userid = $_SESSION['userid'];
 
-    header("Location: broken.php");
     $sql = "SELECT foreground, background
             FROM Preferences
             WHERE userid=?";
+
+    $conn = mysqli_connect(host, user, password, database, port);
 
     $stmt = mysqli_stmt_init($conn);
 
@@ -25,23 +27,79 @@ if (isset($_SESSION['userid'])) {
         mysqli_stmt_store_result($stmt);
         mysqli_stmt_bind_result($stmt, $fg, $bg);
         if (mysqli_stmt_num_rows($stmt) > 0) {
-            header("Location: test.php");
             mysqli_stmt_fetch($stmt);
             mysqli_stmt_close($stmt);
-            mysqli_close($conn);
-            exit();
-        }
-        else {
-            header("Location: magic.php");
-            mysqli_stmt_fetch($stmt);
-            mysqli_stmt_close($stmt);
-            mysqli_close($conn);
-            exit();
+            // mysqli_close($conn);
+            //exit();
+        } else {
+            $bg = "#CCE0F5";
+            $fg = "#028090";
         }
     }
 }
 ?>
 
+* {
+box-sizing: border-box;
+}
+
+body {
+font: 16px Arial;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+position: relative;
+display: inline-block;
+}
+
+input {
+border: 1px solid transparent;
+background-color: #f1f1f1;
+padding: 10px;
+font-size: 16px;
+}
+
+input[type=text] {
+background-color: #f1f1f1;
+width: 100%;
+}
+
+input[type=submit] {
+background-color: DodgerBlue;
+color: #fff;
+cursor: pointer;
+}
+
+.autocomplete-items {
+position: absolute;
+border: 1px solid #d4d4d4;
+border-bottom: none;
+border-top: none;
+z-index: 99;
+/*position the autocomplete items to be the same width as the container:*/
+top: 100%;
+left: 0;
+right: 0;
+}
+
+.autocomplete-items div {
+padding: 10px;
+cursor: pointer;
+background-color: #fff;
+border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+background-color: DodgerBlue !important;
+color: #ffffff;
+}
 
 html {
     height: 100%;
@@ -61,7 +119,7 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: <?php echo $bg ?>;
+    background-color: <?php echo $bg; ?>;
 ;
     /*background-image: linear-gradient(to bottom right, rgba(18, 180, 13, 0.45), #79a9ed);
     */
@@ -70,6 +128,10 @@ body {
     font-size: 1rem;
     display: flex;
     flex-direction: column;
+}
+
+td {
+    text-align:center;
 }
 
 .content {
@@ -129,7 +191,7 @@ Navigation Bar
 */
 
 .topnav {
-    background-color: <?php echo $fg ?>;
+    background-color: <?php echo $fg; ?>;
     margin: 0px;
     z-index: 20;
 }
@@ -302,7 +364,7 @@ Animations
 }
 
 
-/* Bry's stuff. unordered so delete if it messes anything up! */
+/* Alternative stuff, unordered so delete if it messes anything up! */
 
 * {
     padding: 0;
@@ -353,10 +415,6 @@ button {
     letter-spacing: 0.5em;
     font-weight: bold;
     box-shadow: 0 8px 16px 0 #9b9b9b;
-}
-
-strong {
-    color: white;
 }
 
 #myDIV {

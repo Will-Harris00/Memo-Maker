@@ -1,12 +1,15 @@
 <?php
 session_start();
+if (!(isset($_SESSION['userid']))) {
+    header("Location: ../../index.php");
+}
 ?>
 
 <html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Memo Maker</title>
-    <link rel="stylesheet" href="../css/styles.php">
+    <link rel="stylesheet" type='text/css' href="../css/style.php">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">

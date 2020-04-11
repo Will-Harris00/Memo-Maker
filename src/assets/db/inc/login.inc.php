@@ -39,7 +39,7 @@ if (isset($_POST['login_btn'])){
                     $_SESSION["userid"] = $fetch_id;
                     header("Location: ../tasks.php?login=success");
                     mysqli_stmt_close($stmt);
-                    mysqli_close($conn);
+                    // mysqli_close($conn);
                     exit();
                 }
             } else {
