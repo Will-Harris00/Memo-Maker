@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if (isset($_POST['change_preferences'])) {
+if (isset($_POST['apply_prefs_btn'])) {
     require "handler.inc.php";
     $userid = $_SESSION["userid"];
     $fg = str_replace(' ', '', $_POST['foreground']);
