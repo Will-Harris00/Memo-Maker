@@ -9,7 +9,7 @@ if (isset($_POST['new_task_btn'])) {
     $description = $_POST['description'];
 
     if (empty($name) || empty($due) || empty($description)) {
-        header("Location: ../signup.php?error=emptyfields&userid=" . $userid);
+        header("Location: ../sign-up.php?error=emptyfields&userid=" . $userid);
         mysqli_close($conn);
         exit();
     } else {
@@ -18,7 +18,7 @@ if (isset($_POST['new_task_btn'])) {
                         VALUES (?, ?, ?, ?)";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../signup.php?error=sqluserinserterror&userid=" . $userid);
+            header("Location: ../sign-up.php?error=sqluserinserterror&userid=" . $userid);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
             exit();

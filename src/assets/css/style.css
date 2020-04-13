@@ -1,47 +1,8 @@
-<?php
-session_start();
-$bg = "AliceBlue";
-$fg = "PowderBlue";
-header('Content-type: text/css; charset=utf-8' );
-if (isset($_SESSION['userid'])) {
-    require "../secure/credentials.php";
-// require "../db/inc/handler.inc.php";
-    $userid = $_SESSION['userid'];
-
-    $sql = "SELECT foreground, background
-    FROM Preferences
-    WHERE userid=?";
-
-    $conn = mysqli_connect(host, user, password, database, port);
-
-    $stmt = mysqli_stmt_init($conn);
-
-    if (!mysqli_stmt_prepare($stmt, $sql)) {
-        mysqli_stmt_close($stmt);
-        mysqli_close($conn);
-        exit();
-    } else {
-        mysqli_stmt_bind_param($stmt, "i", $userid);
-        mysqli_stmt_execute($stmt);
-        mysqli_stmt_store_result($stmt);
-        mysqli_stmt_bind_result($stmt, $fg, $bg);
-        if (mysqli_stmt_num_rows($stmt) > 0) {
-            mysqli_stmt_fetch($stmt);
-            mysqli_stmt_close($stmt);
-            mysqli_close($conn);
-        } else {
-            $bg = "AliceBlue";
-            $fg = "PowderBlue";
-        }
-    }
-}
-?>
-
 /*
 
 General styling
 
-*/
+ */
 
 
 html {
@@ -62,7 +23,7 @@ body {
     font-size: 1rem;
     display: flex;
     flex-direction: column;
-    background-color: <?php echo $bg; ?>;
+    background-color: AliceBlue;
 }
 
 main {
@@ -109,7 +70,7 @@ nav ul {
     padding: 0;
     margin: 0;
     top: 0;
-    background-color: <?php echo $fg; ?>;
+    background-color: PowderBlue;
 }
 nav ul li, a {
     display: inline-block;
@@ -141,21 +102,21 @@ nav ul li a:hover {
 }
 
 /*
-Future development would all the user to change the colour of nearly every
-element on the page but for now I am sticking to only making changes to
-background and foreground colours, as such this hover effect is redundant.
+ Future development would all the user to change the colour of nearly every
+ element on the page but for now I am sticking to only making changes to
+ background and foreground colours, as such this hover effect is redundant.
 
 nav ul li:hover{
     background: Honeydew;
 }
-*/
+ */
 
 
 /*
 
 Preferences selector
 
-*/
+ */
 
 
 * {
@@ -164,7 +125,7 @@ Preferences selector
 }
 
 /*the container must be positioned relative:*/
-    .autocomplete {
+.autocomplete {
     width: 300px;
     position: relative;
     display: inline-block;
@@ -268,14 +229,14 @@ Animations
 
 Styling for small screens
 
-*/
+ */
 
 
 @media screen and (max-width: 700px) {
-nav {
-    flex-direction: column;
-    display: block;
-    text-align: center;
-    padding: 0;
-}
+    nav {
+        flex-direction: column;
+        display: block;
+        text-align: center;
+        padding: 0;
+    }
 }

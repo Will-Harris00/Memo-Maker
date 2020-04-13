@@ -1,15 +1,14 @@
 <?php
-session_start();
-if (!(isset($_SESSION['userid']))) {
-    header("Location: ../../index.php");
-} else {
+require "../header.php";
+
+if (isset($_SESSION['userid'])) {
     $userid = $_SESSION['userid'];
-    echo $userid;
-    include "handler.inc.php";
+    echo '<link rel="stylesheet" type=\'text/css\' href="../../css/style.php">';
+    require "handler.inc.php";
     $sql = "SELECT name, description, due, state 
             FROM Tasks 
             WHERE userid=?";
-    echo $userid;
+
     /*
     $stmt = mysqli_prepare($conn, $sql);
 
@@ -30,18 +29,17 @@ if (!(isset($_SESSION['userid']))) {
         /* bind result variables */
         mysqli_stmt_bind_result($stmt, $name, $description, $due, $state);
         //if (mysqli_stmt_num_rows($stmt) > 0) {
-        echo '<br>';
-        echo $userid;
+        echo '<br><br>';
         echo '<table>';
         echo '<tr><th>Name</th><th>Description</th><th>Due</th><th>Completed</th></tr>';
         /* fetch values */
         while (mysqli_stmt_fetch($stmt)) {
-            echo "<tr>";
-            echo "<td>" . $name . "</td>";
-            echo "<td>" . $description . "</td>";
-            echo "<td>" . $due . "</td>";
-            echo "<td>" . $state . "</td>";
-            echo "</tr>";
+            echo '<tr>';
+            echo '<td>' . $name . '</td>';
+            echo '<td>' . $description . '</td>';
+            echo '<td>' . $due . '</td>';
+            echo '<td>' . $state . '</td>';
+            echo '</tr>';
         }
         echo '</table>';
         //}

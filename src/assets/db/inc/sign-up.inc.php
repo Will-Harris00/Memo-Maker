@@ -9,15 +9,15 @@ if (isset($_POST['signup_btn'])){
     $passConfirm = $_POST['confirm_password'];
 
     if (empty($user) || empty($pass) || empty($passConfirm)) {
-        header("Location: ../signup.php?error=emptyfields&user=" . $user);
+        header("Location: ../sign-up.php?error=emptyfields&user=" . $user);
         mysqli_close($conn);
         exit();
     } else if (!preg_match("/^[A-Za-z0-9_-]{3,15}$/", $user)) {
-        header("Location: ../signup.php?error=invalidusername");
+        header("Location: ../sign-up.php?error=invalidusername");
         mysqli_close($conn);
         exit();
     } else if ($passConfirm != $pass) {
-        header("Location: ../signup.php?error=passwordcheck&user=" . $user);
+        header("Location: ../sign-up.php?error=passwordcheck&user=" . $user);
         mysqli_close($conn);
         exit();
     } else {
@@ -28,7 +28,7 @@ if (isset($_POST['signup_btn'])){
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../signup.php?error=sqluserrequesterror&user=" . $user);
+            header("Location: ../sign-up.php?error=sqluserrequesterror&user=" . $user);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
             exit();
@@ -38,7 +38,7 @@ if (isset($_POST['signup_btn'])){
             mysqli_stmt_store_result($stmt);
             $resultCheck = mysqli_stmt_num_rows($stmt);
             if ($resultCheck > 0) {
-                header("Location: ../signup.php?error=usertaken");
+                header("Location: ../sign-up.php?error=usertaken");
                 mysqli_stmt_close($stmt);
                 mysqli_close($conn);
                 exit();
@@ -48,7 +48,7 @@ if (isset($_POST['signup_btn'])){
                         VALUES (?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
                 if(!mysqli_stmt_prepare($stmt, $sql)) {
-                    header("Location: ../signup.php?error=sqluserinserterror&user=" . $user);
+                    header("Location: ../sign-up.php?error=sqluserinserterror&user=" . $user);
                     mysqli_stmt_close($stmt);
                     mysqli_close($conn);
                     exit();
@@ -65,7 +65,7 @@ if (isset($_POST['signup_btn'])){
                             VALUES (?)";
                     $stmt = mysqli_stmt_init($conn);
                     if(!mysqli_stmt_prepare($stmt, $sql)) {
-                        header("Location: ../signup.php?error=sqlpreferencesinserterror&user=" . $user);
+                        header("Location: ../sign-up.php?error=sqlpreferencesinserterror&user=" . $user);
                         mysqli_stmt_close($stmt);
                         mysqli_close($conn);
                         exit();
@@ -83,7 +83,7 @@ if (isset($_POST['signup_btn'])){
         }
     }
 } else {
-    header("Location: ../signup.php");
+    header("Location: ../sign-up.php");
     mysqli_close($conn);
     exit();
 }

@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (isset($_SESSION['userid'])) {
+    header("Location: tasks.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +11,6 @@ session_start();
 <meta name="Developer" content="680033128">
 <meta name="Description" content="Index page for task management system">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=on user-scalable=no">
-
 <head>
     <title>Memo Maker</title>
     <link rel="stylesheet" type='text/css' href="../css/style.css">
@@ -25,9 +27,31 @@ session_start();
          shift that would otherwise occur. Furthermore my reasoning for not using the title attribute to store this
          data is to stop the annoying text box from appearing whenever a user hovers over a link in the header bar. -->
         <li><a href="../../index.php" id="🏠 Home">🏠 Home</a></li>
-        <li><a href="account.php" id="⚙️Account">⚙️Account</a></li>
-        <li><a href="tasks.php" id="📝 Tasks">📝 Tasks</a></li>
-        <li><a href="sign-up.php" id="🙋 Sign Up">🙋 Sign Up</a></li>
-        <li><a href="inc/logoff.inc.php" id="Logoff 🚪🚶">Logoff 🚪🚶</a></li>
+        <li><a href="login.php" id="🔐 Login">🔐 Login</a></li>
     </ul>
 </nav>
+
+<!-- Sign-up form -->
+<main>
+    <form action="inc/sign-up.inc.php" method="post" name="signup_form">
+        <label>
+            <input type="text" name="username" placeholder="Username" pattern="^[A-Za-z0-9_-]{3,15}$">
+        </label>
+        <br>
+        <label>
+            <input type="password" name="password" placeholder="Password">
+        </label>
+        <br>
+        <label>
+            <input type="password" name="confirm_password" placeholder="Repeat Password">
+        </label>
+        <br>
+        <input type="submit" name="signup_btn" value="Sign up">
+        <span id='message'></span>
+    </form>
+    <script src="../js/validate.js"></script>
+</main>
+
+<?php
+require "footer.php";
+?>
