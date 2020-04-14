@@ -1,19 +1,23 @@
 <?php
-require "../header.php";
+require "header.php";
 
 if (isset($_SESSION['userid'])) {
     $userid = $_SESSION['userid'];
-    echo '<link rel="stylesheet" type=\'text/css\' href="../../css/style.php">';
-    require "handler.inc.php";
+    // echo '<link rel="stylesheet" type=\'text/css\' href="../../css/style.php">';
+    // require "handler.inc.php";
+    require "../secure/credentials.php";
+
     $sql = "SELECT name, description, due, state 
             FROM Tasks 
             WHERE userid=?";
+
+    $conn = mysqli_connect(host, user, password, database, port);
 
     /*
     $stmt = mysqli_prepare($conn, $sql);
 
     if (!mysqli_stmt_prepare($stmt, $sql)) {
-        header("Location: ../tasks.php?error=sqltasksrequesterror&userid=" . $userid);
+        header("Location: ../add-tasks.php?error=sqltasksrequesterror&userid=" . $userid);
         mysqli_stmt_close($stmt);
         mysqli_close($conn);
         exit();

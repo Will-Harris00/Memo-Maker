@@ -16,7 +16,9 @@ if (isset($_POST['new_task_btn'])) {
         $sql = "INSERT INTO Tasks
                         (userid, name, description, due)
                         VALUES (?, ?, ?, ?)";
+
         $stmt = mysqli_stmt_init($conn);
+
         if (!mysqli_stmt_prepare($stmt, $sql)) {
             header("Location: ../sign-up.php?error=sqluserinserterror&userid=" . $userid);
             mysqli_stmt_close($stmt);
@@ -25,19 +27,10 @@ if (isset($_POST['new_task_btn'])) {
         } else {
             mysqli_stmt_bind_param($stmt, "isss", $userid, $name, $description, $due);
             mysqli_stmt_execute($stmt);
-            header("Location: ../tasks.php?newtask=success");
+            header("Location: ../add-tasks.php?newtask=success");
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
-            // exit();
         }
     }
 }
-
-
-
-
-
-
-
-
 ?>

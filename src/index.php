@@ -6,11 +6,11 @@ session_start();
 <head>
     <meta charset="utf-8">
     <title>Memo Maker</title>
-    <link rel="stylesheet" type='text/css' href="assets/css/style.css">
+    <link rel="stylesheet" type='text/css' href="assets/css/style.php">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/imgs/favicon.ico" type="image/x-icon">
 
     <meta name="Developer" content="680033128">
     <meta name="Description" content="Index page for task management system">
@@ -33,5 +33,6 @@ session_start();
     </ul>
 <nav>
 
-</body>
-</html>
+<?php
+require_once "assets/db/footer.php";
+?>

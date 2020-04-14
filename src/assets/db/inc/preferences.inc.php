@@ -21,7 +21,7 @@ if (isset($_POST['apply_prefs_btn'])) {
         mysqli_stmt_bind_param($stmt, "iss", $userid, $fg, $bg);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_store_result($stmt);
-        header("Location: ../tasks.php?preferences_updated=success");
+        header("Location: ../add-tasks.php?preferences_updated=success");
         mysqli_stmt_close($stmt);
         // mysqli_close($conn);
         exit();

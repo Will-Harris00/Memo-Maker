@@ -1,5 +1,5 @@
 <?php
-require "header.php";
+require_once "header.php";
 ?>
 
 <html lang="en">
@@ -21,5 +21,7 @@ require "header.php";
     <textarea id="description" name="description" rows="4" cols="80" form="new_task" placeholder="What is the task about?"></textarea>
     <button form="new_task" name="new_task_btn" type="submit" value="Add Task">Add Task</button>
 </main>
-</body>
-</html>
+
+<?php
+require_once "footer.php";
+?>

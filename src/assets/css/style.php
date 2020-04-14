@@ -3,9 +3,10 @@ session_start();
 $bg = "AliceBlue";
 $fg = "PowderBlue";
 header('Content-type: text/css; charset=utf-8' );
+header('Cache-control: must-revalidate');
 if (isset($_SESSION['userid'])) {
     require "../secure/credentials.php";
-// require "../db/inc/handler.inc.php";
+    // require "../db/inc/handler.inc.php";
     $userid = $_SESSION['userid'];
 
     $sql = "SELECT foreground, background
@@ -272,10 +273,8 @@ Styling for small screens
 
 
 @media screen and (max-width: 700px) {
-nav {
-    flex-direction: column;
-    display: block;
-    text-align: center;
-    padding: 0;
-}
+    nav ul li, a {
+        display: block;
+        text-align: center;
+    }
 }

@@ -1,5 +1,8 @@
 <?php
 session_start();
+if (!(isset($_SESSION['userid']))) {
+    header("Location: login.php");
+}
 ?>
 
 <!DOCTYPE html>
@@ -11,9 +14,9 @@ session_start();
 
 <head>
     <title>Memo Maker</title>
-    <link rel="stylesheet" type='text/css' href="../css/style.css">
+    <link rel="stylesheet" type='text/css' href="../css/style.php">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -25,9 +28,11 @@ session_start();
          shift that would otherwise occur. Furthermore my reasoning for not using the title attribute to store this
          data is to stop the annoying text box from appearing whenever a user hovers over a link in the header bar. -->
         <li><a href="../../index.php" id="🏠 Home">🏠 Home</a></li>
-        <li><a href="account.php" id="⚙️Account">⚙️Account</a></li>
-        <li><a href="tasks.php" id="📝 Tasks">📝 Tasks</a></li>
-        <li><a href="sign-up.php" id="🙋 Sign Up">🙋 Sign Up</a></li>
-        <li><a href="inc/logoff.inc.php" id="Logoff 🚪🚶">Logoff 🚪🚶</a></li>
+        <li><a href="view-tasks.php" id="📃 View Tasks">📃 View Tasks</a></li>
+        <li><a href="edit-tasks.php" id="📝 Edit Tasks">📝 Edit Tasks</a></li>
+        <li><a href="add-tasks.php" id="📄 Add Tasks">📄 Add Tasks</a></li>
+        <li><a href="account.php" id="⚙️ Account">⚙️ Account</a></li>
+        <li><a href="inc/switch-user.inc.php" id="👥 Switch User">👥 Switch User</a></li>
+        <li><a href="inc/logoff.inc.php" id="Logoff 🚪🏃‍">Logoff 🚪🏃</a></li>
     </ul>
 </nav>

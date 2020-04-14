@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['userid'])) {
-    header("Location: tasks.php");
+    header("Location: add-tasks.php");
 }
 ?>
 
@@ -13,9 +13,9 @@ if (isset($_SESSION['userid'])) {
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=on user-scalable=no">
 <head>
     <title>Memo Maker</title>
-    <link rel="stylesheet" type='text/css' href="../css/style.css">
+    <link rel="stylesheet" type='text/css' href="../css/style.php">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
 </head>
 
 <body>

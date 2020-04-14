@@ -73,7 +73,7 @@ if (isset($_POST['signup_btn'])){
                         mysqli_stmt_bind_param($stmt, "i", $userid);
                         mysqli_stmt_execute($stmt);
                         $_SESSION["userid"] = $userid;
-                        header("Location: ../tasks.php?signup=success");
+                        header("Location: ../add-tasks.php?signup=success");
                         mysqli_stmt_close($stmt);
                         // mysqli_close($conn);
                         exit();
