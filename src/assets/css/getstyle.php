@@ -1,7 +1,43 @@
 <?php
+session_start();
+$bg = "AliceBlue";
+$fg = "PowderBlue";
 header('Content-type: text/css; charset=utf-8' );
-require "../db/inc/preferences.inc.php";
+header('Cache-control: must-revalidate');
+if (isset($_SESSION['userid'])) {
+    require "../secure/credentials.php";
+    // require "../db/inc/handler.inc.php";
+    $userid = $_SESSION['userid'];
+
+    $sql = "SELECT foreground, background
+    FROM Preferences
+    WHERE userid=?";
+
+    $conn = mysqli_connect(host, user, password, database, port);
+
+    $stmt = mysqli_stmt_init($conn);
+
+    if (!mysqli_stmt_prepare($stmt, $sql)) {
+        mysqli_stmt_close($stmt);
+        mysqli_close($conn);
+        exit();
+    } else {
+        mysqli_stmt_bind_param($stmt, "i", $userid);
+        mysqli_stmt_execute($stmt);
+        mysqli_stmt_store_result($stmt);
+        mysqli_stmt_bind_result($stmt, $fg, $bg);
+        if (mysqli_stmt_num_rows($stmt) > 0) {
+            mysqli_stmt_fetch($stmt);
+            mysqli_stmt_close($stmt);
+            mysqli_close($conn);
+        } else {
+            $bg = "AliceBlue";
+            $fg = "PowderBlue";
+        }
+    }
+}
 ?>
+
 /*
 
 General styling
