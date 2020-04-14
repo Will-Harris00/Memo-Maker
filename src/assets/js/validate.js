@@ -22,12 +22,12 @@ function debounceFunction(func, delay) {
 
 function check() {
     if (pass.value === confirm_pass.value) {
-        document.getElementById('message').style.color = 'green';
-        document.getElementById('message').innerHTML = 'matching';
+        document.getElementById('confirm_password').style.borderColor = 'green';
+        document.getElementById('confirm_password').style.boxShadow = '0 0 10px green';
         signup_btn.disabled = false;
     } else {
         signup_btn.disabled = true;
-        document.getElementById('message').style.color = 'red';
-        document.getElementById('message').innerHTML = 'not matching';
+        document.getElementById('confirm_password').style.borderColor = 'red';
+        document.getElementById('confirm_password').style.boxShadow = '0 0 10px red';
     }
 }

@@ -8,13 +8,13 @@ require_once "header.php";
 <form action="inc/addtask.inc.php" method="post" id="new_task">
     <h3>Add a new task to the list</h3>
     <label> Name
-        <input name="name" placeholder="Give it a name." required="required" pattern="[a-zA-Z0-9\w\s\p{P}\p{S}].{1,18}" size="18" type="text">
+        <input name="name" placeholder="Give it a name." pattern="[a-zA-Z0-9\w\s\p{P}\p{S}].{1,18}" size="18" type="text">
     </label>
     <label>Date
-        <input name="date" placeholder="When is it due?" type="text" size="12" required="required" min="1970-01-01" max="9999-12-31" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <input name="date" placeholder="When is it due?" type="text" size="12" min="1970-01-01" max="9999-12-31" onfocus="(this.type='date')" onblur="(this.type='text')">
     </label>
     <label>Time
-        <input name="time" placeholder="At what time?" type="text" size="8" required="required" onfocus="(this.type='time')" onblur="(this.type='text')">
+        <input name="time" placeholder="At what time?" type="text" size="8" onfocus="(this.type='time')" onblur="(this.type='text')">
     </label>
 </form>
     <label for="description">Description</label>

@@ -51,6 +51,14 @@ textarea {
     min-height: 150px;
 }
 
+input {
+    border: 1px solid transparent;
+    background-color: White;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+}
+
 input[type=submit], button {
     border: 1px solid transparent;
     background-color: DodgerBlue;
@@ -58,6 +66,12 @@ input[type=submit], button {
     cursor: pointer;
     padding: 10px;
     width: auto;
+}
+
+input[type=password]:focus {
+    outline:none;
+    border-color:DodgerBlue;
+    box-shadow:0 0 10px DodgerBlue;
 }
 
 
@@ -133,14 +147,6 @@ Preferences selector
     width: 300px;
     position: relative;
     display: inline-block;
-}
-
-input {
-    border: 1px solid transparent;
-    background-color: White;
-    padding: 10px;
-    font-size: 16px;
-    width: 100%;
 }
 
 .autocomplete-items {

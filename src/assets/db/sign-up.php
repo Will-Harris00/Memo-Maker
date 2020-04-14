@@ -43,11 +43,10 @@ if (isset($_SESSION['userid'])) {
         </label>
         <br>
         <label>
-            <input type="password" name="confirm_password" placeholder="Repeat Password">
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Repeat Password">
         </label>
         <br>
         <input type="submit" name="signup_btn" value="Sign up">
-        <span id='message'></span>
     </form>
     <script src="../js/validate.js"></script>
 </main>
