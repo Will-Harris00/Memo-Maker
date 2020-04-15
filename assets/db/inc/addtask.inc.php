@@ -2,11 +2,12 @@
 session_start();
 
 if (isset($_POST['new_task_btn'])) {
-    require "handler.inc.php";
     $userid = $_SESSION['userid'];
     $name = $_POST['name'];
     $due =  date('Y-m-d H:i', strtotime(str_replace("/","-",$_POST['date']) . $_POST['time']));
     $description = $_POST['description'];
+    require "../../secure/credentials.php";
+    require "handler.inc.php";
 
     if (empty($name) || empty($due) || empty($description)) {
         header("Location: ../add-tasks.php?error=emptyfields&userid=" . $userid);
@@ -30,6 +31,7 @@ if (isset($_POST['new_task_btn'])) {
             header("Location: ../add-tasks.php?newtask=success");
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
+            exit();
         }
     }
 }

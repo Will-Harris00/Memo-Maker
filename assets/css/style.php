@@ -37,9 +37,25 @@ main {
     text-align: center;
 }
 
-td {
-    text-align:center;
+table {
+    border-collapse: collapse;
 }
+
+table, td, th {
+    border: 1px solid powderblue;
+    font-weight: normal;
+    text-align: center;
+}
+
+th {
+    color: white;
+    cursor: pointer;
+    background-color: rgba(29,150,178,1);
+    border: 1px solid rgba(29,150,178,1);
+}
+tr:nth-child(odd) {background-color: #ffffff;}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
 
 textarea {
     border: 1px solid transparent;

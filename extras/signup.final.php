@@ -2,23 +2,22 @@
 session_start();
 
 if (isset($_POST['signup_btn'])){
-    require "../../secure/pepper.php";
-    require "../../secure/credentials.php";
     require "handler.inc.php";
+    require "../../secure/pepper.php";
     $user = $_POST['username'];
     $pass = $_POST['password'];
     $passConfirm = $_POST['confirm_password'];
 
     if (empty($user) || empty($pass) || empty($passConfirm)) {
-        header("Location: ../sign-up.php?error=emptyfields&user=" . $user);
+        header("Location: ../signup.php?error=emptyfields&user=" . $user);
         mysqli_close($conn);
         exit();
     } else if (!preg_match("/^[A-Za-z0-9_-]{3,15}$/", $user)) {
-        header("Location: ../sign-up.php?error=invalidusername");
+        header("Location: ../signup.php?error=invalidusername");
         mysqli_close($conn);
         exit();
     } else if ($passConfirm != $pass) {
-        header("Location: ../sign-up.php?error=passwordcheck&user=" . $user);
+        header("Location: ../signup.php?error=passwordcheck&user=" . $user);
         mysqli_close($conn);
         exit();
     } else {
@@ -29,7 +28,7 @@ if (isset($_POST['signup_btn'])){
         $stmt = mysqli_stmt_init($conn);
 
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("Location: ../sign-up.php?error=sqluserrequesterror&user=" . $user);
+            header("Location: ../signup.php?error=sqluserrequesterror&user=" . $user);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
             exit();
@@ -39,7 +38,7 @@ if (isset($_POST['signup_btn'])){
             mysqli_stmt_store_result($stmt);
             $resultCheck = mysqli_stmt_num_rows($stmt);
             if ($resultCheck > 0) {
-                header("Location: ../sign-up.php?error=usertaken");
+                header("Location: ../signup.php?error=usertaken");
                 mysqli_stmt_close($stmt);
                 mysqli_close($conn);
                 exit();
@@ -49,7 +48,7 @@ if (isset($_POST['signup_btn'])){
                         VALUES (?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
                 if(!mysqli_stmt_prepare($stmt, $sql)) {
-                    header("Location: ../sign-up.php?error=sqluserinserterror&user=" . $user);
+                    header("Location: ../signup.php?error=sqluserinserterror&user=" . $user);
                     mysqli_stmt_close($stmt);
                     mysqli_close($conn);
                     exit();
@@ -66,7 +65,7 @@ if (isset($_POST['signup_btn'])){
                             VALUES (?)";
                     $stmt = mysqli_stmt_init($conn);
                     if(!mysqli_stmt_prepare($stmt, $sql)) {
-                        header("Location: ../sign-up.php?error=sqlpreferencesinserterror&user=" . $user);
+                        header("Location: ../signup.php?error=sqlpreferencesinserterror&user=" . $user);
                         mysqli_stmt_close($stmt);
                         mysqli_close($conn);
                         exit();
@@ -74,9 +73,9 @@ if (isset($_POST['signup_btn'])){
                         mysqli_stmt_bind_param($stmt, "i", $userid);
                         mysqli_stmt_execute($stmt);
                         $_SESSION["userid"] = $userid;
-                        header("Location: ../add-tasks.php?signup=success");
+                        header("Location: ../tasks.php?signup=success");
                         mysqli_stmt_close($stmt);
-                        // mysqli_close($conn);
+                        mysqli_close($conn);
                         exit();
                     }
                 }
@@ -84,7 +83,7 @@ if (isset($_POST['signup_btn'])){
         }
     }
 } else {
-    header("Location: ../sign-up.php");
+    header("Location: ../signup.php");
     mysqli_close($conn);
     exit();
 }
