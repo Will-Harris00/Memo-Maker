@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a31e209-03b8-4db3-a844-c5669f787349" name="Default Changelist" comment="" />
+    <list default="true" id="1a31e209-03b8-4db3-a844-c5669f787349" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,9 +45,9 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/db/inc" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -108,25 +112,18 @@
       <workItem from="1586907337089" duration="8000" />
       <workItem from="1586907376206" duration="3000" />
       <workItem from="1586957889793" duration="12947000" />
-      <workItem from="1586991375308" duration="359000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/.." />
-      <path value="$PROJECT_DIR$" />
-    </ignored-roots>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="234" y="1" key="#Deployment" timestamp="1586991734256">
+    <state x="234" y="1" key="#Deployment" timestamp="1586882497895">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="234" y="1" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1585748889377" />
-    <state x="234" y="1" key="#Deployment/0.0.1280.760@0.0.1280.760" timestamp="1586991734256" />
+    <state x="234" y="1" key="#Deployment/0.0.1280.760@0.0.1280.760" timestamp="1586882497895" />
     <state x="233" y="40" key="#Options" timestamp="1586010528170">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -165,10 +162,10 @@
     </state>
     <state x="94" y="94" width="1093" height="493" key="DirDiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1585744471442" />
     <state x="94" y="105" width="1093" height="551" key="DirDiffDialog/0.0.1280.760@0.0.1280.760" timestamp="1586010321042" />
-    <state x="421" y="136" key="FileChooserDialogImpl" timestamp="1586991393644">
+    <state x="421" y="136" key="FileChooserDialogImpl" timestamp="1586271867680">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="421" y="136" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1586991393644" />
+    <state x="421" y="136" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1586271867680" />
     <state width="845" height="188" key="GridCell.Tab.0.bottom" timestamp="1586624885663">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
@@ -194,10 +191,10 @@
     </state>
     <state x="157" y="266" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1585748951448" />
     <state x="157" y="297" key="NewPhpFileDialog/0.0.1280.760@0.0.1280.760" timestamp="1586822564343" />
-    <state x="142" y="23" key="SettingsEditor" timestamp="1586991421226">
+    <state x="142" y="23" key="SettingsEditor" timestamp="1586786745886">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="142" y="23" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1586991421226" />
+    <state x="142" y="23" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1586786745886" />
     <state x="478" y="269" key="WebDeployment.AddServerDialog.v.1" timestamp="1586882085904">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
