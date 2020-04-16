@@ -53,9 +53,28 @@ th {
     background-color: rgba(29,150,178,1);
     border: 1px solid rgba(29,150,178,1);
 }
-tr:nth-child(odd) {background-color: #ffffff;}
-tr:nth-child(even) {background-color: #f2f2f2;}
 
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:not(:first-child) {
+    cursor: pointer;transition: all .25s ease-in-out;
+}
+table tr:not(:first-child):hover {
+    background-color: #ddd;
+}
+
+.edit {
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    visibility: hidden;
+}
 
 textarea {
     border: 1px solid transparent;

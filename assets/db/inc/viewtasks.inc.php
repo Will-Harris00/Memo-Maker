@@ -30,19 +30,32 @@ if (isset($_SESSION['userid'])) {
         echo '<script src="https://www.w3schools.com/lib/w3.js"></script>';
         echo '<p>Click the <strong>table headers</strong> to sort the table accordingly.</p>';
         echo '<br>';
-        echo '<table id="tasks_table" class="w3-table-all">';
-        echo '<tr><th>Name</th><th>Description</th><th>Due</th><th>Completed</th></tr>';
+        echo '<div id="container" style="position:relative;">';
+        echo '    <div style="position:absolute; top:0; left:0;">';
+
+        echo '        <table id="tasks_table" class="w3-table-all">';
+        echo '            <tr><th>Name</th><th>Description</th><th>Due</th><th>State</th></tr>';
         /* fetch values */
         while (mysqli_stmt_fetch($stmt)) {
-            echo '<tr class="item">';
-            echo '<td><a href="http://localhost:5000/cancel?alarm_cancel={{ alarms[0] }}">' . $name . '</td>';
-            echo '<td>' . $description . '</td>';
-            echo '<td>' . $due . '</td>';
-            echo '<td>' . $state . '</td>';
-            echo '</tr>';
+            echo '        <tr class="item">';
+            echo '            <td>' . $name . '</td>';
+            echo '            <td>' . $description . '</td>';
+            echo '            <td>' . $due . '</td>';
+            echo '            <td>' . $state . '</td>';
+            echo '        </tr>';
         }
-        echo '</table>';
+        echo '        </table>';
+        echo '    </div>';
+        echo '    <div class="edit" id="edit" style="position:absolute; top:0; left:0;">';
+        echo '        Name:<input type="text" name="name" id="name"><br><br>';
+        echo '        Description:<input type="text" name="description" id="description"><br><br>';
+        echo '        Due:<input type="text" name="due" id="due"><br><br>';
+        echo '        State:<input type="text" name="state" id="state"><br><br>';
+        echo '        <button onclick="editRow();">Edit Row</button><br><br>';
+        echo '    </div>';
+        echo '</div>';
         echo '<script src="../js/sort.js"></script>';
+        echo '<script src="../js/edittasks.js"></script>';
         //}
         /* close statement */
         mysqli_stmt_close($stmt);
