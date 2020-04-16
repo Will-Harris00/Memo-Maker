@@ -51,7 +51,7 @@ if (isset($_SESSION['userid'])) {
             echo '    <div class="edit" id="edit">';
             echo '        Name:<input type="text" name="name" id="name"><br><br>';
             echo '        Description:<input type="text" name="description" id="description"><br><br>';
-            echo '        Due:<input type="text" name="due" id="due"><br><br>';
+            echo '        Due:<input type="datetime-local" name="due" id="due"><br><br>';
             echo '        State:<input type="text" name="state" id="state"><br><br>';
             echo '        <button onclick="editRow();">Edit Row</button><br><br>';
             echo '    </div>';
