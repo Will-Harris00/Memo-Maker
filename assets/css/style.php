@@ -37,10 +37,6 @@ main {
     text-align: center;
 }
 
-table {
-    border-collapse: collapse;
-}
-
 table, td, th {
     border: 1px solid powderblue;
     font-weight: normal;
@@ -69,9 +65,29 @@ table tr:not(:first-child):hover {
     background-color: #ddd;
 }
 
+table {
+    border-collapse: collapse;
+    width:100%;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.table {
+    position: static;
+    width: 100%:
+    top:0;
+    left:0;
+}
+
 .edit {
-    position: absolute;
     background-color: white;
+    position: absolute;
+    width:100%;
+    top:0;
+    left:0;
     z-index: 1;
     visibility: hidden;
 }
