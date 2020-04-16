@@ -41,7 +41,7 @@ if (isset($_SESSION['userid'])) {
             while (mysqli_stmt_fetch($stmt)) {
                 echo '        <tr class="item">';
                 echo '            <td>' . $name . '</td>';
-                echo '            <td id="description">' . $description . '</td>';
+                echo '            <td id="description"><div style="max-height:115px; overflow:auto">' . $description . '</div></td>';
                 echo '            <td>' . $due . '</td>';
                 echo '            <td>' . $state . '</td>';
                 echo '        </tr>';

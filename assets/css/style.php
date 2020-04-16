@@ -44,7 +44,7 @@ table, td, th {
     text-align: center;
 }
 
-td, th {
+#content {
     height: auto;
     max-height: 1px;
 }
