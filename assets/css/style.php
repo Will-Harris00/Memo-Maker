@@ -38,9 +38,28 @@ main {
 }
 
 table, td, th {
+    padding:5px;
     border: 1px solid powderblue;
     font-weight: normal;
     text-align: center;
+}
+
+td, th {
+    height: auto;
+    max-height: 1px;
+}
+
+td#description {
+    /* keeps paragraph formatting and newline breaks */
+    white-space: pre-wrap;
+    /* allows for splitting of continuous strings with no whitespaces */
+    word-wrap: break-word;
+    word-break: break-word;
+    /*page-break-inside: auto;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: auto;
+    max-width: 600px;
 }
 
 th {
@@ -70,19 +89,19 @@ table {
     width:100%;
 }
 
-.container {
+div.container {
     position: relative;
     width: 100%;
 }
 
-.table {
+div.table {
     position: static;
     width: 100%:
     top:0;
     left:0;
 }
 
-.edit {
+div.edit {
     background-color: white;
     position: absolute;
     width:100%;
