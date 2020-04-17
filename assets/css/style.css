@@ -1,16 +1,16 @@
-/*
+ /*
 
-General styling
+ General styling
 
  */
 
 
 html {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    color: #292929;
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ font-family: 'Roboto', sans-serif;
+ color: #292929;
 }
 
 body {
@@ -33,11 +33,110 @@ main {
     text-align: center;
 }
 
-td {
-    text-align:center;
+table, td, th {
+    padding:5px;
+    border: 1px solid PowderBlue;
+    font-weight: normal;
+    text-align: center;
+}
+
+.desc_scroll {
+    max-height:175px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+td#desc_scroll {
+    padding: 2px;
+    /* keeps paragraph formatting and newline breaks */
+    white-space: pre-wrap;
+    /* allows for splitting of continuous strings with no whitespaces */
+    word-wrap: break-word;
+    word-break: break-word;
+    /*page-break-inside: auto;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: auto;
+    max-width: 600px;
+}
+
+.name_scroll {
+    max-height:175px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+td#name_scroll {
+    padding: 2px;
+    /* keeps paragraph formatting and newline breaks */
+    white-space: pre-wrap;
+    /* allows for splitting of continuous strings with no whitespaces */
+    word-wrap: break-word;
+    word-break: break-word;
+    /*page-break-inside: auto;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: auto;
+    max-width: 125px;
+}
+
+th {
+    color: white;
+    cursor: pointer;
+    background-color: rgba(29,150,178,1);
+    border: 1px solid rgba(29,150,178,1);
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:not(:first-child) {
+    cursor: pointer;transition: all .25s ease-in-out;
+}
+
+table tr:not(:first-child):hover {
+    background-color: #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    width:100%;
+}
+
+div.container {
+    position: relative;
+    width: 100%;
+}
+
+div.table {
+    position: static;
+    width: 100%;
+    top:0;
+    left:0;
+}
+
+div.edit {
+    background-color: white;
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: 1;
+    visibility: hidden;
 }
 
 textarea {
+    font-family: 'Roboto', sans-serif;
     border: 1px solid transparent;
     padding: 10px;
     font-size: 16px;
@@ -69,6 +168,7 @@ input[type=password]:focus {
     border-color:DodgerBlue;
     box-shadow:0 0 10px DodgerBlue;
 }
+
 
 /*
 
@@ -115,21 +215,21 @@ nav ul li a:hover {
 }
 
 /*
- Future development would all the user to change the colour of nearly every
- element on the page but for now I am sticking to only making changes to
- background and foreground colours, as such this hover effect is redundant.
+Future development would all the user to change the colour of nearly every
+element on the page but for now I am sticking to only making changes to
+background and foreground colours, as such this hover effect is redundant.
 
 nav ul li:hover{
-    background: Honeydew;
+background: Honeydew;
 }
- */
+*/
 
 
 /*
 
 Preferences selector
 
- */
+*/
 
 
 * {
@@ -241,5 +341,49 @@ Styling for small screens
     nav ul li, a {
         display: block;
         text-align: center;
+    }
+
+    .desc_scroll {
+        max-height:168px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    td#desc_scroll {
+        padding: 2px;
+        /* keeps paragraph formatting and newline breaks */
+        white-space: pre-wrap;
+        /* allows for splitting of continuous strings with no whitespaces */
+        word-wrap: break-word;
+        word-break: break-word;
+        /*page-break-inside: auto;*/
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: auto;
+        max-width: 500px;
+    }
+
+    .name_scroll {
+        max-height:168px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    td#name_scroll {
+        padding: 2px;
+        /* keeps paragraph formatting and newline breaks */
+        white-space: pre-wrap;
+        /* allows for splitting of continuous strings with no whitespaces */
+        word-wrap: break-word;
+        word-break: break-word;
+        /*page-break-inside: auto;*/
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: auto;
+        max-width: 225px;
     }
 }
