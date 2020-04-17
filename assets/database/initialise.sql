@@ -1,4 +1,6 @@
 /*Create Tables*/
+/* tiny text can store 255 characters whilst
+   text datatype can store 65,535 characters */
 USE wjph202;
 
 DROP TABLE Users;

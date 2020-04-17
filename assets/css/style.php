@@ -44,20 +44,24 @@ table, td, th {
     text-align: center;
 }
 
-#content {
-    height: auto;
-    max-height: 1px;
+.desc_scroll {
+    max-height:125px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
-td#description {
+td#desc_scroll {
+    padding: 2px;
     /* keeps paragraph formatting and newline breaks */
     white-space: pre-wrap;
     /* allows for splitting of continuous strings with no whitespaces */
     word-wrap: break-word;
     word-break: break-word;
     /*page-break-inside: auto;*/
-    overflow-y: auto;
     overflow-x: hidden;
+    overflow-y: auto;
     width: auto;
     max-width: 600px;
 }
@@ -113,6 +117,7 @@ div.edit {
 }
 
 textarea {
+    font-family: 'Roboto', sans-serif;
     border: 1px solid transparent;
     padding: 10px;
     font-size: 16px;
@@ -317,5 +322,26 @@ Styling for small screens
     nav ul li, a {
         display: block;
         text-align: center;
+    }
+
+    .name_scroll {
+        max-height:150px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    td#name_scroll {
+        /* keeps paragraph formatting and newline breaks */
+        white-space: pre-wrap;
+        /* allows for splitting of continuous strings with no whitespaces */
+        word-wrap: break-word;
+        word-break: break-word;
+        /*page-break-inside: auto;*/
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: auto;
+        max-width: 200px;
     }
 }

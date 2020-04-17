@@ -36,12 +36,13 @@ if (isset($_SESSION['userid'])) {
             echo '<div class="container">';
             echo '    <div class="table">';
             echo '        <table id="tasks_table" class="w3-table-all">';
-            echo '            <tr><th>Name</th><th>Description</th><th>Due</th><th>Completed</th></tr>';
+            echo '            <tr><th>Name</th><th>Description</th><th>Due</th><th>Done</th></tr>';
             /* fetch values */
             while (mysqli_stmt_fetch($stmt)) {
                 echo '        <tr class="item">';
-                echo '            <td>' . $name . '</td>';
-                echo '            <td id="description"><div style="max-height:115px; overflow:auto">' . $description . '</div></td>';
+                echo '            <td id="name_scroll"><div class="name_scroll">' . $name . '</div></td>';
+                /* desc id added to allow for manipulation of cell height by setting content div max-height */
+                echo '            <td id="desc_scroll"><div class="desc_scroll">' . $description . '</div></td>';
                 echo '            <td>' . $due . '</td>';
                 echo '            <td>' . $state . '</td>';
                 echo '        </tr>';
@@ -52,7 +53,7 @@ if (isset($_SESSION['userid'])) {
             echo '        Name:<input type="text" name="name" id="name"><br><br>';
             echo '        Description:<input type="text" name="description" id="description"><br><br>';
             echo '        Due:<input type="datetime-local" name="due" id="due"><br><br>';
-            echo '        State:<input type="text" name="state" id="state"><br><br>';
+            echo '        Done:<input type="text" name="state" id="state"><br><br>';
             echo '        <button onclick="editRow();">Edit Row</button><br><br>';
             echo '    </div>';
             echo '</div>';
