@@ -66,6 +66,28 @@ td#desc_scroll {
     max-width: 600px;
 }
 
+.name_scroll {
+    max-height:150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+td#name_scroll {
+    padding: 2px;
+    /* keeps paragraph formatting and newline breaks */
+    white-space: pre-wrap;
+    /* allows for splitting of continuous strings with no whitespaces */
+    word-wrap: break-word;
+    word-break: break-word;
+    /*page-break-inside: auto;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: auto;
+    max-width: 125px;
+}
+
 th {
     color: white;
     cursor: pointer;
@@ -324,7 +346,7 @@ Styling for small screens
         text-align: center;
     }
 
-    .name_scroll {
+    .desc_scroll {
         max-height:150px;
         overflow-x: hidden;
         overflow-y: auto;
@@ -332,7 +354,8 @@ Styling for small screens
         padding-right: 2px;
     }
 
-    td#name_scroll {
+    td#desc_scroll {
+        padding: 2px;
         /* keeps paragraph formatting and newline breaks */
         white-space: pre-wrap;
         /* allows for splitting of continuous strings with no whitespaces */
@@ -342,6 +365,28 @@ Styling for small screens
         overflow-x: hidden;
         overflow-y: auto;
         width: auto;
-        max-width: 200px;
+        max-width: 500px;
+    }
+
+    .name_scroll {
+        max-height:150px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    td#name_scroll {
+        padding: 2px;
+        /* keeps paragraph formatting and newline breaks */
+        white-space: pre-wrap;
+        /* allows for splitting of continuous strings with no whitespaces */
+        word-wrap: break-word;
+        word-break: break-word;
+        /*page-break-inside: auto;*/
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: auto;
+        max-width: 225px;
     }
 }
