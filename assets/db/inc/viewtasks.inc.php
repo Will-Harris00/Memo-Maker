@@ -43,7 +43,7 @@ if (isset($_SESSION['userid'])) {
                 echo '            <td id="name_scroll"><div class="name_scroll">' . $name . '</div></td>';
                 /* desc id added to allow for manipulation of cell height by setting content div max-height */
                 echo '            <td id="desc_scroll"><div class="desc_scroll">' . $description . '</div></td>';
-                echo '            <td>' . date("D j, M, Y", strtotime($due)) . '</td>';
+                echo '            <td>' . date("D j, M, Y, H:i", strtotime($due)) . '</td>';
                 echo '            <td>' . $state . '</td>';
                 echo '        </tr>';
             }
