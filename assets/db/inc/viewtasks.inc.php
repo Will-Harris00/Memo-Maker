@@ -55,8 +55,8 @@ if (isset($_SESSION['userid'])) {
             echo '    <div class="edit" id="edit">';
             echo '        <form name="edit_task" action="inc/edittask.inc.php" method="post">';
             echo '            <input type="hidden" name="taskid" id="taskid">';
-            echo '            <strong>Name:</strong><input type="text" name="name" id="name" required="required"><br><br>';
-            echo '            <strong>Description:</strong><input type="text" name="description" id="description" pattern="[a-zA-Z0-9\w\s\p{P}\p{S}].{0,254}" required="required"><br><br>';
+            echo '            <strong>Name:</strong><input type="text" name="name" id="name" pattern="[a-zA-Z0-9\w\s\p{P}\p{S}].{0,254}" required="required"><br><br>';
+            echo '            <strong>Description:</strong><input type="text" name="description" id="description" pattern="[a-zA-Z0-9\w\s\S\\P].{0,65534}" required="required"><br><br>';
             echo '            <strong>Due Date:</strong><input type="date" name="date" id="date" max="9999-12-31"><br><br>';
             echo '            <strong>Time:</strong><input type="time" name="time" id="time"><br><br>';
             echo '            <strong>Done:</strong><input type="text" name="state" id="state" pattern="[01].{0}" required="required"><br><br>';
