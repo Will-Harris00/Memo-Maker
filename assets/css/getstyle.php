@@ -63,7 +63,7 @@ background-size: cover;
 font-size: 1rem;
 display: flex;
 flex-direction: column;
-background-color: <?php echo $bg ?>;
+background-color: <?php echo $bg; ?>;
 }
 
 main {
@@ -75,6 +75,7 @@ text-align: center;
 
 a {
 text-decoration: none;
+color:black;
 }
 
 table, td, th {
@@ -136,7 +137,7 @@ border: 1px solid rgba(29,150,178,1);
 }
 
 tr:nth-child(odd) {
-background-color: #ffffff;
+background-color: White;
 }
 
 tr:nth-child(even) {
@@ -213,12 +214,6 @@ padding: 10px;
 width: auto;
 }
 
-input[type=password]:focus {
-outline:none;
-border-color:DodgerBlue;
-box-shadow:0 0 10px DodgerBlue;
-}
-
 
 /*
 
@@ -233,8 +228,9 @@ width: 100%;
 padding: 0;
 margin: 0;
 top: 0;
-background-color: <?php echo $fg ?>;
+background-color: <?php echo $fg; ?>;
 }
+
 nav ul li, a {
 display: inline-block;
 text-align: center;
@@ -309,7 +305,7 @@ right: 0;
 .autocomplete-items div {
 padding: 10px;
 cursor: pointer;
-background-color: #fff;
+background-color: White;
 border-bottom: 1px solid #d4d4d4;
 }
 
@@ -321,7 +317,7 @@ background-color: #e9e9e9;
 /*when navigating through the items using the arrow keys:*/
 .autocomplete-active {
 background-color: DodgerBlue !important;
-color: #ffffff;
+color: White;
 }
 
 

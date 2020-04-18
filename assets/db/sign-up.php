@@ -48,7 +48,7 @@ if (isset($_SESSION['userid'])) {
         <br>
         <input type="submit" name="signup_btn" value="Sign up">
     </form>
-    <script src="../js/validate.js"></script>
+    <script src="../js/valpass.js"></script>
 </main>
 
 <?php

@@ -40,11 +40,12 @@ text-align: center;
 
 a {
 text-decoration: none;
+color:black;
 }
 
 table, td, th {
 padding:5px;
-border: 1px solid powderblue;
+border: 1px solid PowderBlue;
 font-weight: normal;
 text-align: center;
 }
@@ -101,7 +102,7 @@ border: 1px solid rgba(29,150,178,1);
 }
 
 tr:nth-child(odd) {
-background-color: #ffffff;
+background-color: White;
 }
 
 tr:nth-child(even) {
@@ -176,12 +177,6 @@ color: white;
 cursor: pointer;
 padding: 10px;
 width: auto;
-}
-
-input[type=password]:focus {
-outline:none;
-border-color:DodgerBlue;
-box-shadow:0 0 10px DodgerBlue;
 }
 
 
@@ -275,7 +270,7 @@ right: 0;
 .autocomplete-items div {
 padding: 10px;
 cursor: pointer;
-background-color: #fff;
+background-color: White;
 border-bottom: 1px solid #d4d4d4;
 }
 
@@ -287,7 +282,7 @@ background-color: #e9e9e9;
 /*when navigating through the items using the arrow keys:*/
 .autocomplete-active {
 background-color: DodgerBlue !important;
-color: #ffffff;
+color: White;
 }
 
 

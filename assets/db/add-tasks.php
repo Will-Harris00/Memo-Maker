@@ -18,9 +18,9 @@ require_once "header.php";
     </label>
 </form>
     <label for="description">Description</label>
-    <textarea form="new_task" id="description" name="description" match="[a-zA-Z0-9\w\s\p{P}\p{S}].{0,2}" placeholder="What is the task about? (Max 65,535 characters.)" required="required" rows="4" cols="80"></textarea>
-    <button form="new_task" name="new_task_btn" type="submit" value="Add Task">Add Task</button>
-    <script src="../js/valtextarea.js"></script>
+    <textarea form="new_task" id="description" name="description" rows="4" cols="80" placeholder="What is the task about? (Max 65,535 characters.)" required="required"></textarea>
+    <button form="new_task" id="submit_btn" name="new_task_btn" type="submit">Add Task</button>
+    <script src="../js/valtext.js"></script>
 </main>
 
 <?php

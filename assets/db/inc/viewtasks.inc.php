@@ -56,17 +56,17 @@ if (isset($_SESSION['userid'])) {
             echo '        <form name="edit_task" action="inc/edittask.inc.php" method="post">';
             echo '            <input type="hidden" name="taskid" id="taskid">';
             echo '            <strong>Name:</strong><input type="text" name="name" id="name" pattern="[a-zA-Z0-9\w\s\p{P}\p{S}].{0,254}" required="required"><br><br>';
-            echo '            <strong>Description:</strong><input type="text" name="description" id="description" pattern="[a-zA-Z0-9\w\s\S\\P].{0,65534}" required="required"><br><br>';
+            echo '            <strong>Description:</strong><textarea id="description" name="description" rows="4" cols="80" required="required"></textarea><br><br>';
             echo '            <strong>Due Date:</strong><input type="date" name="date" id="date" max="9999-12-31"><br><br>';
             echo '            <strong>Time:</strong><input type="time" name="time" id="time"><br><br>';
             echo '            <strong>Done:</strong><input type="text" name="state" id="state" pattern="[01].{0}" required="required"><br><br>';
-            echo '            <input type="submit" name="edit_task_btn" id="edit_task_btn" value="Edit Task"><br><br>';
+            echo '            <input type="submit" name="edit_task_btn" id="submit_btn" value="Edit Task"><br><br>';
             echo '        </form>';
             echo '    </div>';
             echo '</div>';
             echo '<script src="../js/sort.js"></script>';
             echo '<script src="../js/edittask.js"></script>';
-            echo '<script src="../js/valtextarea.js"></script>';
+            echo '<script src="../js/valtext.js"></script>';
 
             /* close statement */
             mysqli_stmt_close($stmt);

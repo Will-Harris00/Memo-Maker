@@ -11,6 +11,14 @@ confirm_pass.addEventListener('input', function() {
     debounceFunction(check, 200)
 });
 
+// Reset styling on click away blur
+confirm_pass.addEventListener('blur', function() {
+    // Removes border shadow and resets outline
+    confirm_pass.style.outline = '';
+    confirm_pass.style.borderColor = '';
+    confirm_pass.style.boxShadow = '';
+});
+
 // Debounce function: Input as function which needs to be debounced and delay is the debounced time in milliseconds
 function debounceFunction(func, delay) {
     // Cancels the setTimeout method execution
@@ -21,12 +29,14 @@ function debounceFunction(func, delay) {
 
 function check() {
     if (pass.value === confirm_pass.value) {
-        document.getElementById('confirm_password').style.borderColor = 'green';
-        document.getElementById('confirm_password').style.boxShadow = '0 0 10px green';
+        confirm_pass.style.outline = "none";
+        confirm_pass.style.borderColor = 'green';
+        confirm_pass.style.boxShadow = '0 0 10px green';
         signup_btn.disabled = false;
     } else {
         signup_btn.disabled = true;
-        document.getElementById('confirm_password').style.borderColor = 'red';
-        document.getElementById('confirm_password').style.boxShadow = '0 0 10px red';
+        confirm_pass.style.outline = "none";
+        confirm_pass.style.borderColor = 'red';
+        confirm_pass.style.boxShadow = '0 0 10px red';
     }
 }
