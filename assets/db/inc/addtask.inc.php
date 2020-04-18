@@ -15,8 +15,8 @@ if (isset($_POST['new_task_btn'])) {
         exit();
     } else {
         $sql = "INSERT INTO Tasks
-                        (userid, name, description, due)
-                        VALUES (?, ?, ?, ?)";
+                (userid, name, description, due)
+                VALUES (?, ?, ?, ?)";
 
         $stmt = mysqli_stmt_init($conn);
 

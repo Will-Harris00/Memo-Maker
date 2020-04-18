@@ -38,6 +38,10 @@ padding: 0.5rem;
 text-align: center;
 }
 
+a {
+text-decoration: none;
+}
+
 table, td, th {
 padding:5px;
 border: 1px solid powderblue;
@@ -140,6 +144,12 @@ z-index: 1;
 visibility: hidden;
 }
 
+form[name=edit_task] {
+background-color: white;
+padding:5px;
+box-shadow:0 0 10px DodgerBlue;
+}
+
 textarea {
 font-family: 'Roboto', sans-serif;
 border: 1px solid transparent;
@@ -190,6 +200,7 @@ margin: 0;
 top: 0;
 background-color: <?php echo $fg; ?>;
 }
+
 nav ul li, a {
 display: inline-block;
 text-align: center;

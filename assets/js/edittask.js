@@ -9,15 +9,25 @@ for(var i = 1; i < table.rows.length; i++)
     {
         rIndex = this.rowIndex;
         console.log(rIndex - 1);
+        document.getElementById("taskid").value = document.getElementById(rIndex - 1).value;
         document.getElementById("name").value = table.getElementsByClassName("name_scroll")[rIndex - 1].innerHTML;
         document.getElementById("description").value = table.getElementsByClassName("desc_scroll")[rIndex - 1].innerHTML;
-        document.getElementById("due").value = formatDate(this.cells[2].innerHTML);
+        document.getElementById("date").value = formatDate(this.cells[2].innerHTML);
+        document.getElementById("time").value = formatTime(this.cells[2].innerHTML);
         document.getElementById("state").value = this.cells[3].innerHTML;
         document.getElementById("edit").style.visibility = "visible";
     };
 }
 
 // edit the row
+/* Need to write to database then reload page.
+   This function only allows for local changes
+   which would be lost upon refresh or timeout.
+   This could be developed further to allow for multiple edits to be
+   made on different tasks before submitting these changes all at once.
+ */
+
+/*
 function editRow()
 {
     table.getElementsByClassName("name_scroll")[rIndex - 1].innerHTML = document.getElementById("name").value;
@@ -26,21 +36,30 @@ function editRow()
     table.rows[rIndex].cells[3].innerHTML = document.getElementById("state").value;
     document.getElementById("edit").style.visibility = "hidden";
 }
+*/
 
-function formatDate(strdate) {
-    var dt = new Date(strdate),
-        month = '' + (dt.getMonth() + 1),
-        day = '' + dt.getDate(),
-        year = '' + dt.getFullYear();
-        hour = '' + dt.getHours();
-        min = '' + dt.getMinutes();
+function formatDate(datetime) {
+    var date = new Date(datetime),
+        month = '' + (date.getMonth() + 1),
+        day = '' + date.getDate(),
+        year = '' + date.getFullYear();
     if (month.length < 2) month = '0' + month;
     if (day.length < 2) day = '0' + day;
-    if (hour.length < 2) hour = '0' + hour;
-    if (min.length < 2) min = '0' + min;
-    return [year, month, day].join('-') + "T" + [hour, min].join(':');
+    return [year, month, day].join('-');
 }
 
+function formatTime(datetime) {
+    var time = new Date(datetime),
+        hour = '' + time.getHours();
+        min = '' + time.getMinutes();
+    if (hour.length < 2) hour = '0' + hour;
+    if (min.length < 2) min = '0' + min;
+    return [hour, min].join(':');
+}
+
+
+/* this function goes with editRow */
+/*
 function outputDate(strdatetime) {
     var dt = new Date(strdatetime)
         date = '' + dt.getDate();
@@ -74,3 +93,5 @@ function outputDate(strdatetime) {
     if (min.length < 2) min = '0' + min;
     return day + " " + [date, month, year].join(', ') + ", " + [hour, min].join(':');
 }
+
+ */

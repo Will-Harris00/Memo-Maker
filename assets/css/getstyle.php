@@ -73,6 +73,10 @@ padding: 0.5rem;
 text-align: center;
 }
 
+a {
+text-decoration: none;
+}
+
 table, td, th {
 padding:5px;
 border: 1px solid PowderBlue;
@@ -173,6 +177,12 @@ top:0;
 left:0;
 z-index: 1;
 visibility: hidden;
+}
+
+form[name=edit_task] {
+background-color: white;
+padding:5px;
+box-shadow:0 0 10px DodgerBlue;
 }
 
 textarea {
