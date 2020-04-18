@@ -50,11 +50,13 @@ if (isset($_SESSION['userid'])) {
             echo '        </table>';
             echo '    </div>';
             echo '    <div class="edit" id="edit">';
-            echo '        Name:<input type="text" name="name" id="name"><br><br>';
-            echo '        Description:<input type="text" name="description" id="description"><br><br>';
-            echo '        Due:<input type="datetime-local" name="due" id="due"><br><br>';
-            echo '        Done:<input type="text" name="state" id="state"><br><br>';
-            echo '        <button onclick="editRow();">Edit Row</button><br><br>';
+            // echo '        <form name="edit_task" method="post" onsubmit="return valRegex()">';
+            echo '            Name:<input type="text" name="name" id="name"><br><br>';
+            echo '            Description:<input type="text" name="description" id="description"><br><br>';
+            echo '            Due:<input type="datetime-local" name="due" id="due"><br><br>';
+            echo '            Done:<input type="text" name="state" id="state"><br><br>';
+            echo '            <button name="edit_btn" id="edit_btn" onclick="editRow();">Edit Row</button><br><br>';
+            // echo '        </form>';
             echo '    </div>';
             echo '</div>';
             echo '<script src="../js/sort.js"></script>';
