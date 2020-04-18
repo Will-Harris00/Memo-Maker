@@ -20,7 +20,6 @@ for(var i = 1; i < table.rows.length; i++)
 // edit the row
 function editRow()
 {
-    alert("magic");
     table.getElementsByClassName("name_scroll")[rIndex - 1].innerHTML = document.getElementById("name").value;
     table.getElementsByClassName("desc_scroll")[rIndex - 1].innerHTML = document.getElementById("description").value;
     table.rows[rIndex].cells[2].innerHTML = outputDate(document.getElementById("due").value);
