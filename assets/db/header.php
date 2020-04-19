@@ -28,9 +28,9 @@ if (!(isset($_SESSION['userid']))) {
          shift that would otherwise occur. Furthermore my reasoning for not using the title attribute to store this
          data is to stop the annoying text box from appearing whenever a user hovers over a link in the header bar. -->
         <li><a href="../../index.php" id="🏠 Home">🏠 Home</a></li>
-        <li><a href="view-tasks.php" id="📃 View Tasks">📃 View Tasks</a></li>
-        <li><a href="edit-tasks.php" id="📝 Edit Tasks">📝 Edit Tasks</a></li>
-        <li><a href="add-tasks.php" id="📄 Add Tasks">📄 Add Tasks</a></li>
+        <li><a href="view-tasks.php" id="📄 View Tasks">📄 View Tasks</a></li>
+        <li><a href="add-tasks.php" id="📝 Add Tasks">📝 Add Tasks</a></li>
+        <li><a href="import-tasks.php" id="📃 Import Tasks">📃 Import Tasks</a></li>
         <li><a href="account.php" id="⚙️ Account">⚙️ Account</a></li>
         <li><a href="inc/switch-user.inc.php" id="👥 Switch User">👥 Switch User</a></li>
         <li><a href="inc/logoff.inc.php" id="Logoff 🚪🏃‍">Logoff 🚪🏃</a></li>

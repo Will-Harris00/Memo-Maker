@@ -11,8 +11,6 @@ DELETE FROM Users WHERE true;
 DELETE FROM Preferences WHERE true;
 DELETE FROM Tasks WHERE true;
 
-DELETE FROM Tasks WHERE taskid=81;
-
 CREATE TABLE Users (
                     userid int not null auto_increment,
                     username tinytext not null,
