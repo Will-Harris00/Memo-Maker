@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Table</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+    <script>
+        var color;
+        function select(id) {
+            color=document.getElementById(id).style.backgroundColor;
+            document.getElementById(id).style.backgroundColor='#595959';
+        }
+        function unselect(id) {
+            document.getElementById(id).style.backgroundColor=color;
+            color=undefined;
+        }
+    </script>
+</head>
+<body>
+<table>
+    <h1>My Modules</h1>
+    <tr>
+        <th>Code</th><th>Title</th><th>Description</th>
+    </tr>
+    <tr id="row1" onmouseenter="select('row1')" onmouseleave="unselect('row1')">
+        <td>ECM1400</td><td id="col11">Introduction to Programming</td><td>Introduction to Python</td>
+    </tr>
+    <tr id="row2" onmouseenter="select('row2')" onmouseleave="unselect('row2')">
+        <td>ECM1410</td><td id="col21">Object Oriented Programming</td><td>Introduction to Java</td>
+    </tr>
+    <tr id="row3" onmouseenter="select('row3')" onmouseleave="unselect('row3')">
+        <td>ECM1417</td><td id="col31">Web Development</td><td>Foundations of the Web</td>
+    </tr>
+</table>
+<script>
+    document.getElementById('row1').addEventListener('click', function () {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                alert(this.responseText);
+            }
+        };
+        xmlhttp.open("GET", "details.php?code=ECM1400",true);
+        xmlhttp.send();
+    });
+    document.getElementById('row2').addEventListener('click', function () {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                alert(this.responseText);
+            }
+        };
+        xmlhttp.open("GET", "details.php?code=ECM1410",true);
+        xmlhttp.send();
+    });
+    document.getElementById('row3').addEventListener('click', function () {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                alert(this.responseText);
+            }
+        };
+        xmlhttp.open("GET", "details.php?code=ECM1417",true);
+        xmlhttp.send();
+    });
+</script>
+</body>
+</html>

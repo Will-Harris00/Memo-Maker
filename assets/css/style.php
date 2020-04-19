@@ -125,6 +125,7 @@ width:100%;
 div.container {
 position: relative;
 width: 100%;
+background-color: white;
 }
 
 div.table {
@@ -143,12 +144,12 @@ top:0;
 left:0;
 z-index: 1;
 visibility: hidden;
+box-shadow:0 0 10px DodgerBlue;
 }
 
 form[name=edit_task] {
+padding:8px 0px 12px 8px;
 background-color: white;
-padding:5px;
-box-shadow:0 0 10px DodgerBlue;
 }
 
 textarea {
@@ -171,14 +172,25 @@ width: 100%;
 }
 
 input[type=submit], button {
-border: 1px solid transparent;
-background-color: DodgerBlue;
 color: white;
 cursor: pointer;
 padding: 10px;
+font-size: 16px;
 width: auto;
+display: inline;
+border: 1px solid transparent;
+background-color: DodgerBlue;
 }
 
+button[name=cancel_btn] {
+border: 1px solid transparent;
+background-color: Orange;
+}
+
+button[name=delete_btn] {
+border: 1px solid transparent;
+background-color: Red;
+}
 
 /*
 

@@ -60,7 +60,8 @@ if (isset($_SESSION['userid'])) {
             echo '            <strong>Due Date:</strong><input type="date" name="date" id="date" max="9999-12-31"><br><br>';
             echo '            <strong>Time:</strong><input type="time" name="time" id="time"><br><br>';
             echo '            <strong>Done:</strong><input type="text" name="state" id="state" pattern="[01].{0}" required="required"><br><br>';
-            echo '            <input type="submit" name="edit_task_btn" id="submit_btn" value="Edit Task"><br><br>';
+            echo '            <input type="submit" name="edit_task_btn" id="submit_btn" value="Edit Task">';
+            echo "            <button type='button' name='cancel_btn' id='cancel_btn' onclick='document.getElementById(\"edit\").style.visibility = \"hidden\";'>Cancel</button>";
             echo '        </form>';
             echo '    </div>';
             echo '</div>';

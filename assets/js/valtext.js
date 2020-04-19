@@ -13,7 +13,7 @@ textarea.addEventListener('blur', function() {
 
 function valRegex() {
     var text = textarea.value;
-    if (/^[a-zA-Z0-9\w\s\S\\P].{0,5}$/g.test(text) !== true) {
+    if (/^[a-zA-Z0-9\w\s\S\\P].{0,65534}$/g.test(text) !== true) {
         // textarea.setCustomValidity("Number, letters, symbols and punctuation only.");
         document.getElementById("submit_btn").disabled = true;
         textarea.style.outline = "none";
