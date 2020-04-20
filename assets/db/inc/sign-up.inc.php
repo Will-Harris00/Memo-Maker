@@ -76,7 +76,7 @@ if (isset($_POST['signup_btn'])){
                         $_SESSION["userid"] = $userid;
                         header("Location: ../add-tasks.php?signup=success");
                         mysqli_stmt_close($stmt);
-                        // mysqli_close($conn);
+                        mysqli_close($conn);
                         exit();
                     }
                 }

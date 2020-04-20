@@ -40,7 +40,11 @@ text-align: center;
 
 a {
 text-decoration: none;
-color:black;
+color: Black;
+}
+
+a#no_tasks:hover {
+text-decoration: underline;
 }
 
 table, td, th {

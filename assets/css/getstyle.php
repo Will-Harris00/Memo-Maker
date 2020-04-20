@@ -78,6 +78,10 @@ text-decoration: none;
 color:black;
 }
 
+a#no_tasks:hover {
+text-decoration: underline;
+}
+
 table, td, th {
 padding:5px;
 border: 1px solid PowderBlue;

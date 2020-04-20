@@ -76,7 +76,7 @@ if (isset($_SESSION['userid'])) {
             mysqli_close($conn);
             exit();
         } else {
-            echo '<p>There no tasks available to display. Begin by <strong><a href="add-tasks.php">creating a task.</a></strong></p>';
+            echo '<p>There no tasks available to display. Begin by <strong><a id="no_tasks" href="add-tasks.php">creating a task.</a></strong></p>';
         }
     }
 }

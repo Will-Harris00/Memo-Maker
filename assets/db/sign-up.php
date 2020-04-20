@@ -35,11 +35,16 @@ if (isset($_SESSION['userid'])) {
 <main>
     <form action="inc/sign-up.inc.php" method="post" name="signup_form">
         <label>
-            <input type="text" name="username" placeholder="Username" pattern="^[A-Za-z0-9_-]{3,15}$">
+            <input type="text" name="username" placeholder="Username" pattern="^[A-Za-z0-9_-]{3,15}$"
+                   oninvalid="this.setCustomValidity('3-15 characters, numbers, letters, underscores and dashes.')"
+                   oninput="setCustomValidity('')">
         </label>
         <br>
         <label>
-            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="password" placeholder="Password"
+                   pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+                   oninvalid="this.setCustomValidity('Min 8 characters, at least one uppercase letter, ' +
+                    'one lowercase letter, one number and one special character.')" oninput="setCustomValidity('')">
         </label>
         <br>
         <label>
