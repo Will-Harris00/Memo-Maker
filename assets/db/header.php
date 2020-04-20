@@ -18,6 +18,7 @@ if (!(isset($_SESSION['userid']))) {
     <link rel="stylesheet" type='text/css' href="../css/style.php">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="../js/change-state.js"></script>
 </head>
 
 <body>

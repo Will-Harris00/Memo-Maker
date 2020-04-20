@@ -14,7 +14,7 @@ for(var i = 1; i < table.rows.length; i++)
         document.getElementById("description").value = table.getElementsByClassName("desc_scroll")[rIndex - 1].innerHTML;
         document.getElementById("date").value = formatDate(this.cells[2].innerHTML);
         document.getElementById("time").value = formatTime(this.cells[2].innerHTML);
-        document.getElementById("state").value = this.cells[3].innerHTML;
+        document.getElementById("state").value = table.getElementsByClassName("toggle_state")[rIndex - 1].value;
         document.getElementById("edit").style.visibility = "visible";
     };
 }

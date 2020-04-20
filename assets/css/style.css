@@ -49,6 +49,10 @@ table, td, th {
     text-align: center;
 }
 
+table td#state {
+    padding: 0px;
+}
+
 .desc_scroll {
     max-height:175px;
     overflow-x: hidden;

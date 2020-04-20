@@ -8,7 +8,7 @@ if (isset($_SESSION['userid'])) {
     require "../secure/credentials.php";
     require "inc/handler.inc.php";
 
-    $sql = "SELECT name, taskid, description, due, state 
+    $sql = "SELECT name, taskid, importid, description, due, state 
             FROM Tasks 
             WHERE userid=?";
 
@@ -25,7 +25,7 @@ if (isset($_SESSION['userid'])) {
         /* execute statement */
         mysqli_stmt_execute($stmt);
         /* bind result variables */
-        mysqli_stmt_bind_result($stmt, $name, $taskid, $description, $due, $state);
+        mysqli_stmt_bind_result($stmt, $name, $taskid, $importid, $description, $due, $state);
         /* store the result */
         mysqli_stmt_store_result($stmt);
         if (mysqli_stmt_num_rows($stmt) > 0) {
@@ -46,11 +46,13 @@ if (isset($_SESSION['userid'])) {
                 /* desc id added to allow for manipulation of cell height by setting content div max-height */
                 echo '            <td id="desc_scroll"><div class="desc_scroll">' . $description . '</div></td>';
                 echo '            <td>' . date("D j, M, Y, H:i", strtotime($due)) . '</td>';
+                echo "            <td onclick='event.stopPropagation();return false;'>";
                 if ($state == 0) {
-                    echo "            <td onclick='event.stopPropagation();return false;'><input type='checkbox'  id='check-$taskid' value='{$taskid}' onclick='event.stopPropagation();return true;'></td>";
+                    echo "            <input type='checkbox' class='toggle_state' id='check-$taskid' value='{$state}' onclick='event.stopPropagation();return true;'>";
                 } else {
-                    echo "            <td onclick='event.stopPropagation();return false;'><input type='checkbox' id='check-$taskid' checked value='{$taskid}' onclick='event.stopPropagation();return true;'></td>";
+                    echo "            <input type='checkbox' class='toggle_state' id='check-$taskid' checked value='{$state}' onclick='event.stopPropagation();toggleState({$importid}, {$taskid}, {$userid});return true;'>";
                 }
+                echo "            </td>";
                 echo '        </tr>';
                 $i++;
             }
