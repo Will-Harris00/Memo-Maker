@@ -1,6 +1,7 @@
 <?php
 session_start();
 require "header.php";
+
 require "inc/import-tasks.inc.php";
 $xml = new SimpleXMLElement($result);
 
@@ -16,8 +17,9 @@ foreach($xml->task as $task) {
                   <td>{$task->name}</td>
               </tr>";
 }
-require "footer.php";
 echo "    </table>
           <input type='submit' name='import_tasks' id='import_tasks' value='Import'>
       </form>";
+
+require "footer.php";
 ?>

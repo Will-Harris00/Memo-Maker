@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['userid'])) {
-    header("Location: add-tasks.php");
+    header("Location: view-tasks.php");
 }
 ?>
 
