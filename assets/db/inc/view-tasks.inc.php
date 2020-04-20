@@ -46,7 +46,11 @@ if (isset($_SESSION['userid'])) {
                 /* desc id added to allow for manipulation of cell height by setting content div max-height */
                 echo '            <td id="desc_scroll"><div class="desc_scroll">' . $description . '</div></td>';
                 echo '            <td>' . date("D j, M, Y, H:i", strtotime($due)) . '</td>';
-                echo '            <td>' . $state . '</td>';
+                if ($state == 0) {
+                    echo "            <td onclick='event.stopPropagation();return false;'><input type='checkbox'  id='check-$taskid' value='{$taskid}' onclick='event.stopPropagation();return true;'></td>";
+                } else {
+                    echo "            <td onclick='event.stopPropagation();return false;'><input type='checkbox' id='check-$taskid' checked value='{$taskid}' onclick='event.stopPropagation();return true;'></td>";
+                }
                 echo '        </tr>';
                 $i++;
             }
@@ -66,9 +70,9 @@ if (isset($_SESSION['userid'])) {
             echo '        </form>';
             echo '    </div>';
             echo '</div>';
-            echo '<script src="../js/sort.js"></script>';
-            echo '<script src="../js/edittask.js"></script>';
-            echo '<script src="../js/valtext.js"></script>';
+            echo '<script src="../js/sort-column.js"></script>';
+            echo '<script src="../js/edit-task.js"></script>';
+            echo '<script src="../js/validate-txt.js"></script>';
 
             /* close statement */
             mysqli_stmt_close($stmt);

@@ -20,8 +20,8 @@ require_once "header.php";
     <label for="description">Description</label>
     <textarea form="new_task" id="description" name="description" rows="4" cols="80" placeholder="What is the task about? (Max 65,535 characters.)" required="required"></textarea>
     <button form="new_task" id="submit_btn" name="new_task_btn" type="submit">Add Task</button>
-    <script src="../js/valtext.js"></script>
-    <script src="../js/today.js"></script>
+    <script src="../js/validate-txt.js"></script>
+    <script src="../js/current-date.js"></script>
 </main>
 
 <?php
