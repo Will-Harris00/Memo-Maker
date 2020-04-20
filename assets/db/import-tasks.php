@@ -1,6 +1,7 @@
 <?php
 session_start();
 require "header.php";
-echo $_SESSION["imports"];
+require "inc/importtasks.inc.php";
+echo $result;
 require "footer.php";
 ?>

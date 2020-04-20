@@ -10,7 +10,7 @@ curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 300);
 $result = curl_exec($curl);
 $response = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 curl_close($curl);
-
-$_SESSION["imports"] = $result;
-header("Location: ../import-tasks.php");
+//echo $result;
+// $_SESSION["imports"] = $result;
+//header("Location: ../import-tasks.php");
 ?>
