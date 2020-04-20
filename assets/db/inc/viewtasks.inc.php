@@ -53,7 +53,7 @@ if (isset($_SESSION['userid'])) {
             echo '        </table>';
             echo '    </div>';
             echo '    <div class="edit" id="edit">';
-            echo '        <form name="edit_task" action="inc/edittask.inc.php" method="post">';
+            echo '        <form name="edit_task" action="inc/edittask.inc.php" method="post" onsubmit="return confirm(\'Do you really want to submit the form?\');">';
             echo '            <input type="hidden" name="taskid" id="taskid">';
             echo '            <strong>Name:</strong><input type="text" name="name" id="name" pattern="[a-zA-Z0-9\w\s\p{P}\p{S}].{0,254}" required="required"><br><br>';
             echo '            <strong>Description:</strong><textarea id="description" name="description" rows="4" cols="80" required="required"></textarea><br><br>';
@@ -62,6 +62,7 @@ if (isset($_SESSION['userid'])) {
             echo '            <strong>Done:</strong><input type="text" name="state" id="state" pattern="[01].{0}" required="required"><br><br>';
             echo '            <input type="submit" name="edit_task_btn" id="submit_btn" value="Edit Task">';
             echo "            <button type='button' name='cancel_btn' id='cancel_btn' onclick='document.getElementById(\"edit\").style.visibility = \"hidden\";'>Cancel</button>";
+            echo "        <button type='submit' name='delete_btn' id='delete_btn' formaction='inc/deletetask.inc.php'>Delete Task</button>";
             echo '        </form>';
             echo '    </div>';
             echo '</div>';
