@@ -5,7 +5,7 @@ require_once "header.php";
 <html lang="en">
 <body>
 <main>
-<form action="inc/addtask.inc.php" method="post" id="new_task" name="new_task">
+<form action="inc/add-task.inc.php" method="post" id="new_task" name="new_task">
     <h3>Add a new task to the list</h3>
     <label> Name
         <input name="name" placeholder="Give it a name. (Max 255 characters.)" required="required" pattern="[a-zA-Z0-9\w\s\p{P}\p{S}].{0,254}" size="18" type="text">

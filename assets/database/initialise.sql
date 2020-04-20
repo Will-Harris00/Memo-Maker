@@ -20,14 +20,15 @@ CREATE TABLE Users (
 );
 
 CREATE TABLE Tasks (
-                    taskid int not null auto_increment,
-                    userid int not null,
-                    name tinytext not null,
-                    description text not null,
-                    due datetime not null,
-                    state boolean DEFAULT false not null,
-                    primary key (taskid, userid),
-                    foreign key (userid) references Users(userid)
+                       taskid int not null auto_increment,
+                       userid int not null,
+                       importid int,
+                       name tinytext not null,
+                       description text not null,
+                       due datetime not null,
+                       state boolean DEFAULT false not null,
+                       primary key (taskid, userid),
+                       foreign key (userid) references Users(userid)
 );
 
 CREATE TABLE Preferences (
