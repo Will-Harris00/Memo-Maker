@@ -48,7 +48,7 @@ if (isset($_SESSION['userid'])) {
                 echo '            <td>' . date("D j, M, Y, H:i", strtotime($due)) . '</td>';
                 echo "            <td onclick='event.stopPropagation();return false;'>";
                 if ($state == 0) {
-                    echo "            <input type='checkbox' class='toggle_state' id='check-$taskid' value='{$state}' onclick='event.stopPropagation();return true;'>";
+                    echo "            <input type='checkbox' class='toggle_state' id='check-$taskid' value='{$state}' onclick='event.stopPropagation();toggleState({$importid}, {$taskid}, {$userid});return true;'>";
                 } else {
                     echo "            <input type='checkbox' class='toggle_state' id='check-$taskid' checked value='{$state}' onclick='event.stopPropagation();toggleState({$importid}, {$taskid}, {$userid});return true;'>";
                 }
