@@ -11,7 +11,7 @@ function toggleState(importid, taskid, userid) {
     request.setRequestHeader('Content-Type', 'text/xml');
     let xml = "<user><id>" + userid.toString() + "</id></user>";
 
-    request.unload = function () {
+    request.onload = function () {
         window.location.replace("view-tasks.php");
     };
     request.send(xml);
