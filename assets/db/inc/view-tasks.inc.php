@@ -40,6 +40,68 @@ if (isset($_SESSION['userid'])) {
             /* fetch values */
             $i = 0;
             while (mysqli_stmt_fetch($stmt)) {
+
+
+                $user = new SimpleXMLElement('<user/>');
+                $user->addChild('userid', $userid);
+                $user = $user->asXML();
+
+                $url = "http://students.emps.ex.ac.uk/dm656/check.php/" . $importid;
+
+                $curl = curl_init($url);
+                curl_setopt($curl, CURLOPT_HTTPHEADER, array("Content-Type: text/xml"));
+                curl_setopt($curl, CURLOPT_URL, $url);
+                curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'PUT');
+                curl_setopt($curl, CURLOPT_POSTFIELDS, $user);
+                curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+                curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 300);
+                $result = curl_exec($curl);
+                $response = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+                curl_close($curl);
+
+                if ($response == 200) {
+                    // Task was unchecked
+                    $state = 0;
+                    /* Because the response code was retrieved using the check method
+                       we need to ensure that the task is once again left unchecked. */
+
+                    $url = "http://students.emps.ex.ac.uk/dm656/uncheck.php/" . $importid;
+
+                    $curl = curl_init($url);
+                    curl_setopt($curl, CURLOPT_HTTPHEADER, array("Content-Type: text/xml"));
+                    curl_setopt($curl, CURLOPT_URL, $url);
+                    curl_setopt($curl, CURLOPT_CUSTOMREQUEST, 'PUT');
+                    curl_setopt($curl, CURLOPT_POSTFIELDS, $user);
+                    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+                    curl_setopt($curl, CURLOPT_CONNECTTIMEOUT, 300);
+                    $result = curl_exec($curl);
+                    $other_response = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+                    curl_close($curl);
+                } elseif ($response == 409) {
+                    // The task was already checked
+                    $state = 1;
+                    /* We made an attempt to check an event that has already been check
+                    marked as done, as a result no changes were made to the web service. */
+                }
+
+                $sql = "UPDATE Tasks 
+                        SET state=? 
+                        WHERE taskid=?";
+
+                $stmt = mysqli_stmt_init($conn);
+
+                if(!mysqli_stmt_prepare($stmt, $sql)) {
+                    header("Location: ../view-tasks.php?error=sqlpreferencesinserterror&user=" . $user);
+                    mysqli_stmt_close($stmt);
+                    mysqli_close($conn);
+                    exit();
+                } else {
+                    mysqli_stmt_bind_param($stmt, "ii", $state, $taskid);
+                    mysqli_stmt_execute($stmt);
+                }
+
+
+
                 echo "        <input type='hidden' id='$i' value='$taskid'>";
                 echo '        <tr class="item">';
                 echo '            <td id="name_scroll"><div class="name_scroll">' . $name . '</div></td>';
