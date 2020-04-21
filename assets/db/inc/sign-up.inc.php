@@ -3,7 +3,6 @@ session_start();
 
 if (isset($_POST['signup_btn'])){
     require "../../secure/pepper.php";
-    require "../../secure/credentials.php";
     require "handler.inc.php";
     $user = $_POST['username'];
     $pass = $_POST['password'];

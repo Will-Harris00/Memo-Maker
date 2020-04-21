@@ -3,7 +3,6 @@
 session_start();
 
 if (isset($_POST['apply_prefs_btn'])) {
-    require "../../secure/credentials.php";
     require "handler.inc.php";
     $userid = $_SESSION["userid"];
     $fg = str_replace(' ', '', $_POST['foreground']);

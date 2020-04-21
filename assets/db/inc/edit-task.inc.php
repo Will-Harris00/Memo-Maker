@@ -8,7 +8,6 @@ if (isset($_POST['edit_task_btn'])) {
     $due =  date('Y-m-d H:i', strtotime(str_replace("/","-",$_POST['date']) . $_POST['time']));
     $description = $_POST['description'];
     $state = $_POST['state'];
-    require "../../secure/credentials.php";
     require "handler.inc.php";
 
     if (empty($name) || empty($due) || empty($description)) {

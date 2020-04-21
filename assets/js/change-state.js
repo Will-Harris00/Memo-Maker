@@ -1,5 +1,4 @@
 function toggleState(importid, taskid, userid) {
-    alert(importid);
     let checkbox = document.getElementById("check-" + taskid.toString());
     let url = "http://students.emps.ex.ac.uk/dm656/";
     let toggle_url = url + "uncheck.php/";

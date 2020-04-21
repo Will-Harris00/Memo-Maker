@@ -6,7 +6,6 @@ if (isset($_POST['new_task_btn'])) {
     $name = $_POST['name'];
     $due =  date('Y-m-d H:i', strtotime(str_replace("/","-",$_POST['date']) . $_POST['time']));
     $description = $_POST['description'];
-    require "../../secure/credentials.php";
     require "handler.inc.php";
 
     if (empty($name) || empty($due) || empty($description)) {

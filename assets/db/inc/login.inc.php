@@ -2,7 +2,6 @@
 session_start();
 
 if (isset($_POST['login_btn'])){
-    require "../../secure/credentials.php";
     require "handler.inc.php";
     $user = $_POST["username"];
     $pass = $_POST["password"];
@@ -38,7 +37,7 @@ if (isset($_POST['login_btn'])){
                     exit();
                 } else {
                     $_SESSION["userid"] = $fetch_id;
-                    header("Location: ../view-tasks.php?login=success");
+                    header("Location: view-tasks.inc.php?login=success");
                     mysqli_stmt_close($stmt);
                     // mysqli_close($conn);
                     exit();

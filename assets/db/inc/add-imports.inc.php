@@ -1,12 +1,11 @@
 <?php
 session_start();
 
-if (isset($_POST["import_tasks"])) {
-    $userid = $_SESSION["userid"];
-    require "../../secure/credentials.php";
+if (isset($_POST['import_tasks'])) {
+    $userid = $_SESSION['userid'];
     require "handler.inc.php";
 
-    foreach($_POST["tasks"] as $import_id) {
+    foreach($_POST['tasks'] as $import_id) {
         $url = "http://students.emps.ex.ac.uk/dm656/task.php/" . $import_id;
 
         $curl = curl_init($url);

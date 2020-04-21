@@ -4,7 +4,6 @@ session_start();
 if (isset($_POST['delete_btn'])) {
     $userid = $_SESSION['userid'];
     $taskid = $_POST['taskid'];
-    require "../../secure/credentials.php";
     require "handler.inc.php";
 
     if (empty($userid) || empty($taskid)) {

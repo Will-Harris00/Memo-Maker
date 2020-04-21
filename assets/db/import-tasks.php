@@ -2,8 +2,7 @@
 session_start();
 require "header.php";
 
-require "inc/import-tasks.inc.php";
-$xml = new SimpleXMLElement($result);
+$xml = new SimpleXMLElement($_SESSION['imports']);
 
 echo "<form action='inc/add-imports.inc.php' method='post'>
           <table> 
