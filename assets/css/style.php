@@ -11,6 +11,7 @@ General styling
 
 
 html {
+scroll-behavior: smooth;
 height: 100%;
 margin: 0;
 padding: 0;
@@ -194,6 +195,47 @@ background-color: Orange;
 button[name=delete_btn] {
 border: 1px solid transparent;
 background-color: Red;
+}
+
+input#import_tasks {
+padding: 20px;
+font-weight: bold;
+font-size: 24px;
+width: 100%;
+}
+
+/*
+
+Scroll Arrow
+
+*/
+
+
+#back2Top {
+width: 40px;
+line-height: 40px;
+overflow: hidden;
+z-index: 999;
+display: none;
+cursor: pointer;
+-moz-transform: rotate(270deg);
+-webkit-transform: rotate(270deg);
+-o-transform: rotate(270deg);
+-ms-transform: rotate(270deg);
+transform: rotate(270deg);
+position: fixed;
+bottom: 50px;
+right: 0;
+background-color: #DDD;
+color: #555;
+text-align: center;
+font-size: 30px;
+text-decoration: none;
+}
+
+#back2Top:hover {
+background-color: #DDF;
+color: #000;
 }
 
 /*

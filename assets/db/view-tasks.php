@@ -38,9 +38,9 @@ if (count($tasks) == 0) {
                 echo '            <td>' . date("D j, M, Y, H:i", strtotime($due)) . '</td>';
                 echo "            <td onclick='event.stopPropagation();return false;'>";
                 if ($state == 0) {
-                    echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' value='{$state}' onclick='event.stopPropagation();toggleState({$importid}, {$taskid}, {$userid});return true;'>";
+                    echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' value='{$state}' onclick='event.stopPropagation(); var result = confirm(\"Are you sure you want to mark this task as done?\"); if (result) {toggleState({$importid}, {$taskid}, {$userid})}; return true;'>";
                 } else {
-                    echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' checked value='{$state}' onclick='event.stopPropagation();toggleState({$importid}, {$taskid}, {$userid});return true;'>";
+                    echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' checked value='{$state}' onclick='event.stopPropagation(); var result = confirm(\"Are you sure you want to mark this task as incomplete?\"); if (result) {toggleState({$importid}, {$taskid}, {$userid})}; return true;'>";
                 }
                 echo "            </td>";
                 echo '        </tr>';
@@ -63,6 +63,8 @@ if (count($tasks) == 0) {
        </form>
     </div>
 </div>
+<a id="back2Top" title="Back to top" href="#">➤</a>
+<script src="../js/scroll-arrow.js"></script>
 <script src="../js/sort-column.js"></script>
 <script src="../js/edit-task.js"></script>
 <script src="../js/validate-txt.js"></script>

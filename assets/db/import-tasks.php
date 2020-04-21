@@ -5,6 +5,7 @@ require "header.php";
 $xml = new SimpleXMLElement($_SESSION['imports']);
 
 echo "<form action='inc/add-imports.inc.php' method='post'>
+          <input type='submit' name='import_tasks' id='import_tasks' value='Import'>
           <table> 
               <tr>
                   <th></th>
@@ -17,8 +18,9 @@ foreach($xml->task as $task) {
               </tr>";
 }
 echo "    </table>
-          <input type='submit' name='import_tasks' id='import_tasks' value='Import'>
-      </form>";
+      </form>
+      <a id=\"back2Top\" title=\"Back to top\" href=\"#\">➤</a>
+      <script src=\"../js/scroll-arrow.js\"></script>";
 
 require "footer.php";
 ?>

@@ -41,8 +41,8 @@ if (isset($_SESSION['userid'])) {
                 ));
             }
         }
-
-        foreach($tasks as $task) {
+        // The & symbol signifies that we are passing by reference to an item in the array.
+        foreach($tasks as &$task) {
             $importid = $task['importid'];
 
             $user = new SimpleXMLElement('<user/>');
@@ -86,8 +86,6 @@ if (isset($_SESSION['userid'])) {
                 /* We made an attempt to check an event that has already been marked
                    as complete, as a result no changes were made to the web service. */
             }
-            echo $response;
-
             $sql = "UPDATE Tasks 
                     SET state=? 
                     WHERE taskid=?";
@@ -102,10 +100,10 @@ if (isset($_SESSION['userid'])) {
             } else {
                 mysqli_stmt_bind_param($stmt, "is", $state, $task['taskid']);
                 mysqli_stmt_execute($stmt);
+                mysqli_stmt_store_result($stmt);
             }
             $task['state'] = $state;
         }
-
         $_SESSION['tasks'] = $tasks;
         header("Location: ../view-tasks.php");
         exit();
