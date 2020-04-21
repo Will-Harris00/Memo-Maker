@@ -1,5 +1,5 @@
-foreach($rows as $row) {
-
+foreach($tasks as $task) {
+				$importid = $task['importid'];
 
                 $user = new SimpleXMLElement('<user/>');
                 $user->addChild('userid', $userid);
@@ -39,8 +39,8 @@ foreach($rows as $row) {
                 } elseif ($response == 409) {
                     // The task was already checked
                     $state = 1;
-                    /* We made an attempt to check an event that has already been check
-                    marked as done, as a result no changes were made to the web service. */
+                    /* We made an attempt to check an event that has already been marked
+                       as complete, as a result no changes were made to the web service. */
                 }
 
                 $sql = "UPDATE Tasks 

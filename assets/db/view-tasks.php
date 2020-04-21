@@ -23,17 +23,24 @@ if (count($tasks) == 0) {
             <?php
             $i = 0;
             foreach($tasks as $task) {
-                echo "        <input type='hidden' id='$i' value='{$task['taskid']}'>";
+                $taskid = $task['taskid'];
+                $userid = $task['userid'];
+                $importid = $task['importid'];
+                $name = $task['name'];
+                $description = $task['description'];
+                $due = $task['due'];
+                $state = $task['state'];
+                echo "        <input type='hidden' id='$i' value='{$taskid}'>";
                 echo '        <tr class="item">';
-                echo '            <td id="name_scroll"><div class="name_scroll">' . $task['name'] . '</div></td>';
+                echo '            <td id="name_scroll"><div class="name_scroll">' . $name . '</div></td>';
                 /* desc id added to allow for manipulation of cell height by setting content div max-height */
-                echo '            <td id="desc_scroll"><div class="desc_scroll">' . $task['description'] . '</div></td>';
-                echo '            <td>' . date("D j, M, Y, H:i", strtotime($task['due'])) . '</td>';
+                echo '            <td id="desc_scroll"><div class="desc_scroll">' . $description . '</div></td>';
+                echo '            <td>' . date("D j, M, Y, H:i", strtotime($due)) . '</td>';
                 echo "            <td onclick='event.stopPropagation();return false;'>";
-                if ($task['state'] == 0) {
-                    echo "            <input type='checkbox' class='toggle_state' id='check-{$task['taskid']}' value='{$task['state']}' onclick='event.stopPropagation();toggleState({$task['importid']}, {$task['taskid']}, {$task['userid']});return true;'>";
+                if ($state == 0) {
+                    echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' value='{$state}' onclick='event.stopPropagation();toggleState({$importid}, {$taskid}, {$userid});return true;'>";
                 } else {
-                    echo "            <input type='checkbox' class='toggle_state' id='check-{$task['taskid']}' checked value='{$task['state']}' onclick='event.stopPropagation();toggleState({$task['importid']}, {$task['taskid']}, {$task['userid']});return true;'>";
+                    echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' checked value='{$state}' onclick='event.stopPropagation();toggleState({$importid}, {$taskid}, {$userid});return true;'>";
                 }
                 echo "            </td>";
                 echo '        </tr>';

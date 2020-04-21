@@ -36,13 +36,11 @@ if (isset($_POST['import_tasks'])) {
         } else {
             mysqli_stmt_bind_param($stmt, "iisss", $userid, $import_id, $fetch_name, $fetch_description, $fetch_due);
             mysqli_stmt_execute($stmt);
-            mysqli_stmt_store_result($stmt);
         }
     }
-    header("Location: ../view-tasks.php?importtasks=success");
-    mysqli_stmt_close($stmt);
-    mysqli_close($conn);
+    header("Location: view-tasks.inc.php?importtasks=success");
     exit();
 } else {
     header("Location: ../import-tasks.php");
+    exit();
 }

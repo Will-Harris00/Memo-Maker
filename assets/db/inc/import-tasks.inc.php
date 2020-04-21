@@ -12,6 +12,7 @@ $response = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 curl_close($curl);
 
 $_SESSION['imports'] = $result;
+
 header("Location: ../import-tasks.php");
 exit();
 ?>
