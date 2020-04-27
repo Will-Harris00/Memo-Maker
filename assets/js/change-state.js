@@ -27,7 +27,12 @@ function toggleState(importid, taskid, userid) {
                 request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                 request.onreadystatechange = function () {
                         if (request.readyState === 4 && request.status === 200) {
-                                alert(request.responseText);
+                                if (state === 1) {
+                                        string = "complete."
+                                } else {
+                                        string = "incomplete"
+                                }
+                                alert("This local task will be marked as " + string);
                         }
                 };
                 request.send("taskid=" + taskid + "&state=" + state);

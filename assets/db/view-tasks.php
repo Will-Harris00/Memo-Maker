@@ -30,7 +30,8 @@ if (count($tasks) == 0) {
                     $description = $task['description'];
                     $due = $task['due'];
                     $state = $task['state'];
-                    echo "        <input type='hidden' id='$i' value='{$taskid}'>";
+                    echo "        <input type='hidden' id='task_row_$i' value='{$taskid}'>";
+                    echo "        <input type='hidden' id='import_row_$i' value='{$importid}'>";
                     echo '        <tr class="item">';
                     echo '            <td id="name_scroll"><div class="name_scroll">' . $name . '</div></td>';
                     /* desc id added to allow for manipulation of cell height by setting content div max-height */

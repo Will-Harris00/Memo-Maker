@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!(isset($_SESSION['userid']))) {
-    header("Location: ../login.php");
+    header("Location: login.php");
     exit();
 }
 
@@ -32,6 +32,7 @@ if (isset($_POST['taskid'])) {
         } else {
             mysqli_stmt_bind_param($stmt, "i", $state);
             mysqli_stmt_execute($stmt);
+            header("Location: ../view-tasks.php?updatedstate=success");
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
             exit();
