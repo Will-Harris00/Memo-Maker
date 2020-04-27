@@ -210,6 +210,11 @@ font-size: 24px;
 width: 100%;
 }
 
+input[type=checkbox] {
+background-color: transparent;
+margin: 0px;
+}
+
 /*
 
 Scroll Arrow
