@@ -86,6 +86,11 @@ if (isset($_SESSION['userid'])) {
                 /* We made an attempt to check an event that has already been marked
                    as complete, as a result no changes were made to the web service. */
             }
+            if ($response == 401) {
+                //  User tried to uncheck a task which they did not originally check.
+                $state = 1;
+                echo '<script type="text/javascript">alert("Task: ' . $name . ' was marked as complete by another user");</script>';
+            }
             $sql = "UPDATE Tasks 
                     SET state=? 
                     WHERE taskid=?";

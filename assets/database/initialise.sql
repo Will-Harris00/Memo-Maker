@@ -31,6 +31,12 @@ CREATE TABLE Tasks (
                        foreign key (userid) references Users(userid)
 );
 
+
+INSERT INTO Tasks
+(taskid, userid, importid, name, description, due, state)
+VALUES (21, 1, 702, 'X', 'Y', '2020-04-27 23:00:00', '0');
+
+
 CREATE TABLE Preferences (
                        userid int not null,
                        foreground varchar(32) DEFAULT 'PowderBlue',

@@ -20,7 +20,7 @@ if (isset($_POST['taskid'])) {
            in user created that task and has permission to edit it. */
         $sql = "UPDATE Tasks
                 SET state = ?
-                WHERE taskid = $taskid AND userid = $userid";
+                WHERE taskid = ? AND userid = ?";
 
         $stmt = mysqli_stmt_init($conn);
 
@@ -30,7 +30,7 @@ if (isset($_POST['taskid'])) {
             mysqli_close($conn);
             exit();
         } else {
-            mysqli_stmt_bind_param($stmt, "i", $state);
+            mysqli_stmt_bind_param($stmt, "iii", $state, $taskid, $userid);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
