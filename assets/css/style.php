@@ -1,5 +1,6 @@
 <?php
 header('Content-type: text/css; charset=utf-8' );
+header('Cache-control: must-revalidate');
 require "../db/inc/preferences.inc.php";
 ?>
 

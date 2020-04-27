@@ -37,10 +37,18 @@ if (count($tasks) == 0) {
                     echo '            <td id="desc_scroll"><div class="desc_scroll">' . $description . '</div></td>';
                     echo '            <td>' . date("D j, M, Y, H:i", strtotime($due)) . '</td>';
                     echo "            <td onclick='event.stopPropagation();'>";
-                    if ($state == 0) {
-                        echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' value='{$state}' onclick='event.stopPropagation(); toggleState({$importid}, {$taskid}, {$userid});'>";
+                    if ($importid != null) {
+                        if ($state == 0) {
+                            echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' value='{$state}' onclick='event.stopPropagation(); toggleState({$importid}, {$taskid}, {$userid});'>";
+                        } else {
+                            echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' checked value='{$state}' onclick='event.stopPropagation(); toggleState({$importid}, {$taskid}, {$userid});'>";
+                        }
                     } else {
-                        echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' checked value='{$state}' onclick='event.stopPropagation(); toggleState({$importid}, {$taskid}, {$userid});'>";
+                        if ($state == 0) {
+                            echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' value='{$state}' onclick='event.stopPropagation(); toggleState(null, {$taskid}, {$userid});'>";
+                        } else {
+                            echo "            <input type='checkbox' class='toggle_state' id='check-{$taskid}' checked value='{$state}' onclick='event.stopPropagation(); toggleState(null, {$taskid}, {$userid});'>";
+                        }
                     }
                     echo "            </td>";
                     echo '        </tr>';
@@ -63,6 +71,7 @@ if (count($tasks) == 0) {
             </form>
         </div>
     </div>
+    <a id="back2Top" title="Back to top" href="#">➤</a>
     <script src="../js/scroll-arrow.js"></script>
     <script src="../js/sort-column.js"></script>
     <script src="../js/edit-task.js"></script>
