@@ -61,7 +61,7 @@ if (count($tasks) == 0) {
         <div class="edit" id="edit">
             <form name="edit_task" action="inc/edit-task.inc.php" method="post" onsubmit="return confirm('Do you really want to submit the form?');">
                 <input type="hidden" name="taskid" id="taskid">
-                <strong>Name:</strong><input type="text" name="name" id="name" pattern="[a-zA-Z0-9\w\s\p{P}\p{S}].{0,254}" required="required"><br><br>
+                <strong>Name:</strong><input type="text" name="name" id="name" pattern="[\w\s\S\W].{0,254}" required="required"><br><br>
                 <strong>Description:</strong><textarea id="description" name="description" rows="4" cols="80" required="required"></textarea><br><br>
                 <strong>Due Date:</strong><input type="date" name="date" id="date" max="9999-12-31"><br><br>
                 <strong>Time:</strong><input type="time" name="time" id="time"><br><br>
@@ -69,6 +69,7 @@ if (count($tasks) == 0) {
                 <input type="submit" name="edit_task_btn" id="submit_btn" value="Edit Task">
                 <button type='button' name='cancel_btn' id='cancel_btn' onclick='document.getElementById("edit").style.visibility = "hidden";'>Cancel</button>
                 <button type='submit' name='delete_btn' id='delete_btn' formaction='inc/delete-task.inc.php'>Delete Task</button>
+                <button type='submit' name='export_btn' id='export_btn' formaction='inc/export-task.inc.php'>Export Task</button>
             </form>
         </div>
     </div>

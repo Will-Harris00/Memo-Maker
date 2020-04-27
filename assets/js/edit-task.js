@@ -11,7 +11,7 @@ for(var i = 1; i < table.rows.length; i++)
         console.log(rIndex - 1);
         $import = document.getElementById("import_row_" + (rIndex - 1).toString()).value;
         if ($import !== "") {
-            alert("This task was imported and cannot be modified.")
+            alert("This task is synced remotely and cannot be modified.")
         } else {
             document.getElementById("taskid").value = document.getElementById("task_row_" + (rIndex - 1).toString()).value;
             document.getElementById("name").value = table.getElementsByClassName("name_scroll")[rIndex - 1].innerHTML;

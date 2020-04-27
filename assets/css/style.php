@@ -198,6 +198,11 @@ border: 1px solid transparent;
 background-color: Red;
 }
 
+button[name=export_btn] {
+border: 1px solid transparent;
+background-color: Purple;
+}
+
 input#import_tasks {
 padding: 20px;
 font-weight: bold;

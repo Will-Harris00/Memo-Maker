@@ -8,7 +8,7 @@ require_once "header.php";
 <form action="inc/add-task.inc.php" method="post" id="new_task" name="new_task">
     <h3>Add a new task to the list</h3>
     <label> Name
-        <input name="name" placeholder="Give it a name. (Max 255 characters.)" required="required" pattern="[a-zA-Z0-9\w\s\p{P}\p{S}].{0,254}" size="18" type="text">
+        <input name="name" placeholder="Give it a name. (Max 255 characters.)" required="required" pattern="[\w\s\S\W].{0,254}" size="18" type="text">
     </label>
     <label>Date
         <input name="date" placeholder="When is it due?" required="required" type="text" min="1970-01-01" max="9999-12-31">
