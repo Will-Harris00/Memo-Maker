@@ -33,7 +33,11 @@ function toggleState(importid, taskid, userid) {
                                         string = "incomplete"
                                 }
                                 alert("This local task will be marked as " + string);
+                                alert(request.responseText)
                         }
+                };
+                request.onload = function () {
+                        window.location.replace("inc/view-tasks.inc.php");
                 };
                 request.send("taskid=" + taskid + "&state=" + state);
         }

@@ -35,7 +35,7 @@ if (isset($_POST['export_btn'])) {
     curl_close($curl);
 
     $sql = "UPDATE Tasks
-            SET importid = ?
+            SET importid = ?, state = 0
             WHERE taskid = ? AND userid = ?";
 
     $stmt = mysqli_stmt_init($conn);
@@ -49,7 +49,7 @@ if (isset($_POST['export_btn'])) {
         mysqli_stmt_bind_param($stmt, "iii", $importid, $taskid, $userid);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_store_result($stmt);
-        header("Location: ../view-tasks.php?exportedtask=success");
+        header("Location: view-tasks.inc.php?exportedtask=success");
         mysqli_stmt_close($stmt);
         mysqli_close($conn);
         exit();

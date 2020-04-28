@@ -41,6 +41,8 @@ if (isset($_SESSION['userid'])) {
                 ));
             }
         }
+        mysqli_stmt_close($stmt);
+        mysqli_close($conn);
     }
     $_SESSION['tasks'] = $tasks;
     // var_dump($tasks);

@@ -34,6 +34,8 @@ if (isset($_SESSION['tasks'])) {
         curl_close($curl);
 
         if ($response == 200) {
+            unset($_SESSION['response']);
+            $_SESSION['response'] = $response;
             // Task was unchecked
             $state = 0;
             /* Because the response code was retrieved using the check method
@@ -53,14 +55,11 @@ if (isset($_SESSION['tasks'])) {
             curl_close($curl);
         } elseif ($response == 409) {
             // The task was already checked
-            $_SESSION['response'] = $response;
             $state = 1;
             /* We made an attempt to check an event that has already been marked
                as complete, as a result no changes were made to the web service. */
-        }
-        if ($response == 401) {
+        } elseif ($response == 401) {
             //  User tried to uncheck a task which they did not originally check.
-            $_SESSION['response'] = $response;
             $state = 1;
         }
         $sql = "UPDATE Tasks 

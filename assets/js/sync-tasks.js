@@ -6,14 +6,12 @@ function syncTasks() {
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
+            alert("This will remove any remote tasks marked as completed.");
             alert(request.responseText)
-            alert("This will remove any remote tasks marked as complete.");
         }
     };
-    /*
     request.onload = function () {
-        window.location.replace("view-tasks.php");
+        window.location.replace("inc/view-tasks.inc.php");
     };
-     */
     request.send("sync=True");
 }
