@@ -32,6 +32,21 @@ session_start();
         <li><a href="assets/db/inc/logoff.inc.php" id="Logoff 🚪🚶">Logoff 🚪🚶</a></li>
     </ul>
 <nav>
+    <main>
+        <h1>Memo Maker Incorporated by 680033128</h1><br>
+        <h2>Welcome to my website.</h2>
+        <h3>Sign-up to begin your journey.</h3>
+        <br>
+        <p>The purpose of this site is to be a platform for users to create and maintain a list of memo's accessible from anywhere in the world, so long as you have WiFi.
+            Through this portal users are able to form collaborations by utilising our remote sharing web service to synchronise task sharing in realtime and spread the workload.
+            This innovative system records the state of each task and informs the individual users whenever one of their assignments is completed.
+            Users can register for this service safe in the knowledge that there personal details are secure by state of the art
+            security measures implementing top-level cryptographic algorithms to ensure your information is never compromised.
+            This is a site built for the workaholics, the eager beavers, the busy bees. One which will allow you to improve your workflow in both a friendly to use and intuitive way.
+        </p>
+
+
+    </main>
 
 <?php
 require_once "assets/db/footer.php";

@@ -223,6 +223,10 @@ background-color: transparent;
 margin: 0px;
 }
 
+p {
+padding: 5px;
+}
+
 /*
 
 Scroll Arrow
