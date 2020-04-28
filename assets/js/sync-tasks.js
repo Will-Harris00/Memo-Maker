@@ -7,7 +7,7 @@ function syncTasks() {
     request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
             alert("This will remove any remote tasks marked as completed.");
-            alert(request.responseText)
+            alert(request.responseText);
         }
     };
     request.onload = function () {

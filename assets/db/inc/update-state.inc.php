@@ -30,7 +30,7 @@ if (isset($_POST['importid'])) {
     curl_close($curl);
 
     if ($response == 200) {
-        echo "200 Success - Status updated successfully.";
+        echo "200 Success - Task was unchecked successfully.";
         // Task was unchecked
         $state = 0;
         /* Because the response code was retrieved using the check method

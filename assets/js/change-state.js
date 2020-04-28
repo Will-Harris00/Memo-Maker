@@ -20,7 +20,7 @@ function toggleState(importid, taskid, userid) {
                         query.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                         query.onreadystatechange = function () {
                                 if (query.readyState === 4 && query.status === 200) {
-                                        alert(query.responseText)
+                                        alert(query.responseText);
                                 }
                         };
                         query.onload = function () {
@@ -46,7 +46,7 @@ function toggleState(importid, taskid, userid) {
                                         string = "incomplete"
                                 }
                                 alert("This local task will be marked as " + string);
-                                alert(request.responseText)
+                                alert(request.responseText);
                         }
                 };
                 request.onload = function () {

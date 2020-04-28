@@ -11,7 +11,9 @@ for(var i = 1; i < table.rows.length; i++)
         console.log(rIndex - 1);
         $import = document.getElementById("import_row_" + (rIndex - 1).toString()).value;
         if ($import !== "") {
-            alert("This task is synced remotely and cannot be modified.")
+            if (confirm("This task is synced remotely and cannot be modified. Would you like to delete this task from the local database instead?")) {
+                deleteTask(document.getElementById("task_row_" + (rIndex - 1).toString()).value);
+            }
         } else {
             document.getElementById("taskid").value = document.getElementById("task_row_" + (rIndex - 1).toString()).value;
             document.getElementById("name").value = table.getElementsByClassName("name_scroll")[rIndex - 1].innerHTML;
@@ -23,6 +25,22 @@ for(var i = 1; i < table.rows.length; i++)
         }
     };
 }
+
+function deleteTask(taskid) {
+    var request = new XMLHttpRequest();
+    request.open("POST", "inc/delete-task.inc.php", true);
+    request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    request.onreadystatechange = function () {
+        if (request.readyState === 4 && request.status === 200) {
+            alert(request.responseText);
+        }
+    };
+    request.onload = function () {
+        window.location.replace("inc/view-tasks.inc.php");
+    };
+    request.send("taskid=" + taskid.toString());
+}
+
 
 // edit the row
 /* Need to write to database then reload page.
