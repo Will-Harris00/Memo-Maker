@@ -2,8 +2,6 @@
 require_once "header.php";
 ?>
 
-<html lang="en">
-<body>
 <main>
 <form action="inc/add-task.inc.php" method="post" id="new_task" name="new_task">
     <h3>Add a new task to the list</h3>

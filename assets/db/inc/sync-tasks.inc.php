@@ -37,7 +37,7 @@ if (isset($_POST['sync'])) {
                 $user->addChild('id', $userid);
                 $user = $user->asXML();
 
-                $url = "http://students.emps.ex.ac.uk/dm656/uncheck.php/" . $importid;
+                $url = "http://students.emps.ex.ac.uk/dm656/check.php/" . $importid;
 
                 $curl = curl_init($url);
                 curl_setopt($curl, CURLOPT_HTTPHEADER, array("Content-Type: text/xml"));
@@ -49,6 +49,8 @@ if (isset($_POST['sync'])) {
                 $result = curl_exec($curl);
                 $response = curl_getinfo($curl, CURLINFO_HTTP_CODE);
                 curl_close($curl);
+
+                // echo "<br>ImportID: " . $importid . ", Response: " . $response;
 
                 if ($response == 200) {
                     // Task was unchecked
@@ -102,6 +104,7 @@ if (isset($_POST['sync'])) {
     } else {
         echo "All tasks are up to date.";
     }
+    // header("Location: ../view-tasks.php");
     exit();
 } else {
     header("Location: ../view-tasks.php");

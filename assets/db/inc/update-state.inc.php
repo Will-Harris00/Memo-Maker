@@ -81,7 +81,7 @@ if (isset($_SESSION['tasks'])) {
         $task['state'] = $state;
     }
     $_SESSION['tasks'] = $tasks;
-    header("Location: ../view-tasks.php");
+    // header("Location: ../view-tasks.php");
     exit();
 } else {
     header("Location: view-tasks.inc.php");
