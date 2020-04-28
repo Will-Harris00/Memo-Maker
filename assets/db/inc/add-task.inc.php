@@ -2,10 +2,10 @@
 session_start();
 
 if (isset($_POST['new_task_btn'])) {
-    $userid = $_SESSION['userid'];
-    $name = $_POST['name'];
-    $due =  date('Y-m-d H:i', strtotime(str_replace("/","-",$_POST['date']) . $_POST['time']));
-    $description = $_POST['description'];
+    $userid = htmlspecialchars($_SESSION['userid']);
+    $name = htmlentities($_POST['name']);
+    $due =  htmlentities(date('Y-m-d H:i', strtotime(str_replace("/","-",$_POST['date']) . $_POST['time'])));
+    $description = htmlentities($_POST['description']);
     require "handler.inc.php";
 
     if (empty($name) || empty($due) || empty($description)) {

@@ -7,8 +7,8 @@ if (!(isset($_SESSION['userid']))) {
 }
 
 if (isset($_POST['taskid']) or isset($_POST['delete_btn'])) {
-    $userid = $_SESSION['userid'];
-    $taskid = $_POST['taskid'];
+    $userid = htmlspecialchars($_SESSION['userid']);
+    $taskid = htmlentities($_POST['taskid']);
     require "handler.inc.php";
 
     if (empty($userid) || empty($taskid)) {

@@ -7,9 +7,9 @@ if (!(isset($_SESSION['userid']))) {
 }
 
 if (isset($_POST['taskid'])) {
-    $userid = $_SESSION['userid'];
-    $taskid = $_POST['taskid'];
-    $state = $_POST['state'];
+    $userid = htmlspecialchars($_SESSION['userid']);
+    $taskid = htmlentities($_POST['taskid']);
+    $state = htmlentities($_POST['state']);
     require "handler.inc.php";
 
     if (empty($userid) || empty($taskid) || !isset($state)) {

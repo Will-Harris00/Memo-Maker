@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['userid'])) {
-    $userid = $_SESSION['userid'];
+    $userid = htmlspecialchars($_SESSION['userid']);
     require "handler.inc.php";
 
     $sql = "SELECT taskid, importid, name, description, due, state

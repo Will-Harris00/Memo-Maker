@@ -3,8 +3,8 @@ session_start();
 
 if (isset($_POST['login_btn'])){
     require "handler.inc.php";
-    $user = $_POST["username"];
-    $pass = $_POST["password"];
+    $user = htmlentities($_POST["username"]);
+    $pass = htmlentities($_POST["password"]);
 
     if (empty($user) || empty($pass)) {
         header("Location: ../login.php?error=emptyfields&user=" . $user);
@@ -36,10 +36,9 @@ if (isset($_POST['login_btn'])){
                     mysqli_close($conn);
                     exit();
                 } else {
-                    $_SESSION["userid"] = $fetch_id;
+                    $_SESSION["userid"] = htmlentities($fetch_id);
                     header("Location: view-tasks.inc.php?login=success");
                     mysqli_stmt_close($stmt);
-                    // mysqli_close($conn);
                     exit();
                 }
             } else {

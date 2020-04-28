@@ -2,12 +2,12 @@
 session_start();
 
 if (isset($_POST['edit_task_btn'])) {
-    $userid = $_SESSION['userid'];
-    $taskid = $_POST['taskid'];
-    $name = $_POST['name'];
-    $due =  date('Y-m-d H:i', strtotime(str_replace("/","-", $_POST['date']) . $_POST['time']));
-    $description = $_POST['description'];
-    $state = $_POST['state'];
+    $userid = htmlspecialchars($_SESSION['userid']);
+    $taskid = htmlentities($_POST['taskid']);
+    $name = htmlentities($_POST['name']);
+    $due =  htmlentities(date('Y-m-d H:i', strtotime(str_replace("/","-", $_POST['date']) . $_POST['time'])));
+    $description = htmlentities($_POST['description']);
+    $state = htmlentities($_POST['state']);
     require "handler.inc.php";
 
     if (empty($name) || empty($due) || empty($description)) {

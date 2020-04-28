@@ -4,9 +4,9 @@ session_start();
 if (isset($_POST['signup_btn'])){
     require "../../secure/pepper.php";
     require "handler.inc.php";
-    $user = $_POST['username'];
-    $pass = $_POST['password'];
-    $passConfirm = $_POST['confirm_password'];
+    $user = htmlentities($_POST['username']);
+    $pass = htmlentities($_POST['password']);
+    $passConfirm = htmlentities($_POST['confirm_password']);
 
     if (empty($user) || empty($pass) || empty($passConfirm)) {
         header("Location: ../sign-up.php?error=emptyfields&user=" . $user);
@@ -72,7 +72,7 @@ if (isset($_POST['signup_btn'])){
                     } else {
                         mysqli_stmt_bind_param($stmt, "i", $userid);
                         mysqli_stmt_execute($stmt);
-                        $_SESSION["userid"] = $userid;
+                        $_SESSION["userid"] = htmlentities($userid);
                         header("Location: ../add-tasks.php?signup=success");
                         mysqli_stmt_close($stmt);
                         mysqli_close($conn);

@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_POST['import_tasks'])) {
-    $userid = $_SESSION['userid'];
+    $userid = htmlspecialchars($_SESSION['userid']);
     require "handler.inc.php";
 
     foreach($_POST['tasks'] as $import_id) {

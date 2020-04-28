@@ -9,7 +9,7 @@ if (isset($_SESSION['userid'])) {
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="Developer" content="680033128">
     <meta name="Description" content="Index page for task management system">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=on user-scalable=no">

@@ -6,11 +6,11 @@ if (!(isset($_SESSION['userid']))) {
 }
 
 if (isset($_POST['export_btn'])) {
-    $userid = $_SESSION['userid'];
-    $taskid = $_POST['taskid'];
-    $name = $_POST['name'];
-    $due = Date("Y-m-d H:i:s", strtotime($_POST['date'] . $_POST['time']));
-    $description = $_POST['description'];
+    $userid = htmlspecialchars($_SESSION['userid']);
+    $taskid = htmlentities($_POST['taskid']);
+    $name = htmlentities($_POST['name']);
+    $due = htmlentities(Date("Y-m-d H:i:s", strtotime($_POST['date'] . $_POST['time'])));
+    $description = htmlentities($_POST['description']);
     require "handler.inc.php";
 
     $request = "<taskinfo><name>" . $name .

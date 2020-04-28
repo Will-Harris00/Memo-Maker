@@ -4,9 +4,9 @@ session_start();
 
 if (isset($_POST['apply_prefs_btn'])) {
     require "handler.inc.php";
-    $userid = $_SESSION["userid"];
-    $fg = str_replace(' ', '', $_POST['foreground']);
-    $bg = str_replace(' ', '', $_POST['background']);
+    $userid = htmlspecialchars($_SESSION["userid"]);
+    $fg = htmlentities(str_replace(' ', '', $_POST['foreground']));
+    $bg = htmlentities(str_replace(' ', '', $_POST['background']));
 
     $sql = "REPLACE INTO Preferences
         (userid, foreground, background)
@@ -24,7 +24,6 @@ if (isset($_POST['apply_prefs_btn'])) {
         mysqli_stmt_store_result($stmt);
         header("Location: ../account.php?preferences_updated=success");
         mysqli_stmt_close($stmt);
-        // mysqli_close($conn);
         exit();
     }
 } else {

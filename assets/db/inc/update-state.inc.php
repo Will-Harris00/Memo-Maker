@@ -7,9 +7,9 @@ if (!(isset($_SESSION['userid']))) {
 }
 
 if (isset($_POST['importid'])) {
-    $userid = $_SESSION['userid'];
-    $importid = $_POST['importid'];
-    $state = $_POST['state'];
+    $userid = htmlspecialchars($_SESSION['userid']);
+    $importid = htmlentities($_POST['importid']);
+    $state = htmlentities($_POST['state']);
     require "handler.inc.php";
 
     $user = new SimpleXMLElement('<user/>');
@@ -54,7 +54,7 @@ if (isset($_POST['importid'])) {
         $state = 1;
         /* We made an attempt to check an event that has already been marked
            as complete, as a result no changes were made to the web service. */
-    } elseif ($response == 401) {
+    } if ($other_response == 401) {
         echo "401 Unauthorized - Tried to uncheck a task which the user did not originally check.";
         // User tried to uncheck a task which they did not originally check.
         $state = 1;

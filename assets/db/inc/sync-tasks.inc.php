@@ -5,9 +5,8 @@ if (!(isset($_SESSION['userid']))) {
     exit();
 }
 
-
 if (isset($_POST['sync'])) {
-    $userid = $_SESSION['userid'];
+    $userid = htmlspecialchars($_SESSION['userid']);
     require "handler.inc.php";
 
     $sql = "SELECT importid
@@ -104,7 +103,6 @@ if (isset($_POST['sync'])) {
     } else {
         echo "All tasks are up to date.";
     }
-    // header("Location: ../view-tasks.php");
     exit();
 } else {
     header("Location: ../view-tasks.php");
