@@ -12,7 +12,7 @@ function toggleState(importid, taskid, userid) {
                 request.setRequestHeader('Content-Type', 'text/xml');
                 let xml = "<user><id>" + userid.toString() + "</id></user>";
                 request.onload = function () {
-                        window.location.replace("inc/view-tasks.inc.php");
+                        window.location.replace("inc/update-state.inc.php");
                 };
                 request.send(xml);
         } else {

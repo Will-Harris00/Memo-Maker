@@ -223,18 +223,26 @@ background-color: DodgerBlue;
 }
 
 button[name=cancel_btn] {
-border: 1px solid transparent;
 background-color: Orange;
 }
 
 button[name=delete_btn] {
-border: 1px solid transparent;
 background-color: Red;
 }
 
 button[name=export_btn] {
-border: 1px solid transparent;
 background-color: Purple;
+}
+
+button[name=sync_btn] {
+background-color: RosyBrown;
+position: relative;
+width: auto;
+float: right;
+}
+
+div#above_table {
+padding:10px;
 }
 
 input#import_tasks {

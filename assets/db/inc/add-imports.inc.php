@@ -36,6 +36,7 @@ if (isset($_POST['import_tasks'])) {
         } else {
             mysqli_stmt_bind_param($stmt, "iisss", $userid, $import_id, $fetch_name, $fetch_description, $fetch_due);
             mysqli_stmt_execute($stmt);
+            echo $fetch_due;
         }
     }
     header("Location: view-tasks.inc.php?importtasks=success");

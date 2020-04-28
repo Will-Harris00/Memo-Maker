@@ -5,12 +5,17 @@ $tasks = $_SESSION['tasks'];
 if (count($tasks) == 0) {
     echo '<p>There no tasks available to display. Begin by <strong><a id="no_tasks" href="add-tasks.php">creating a task.</a></strong></p>';
     exit();
+} elseif (isset($_SESSION['response'])) {
+    echo '<script>alert(' . $_SESSION['response'] . ')</script>';
+    unset($_SESSION['response']);
 }
 ?>
 
     <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <p>Click the <strong>table headers</strong> to sort the table accordingly or select a <strong>row</strong> to make changes.</p>
-    <br>
+    <div id="above_table">
+        <span> Click the <strong>table headers</strong> to sort the table accordingly or select a <strong>row</strong> to make changes.</span>
+        <button type='submit' name='sync_btn' id='sync_btn' onclick='syncTasks();'>Sync Tasks</button>
+    </div>
     <div class="container">
         <div class="table">
             <table id="tasks_table" class="w3-table-all">
@@ -77,6 +82,7 @@ if (count($tasks) == 0) {
     <script src="../js/scroll-arrow.js"></script>
     <script src="../js/sort-column.js"></script>
     <script src="../js/edit-task.js"></script>
+    <script src="../js/sync-tasks.js"></script>
     <script src="../js/validate-txt.js"></script>
 
 <?php

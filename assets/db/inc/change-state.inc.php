@@ -1,4 +1,5 @@
 <?php
+// This script handles change in state for local tasks.
 session_start();
 if (!(isset($_SESSION['userid']))) {
     header("Location: ../login.php");
@@ -37,5 +38,8 @@ if (isset($_POST['taskid'])) {
             exit();
         }
     }
+} else {
+    header("Location: ../view-tasks.php");
+    exit();
 }
 ?>
