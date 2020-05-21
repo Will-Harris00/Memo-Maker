@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a31e209-03b8-4db3-a844-c5669f787349" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
+    <list default="true" id="641f9e00-8564-4275-99ea-7d6050214bf9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,104 +19,38 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1ZwJYzURRj7dBOsGpUFlSga6OMO" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1cDYnQQm9CObtWcyjYUsoIK7NNy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mariadb" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/db/inc" />
-    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\wjhar\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\assets\imgs" />
-      <recent name="C:\Users\wjhar\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\assets\db" />
-      <recent name="C:\Users\wjhar\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\assets" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\wjhar\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\assets\db\inc" />
-      <recent name="C:\Users\wjhar\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\assets\css" />
-      <recent name="C:\Users\wjhar\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\assets\db" />
-      <recent name="C:\Users\wjhar\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\MVC" />
-      <recent name="C:\Users\wjhar\OneDrive\Documents\Exeter Uni Work\Year 1 - Term 2\ECM1417 - Web Development\Coursework - Web Dev\src\assets\test" />
-    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1a31e209-03b8-4db3-a844-c5669f787349" name="Default Changelist" comment="" />
-      <created>1585744274095</created>
+      <changelist id="641f9e00-8564-4275-99ea-7d6050214bf9" name="Default Changelist" comment="" />
+      <created>1590064797620</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1585744274095</updated>
-      <workItem from="1585744275373" duration="3292000" />
-      <workItem from="1585752078721" duration="3054000" />
-      <workItem from="1585934769285" duration="280000" />
-      <workItem from="1585935068753" duration="255000" />
-      <workItem from="1585952525458" duration="66000" />
-      <workItem from="1586006984650" duration="1795000" />
-      <workItem from="1586009660269" duration="1485000" />
-      <workItem from="1586011453684" duration="6058000" />
-      <workItem from="1586025934817" duration="40000" />
-      <workItem from="1586026098599" duration="1524000" />
-      <workItem from="1586027653994" duration="10013000" />
-      <workItem from="1586042051563" duration="68000" />
-      <workItem from="1586079041068" duration="17305000" />
-      <workItem from="1586102459644" duration="10874000" />
-      <workItem from="1586117558718" duration="249000" />
-      <workItem from="1586117857704" duration="237000" />
-      <workItem from="1586118394413" duration="9191000" />
-      <workItem from="1586178021589" duration="2736000" />
-      <workItem from="1586261503856" duration="3059000" />
-      <workItem from="1586271715110" duration="154000" />
-      <workItem from="1586271878153" duration="21000" />
-      <workItem from="1586271916936" duration="27329000" />
-      <workItem from="1586467029933" duration="2815000" />
-      <workItem from="1586604288294" duration="5963000" />
-      <workItem from="1586613126841" duration="7500000" />
-      <workItem from="1586623413511" duration="2866000" />
-      <workItem from="1586713935040" duration="5000" />
-      <workItem from="1586772952327" duration="18344000" />
-      <workItem from="1586815781365" duration="7006000" />
-      <workItem from="1586822827018" duration="171000" />
-      <workItem from="1586868106563" duration="6152000" />
-      <workItem from="1586877980999" duration="965000" />
-      <workItem from="1586881964896" duration="785000" />
-      <workItem from="1586899191535" duration="2632000" />
-      <workItem from="1586905275144" duration="12000" />
-      <workItem from="1586906401913" duration="11000" />
-      <workItem from="1586907337089" duration="8000" />
-      <workItem from="1586907376206" duration="3000" />
-      <workItem from="1586957889793" duration="12947000" />
+      <updated>1590064797620</updated>
+      <workItem from="1590064798980" duration="358000" />
+      <workItem from="1590065487830" duration="485000" />
     </task>
     <servers />
   </component>
@@ -119,118 +58,33 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="234" y="1" key="#Deployment" timestamp="1586882497895">
+    <state x="233" y="39" key="#Deployment" timestamp="1590065928616">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="234" y="1" key="#Deployment/0.0.1280.680@0.0.1280.680" timestamp="1585748889377" />
-    <state x="234" y="1" key="#Deployment/0.0.1280.760@0.0.1280.760" timestamp="1586882497895" />
-    <state x="233" y="40" key="#Options" timestamp="1586010528170">
+    <state x="233" y="39" key="#Deployment/0.0.1280.760@0.0.1280.760" timestamp="1590065928616" />
+    <state x="318" y="62" key="#Options" timestamp="1590065891957">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="233" y="40" key="#Options/0.0.1280.760@0.0.1280.760" timestamp="1586010528170" />
-    <state x="233" y="40" key="#SQL_Dialects" timestamp="1586027949635">
+    <state x="318" y="62" key="#Options/0.0.1280.760@0.0.1280.760" timestamp="1590065891957" />
+    <state x="349" y="24" key="#PHP" timestamp="1590065749769">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="233" y="40" key="#SQL_Dialects/0.0.1280.760@0.0.1280.760" timestamp="1586027949635" />
-    <state x="218" y="0" key="#SSH_Configurations" timestamp="1586882302829">
+    <state x="349" y="24" key="#PHP/0.0.1280.760@0.0.1280.760" timestamp="1590065749769" />
+    <state x="233" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590065027324">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="218" y="0" key="#SSH_Configurations/0.0.1280.760@0.0.1280.760" timestamp="1586882302829" />
-    <state x="233" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586882450761">
+    <state x="233" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1590065027324" />
+    <state x="93" y="93" width="1095" height="575" key="DirDiffDialog" timestamp="1590065028554">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="-84" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1585752850169" />
-    <state x="233" y="40" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.760@0.0.1280.760" timestamp="1586882450761" />
-    <state x="382" y="183" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586167108309">
+    <state x="93" y="93" width="1095" height="575" key="DirDiffDialog/0.0.1280.760@0.0.1280.760" timestamp="1590065028554" />
+    <state x="526" y="111" key="ftp.server.browser" timestamp="1590065678164">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="382" y="183" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1586167108309" />
-    <state x="321" y="117" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1586025940893">
+    <state x="526" y="111" key="ftp.server.browser/0.0.1280.760@0.0.1280.760" timestamp="1590065678164" />
+    <state x="512" y="273" key="publish.login" timestamp="1590065510650">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="321" y="117" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.760@0.0.1280.760" timestamp="1586025940893" />
-    <state x="389" y="237" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1586900338596">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="389" y="237" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.760@0.0.1280.760" timestamp="1586900338596" />
-    <state x="110" y="120" width="935" height="520" key="DiffContextDialog" timestamp="1586009447526">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="110" y="120" width="935" height="520" key="DiffContextDialog/0.0.1280.760@0.0.1280.760" timestamp="1586009447526" />
-    <state x="94" y="105" width="1093" height="551" key="DirDiffDialog" timestamp="1586010321042">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="94" y="94" width="1093" height="493" key="DirDiffDialog/0.0.1280.680@0.0.1280.680" timestamp="1585744471442" />
-    <state x="94" y="105" width="1093" height="551" key="DirDiffDialog/0.0.1280.760@0.0.1280.760" timestamp="1586010321042" />
-    <state x="421" y="136" key="FileChooserDialogImpl" timestamp="1586271867680">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="421" y="136" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1586271867680" />
-    <state width="845" height="188" key="GridCell.Tab.0.bottom" timestamp="1586624885663">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="845" height="188" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1586624885663" />
-    <state width="845" height="188" key="GridCell.Tab.0.center" timestamp="1586624885661">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="845" height="188" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1586624885661" />
-    <state width="845" height="188" key="GridCell.Tab.0.left" timestamp="1586624885661">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="845" height="188" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1586624885661" />
-    <state width="845" height="188" key="GridCell.Tab.0.right" timestamp="1586624885663">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state width="845" height="188" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1586624885663" />
-    <state width="200" height="457" key="HiddenNamespacesPopup" timestamp="1585744687804">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="200" height="457" key="HiddenNamespacesPopup/0.0.1280.680@0.0.1280.680" timestamp="1585744687804" />
-    <state x="157" y="297" key="NewPhpFileDialog" timestamp="1586822564343">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="157" y="266" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1585748951448" />
-    <state x="157" y="297" key="NewPhpFileDialog/0.0.1280.760@0.0.1280.760" timestamp="1586822564343" />
-    <state x="142" y="23" key="SettingsEditor" timestamp="1586786745886">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="142" y="23" key="SettingsEditor/0.0.1280.760@0.0.1280.760" timestamp="1586786745886" />
-    <state x="478" y="269" key="WebDeployment.AddServerDialog.v.1" timestamp="1586882085904">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="478" y="241" key="WebDeployment.AddServerDialog.v.1/0.0.1280.680@0.0.1280.680" timestamp="1585744290371" />
-    <state x="478" y="269" key="WebDeployment.AddServerDialog.v.1/0.0.1280.760@0.0.1280.760" timestamp="1586882085904" />
-    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1586184021052">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="538" y="210" width="322" height="339" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1280.760@0.0.1280.760" timestamp="1586184021052" />
-    <state x="350" y="22" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586276214744">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="350" y="22" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1280.760@0.0.1280.760" timestamp="1586276214744" />
-    <state x="478" y="89" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1585744719849">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="478" y="89" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1280.680@0.0.1280.680" timestamp="1585744719849" />
-    <state x="348" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1585934787172">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="348" y="209" key="com.intellij.ide.util.TipDialog/0.0.1280.760@0.0.1280.760" timestamp="1585934787172" />
-    <state x="300" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586819670042">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="300" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.760@0.0.1280.760" timestamp="1586819670042" />
-    <state x="511" y="275" key="publish.login" timestamp="1585935283230">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="511" y="275" key="publish.login/0.0.1280.760@0.0.1280.760" timestamp="1585935283230" />
-    <state x="297" y="171" key="run.anything.popup" timestamp="1586284012873">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="297" y="171" key="run.anything.popup/0.0.1280.760@0.0.1280.760" timestamp="1586284012873" />
-    <state x="303" y="81" width="672" height="678" key="search.everywhere.popup" timestamp="1586275103852">
-      <screen x="0" y="0" width="1280" height="760" />
-    </state>
-    <state x="303" y="81" width="672" height="678" key="search.everywhere.popup/0.0.1280.760@0.0.1280.760" timestamp="1586275103852" />
+    <state x="512" y="273" key="publish.login/0.0.1280.760@0.0.1280.760" timestamp="1590065510650" />
   </component>
 </project>
