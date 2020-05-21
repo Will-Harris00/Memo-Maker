@@ -20,8 +20,8 @@ if (isset($_POST['taskid'])) {
         /* Matches both taskid and userid to confirm that the logged
            in user created that task and has permission to edit it. */
         $sql = "UPDATE Tasks
-                SET state = ?
-                WHERE taskid = ? AND userid = ?";
+                SET state=?
+                WHERE taskid=? AND userid=?";
 
         $stmt = mysqli_stmt_init($conn);
 
@@ -35,6 +35,7 @@ if (isset($_POST['taskid'])) {
             mysqli_stmt_execute($stmt);
             mysqli_stmt_close($stmt);
             mysqli_close($conn);
+            // echo is returned in javascript function
             echo "Status updated successfully.";
             exit();
         }

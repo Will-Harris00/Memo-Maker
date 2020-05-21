@@ -7,7 +7,7 @@ console.log(confirm_pass);
 
 // Event listener on the input box
 confirm_pass.addEventListener('input', function() {
-    // Debounces check method
+    // Debounce check method
     debounceFunction(check, 200)
 });
 

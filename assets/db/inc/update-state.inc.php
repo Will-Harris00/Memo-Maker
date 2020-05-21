@@ -67,8 +67,8 @@ if (isset($_POST['importid'])) {
         /* Matches only importid thereby updating the state of the
         remote task simultaneously for all users on the local site. */
         $sql = "UPDATE Tasks 
-                SET state = ? 
-                WHERE importid = ?";
+                SET state=? 
+                WHERE importid=?";
 
         $stmt = mysqli_stmt_init($conn);
 

@@ -2,8 +2,9 @@
 session_start();
 $bg = "AliceBlue";
 $fg = "PowderBlue";
-header('Content-type: text/css; charset=utf-8' );
-header('Cache-control: must-revalidate');
+header("Content-type: text/css; charset=utf-8");
+header("Cache-control: must-revalidate");
+
 if (isset($_SESSION['userid'])) {
     require "../secure/credentials.php";
     // require "../db/inc/handler.inc.php";
@@ -13,7 +14,7 @@ if (isset($_SESSION['userid'])) {
     FROM Preferences
     WHERE userid=?";
 
-    $conn = mysqli_connect(host, user, password, database, port);
+    $conn = mysqli_connect(HOST, USER, PASSWORD, DATABASE, PORT);
 
     $stmt = mysqli_stmt_init($conn);
 

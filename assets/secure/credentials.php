@@ -1,7 +1,7 @@
 <?php
-define(host, 'emps-sql.ex.ac.uk');
-define(user, "wjph202");
-define(password, "wjph202");
-define(database, "wjph202");
-define(port, "3306")
+define(HOST, 'emps-sql.ex.ac.uk');
+define(USER, 'wjph202');
+define(PASSWORD, 'wjph202');
+define(DATABASE, 'wjph202');
+define(PORT, '3306')
 ?>

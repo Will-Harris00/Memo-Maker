@@ -1,4 +1,4 @@
-/*Scroll to top when arrow up clicked BEGIN*/
+/*Scroll to top when arrow up clicked*/
 
 window.onscroll = function() {scrollFunction()};
 
@@ -10,6 +10,7 @@ function scrollFunction() {
     }
 }
 
+/* Smooth scrolling animation redundant as already defined in CSS
 /*
 function animateScroll() {
     window.scrollTo({top: 0, behavior: 'smooth'});
@@ -26,4 +27,3 @@ document.getElementById("back2Top").onclick = async function() {
     }
 }
 */
-/*Scroll to top when arrow up clicked END*/

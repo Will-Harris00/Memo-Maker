@@ -19,7 +19,7 @@ if (isset($_POST['edit_task_btn'])) {
            in user created that task and has permission to edit it. */
         $sql = "UPDATE Tasks
                 SET name=?, description=?, due=?, state=?
-                WHERE taskid = $taskid AND userid = $userid";
+                WHERE taskid=$taskid AND userid=$userid";
 
         $stmt = mysqli_stmt_init($conn);
 

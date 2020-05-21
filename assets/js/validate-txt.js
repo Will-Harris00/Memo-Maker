@@ -33,6 +33,6 @@ function valRegex() {
     /* The above statement could be simplified to
     'document.getElementById("edit_task_btn").disabled
     = /^[a-zA-Z0-9\w\s\S\\P].{0,65534}$/g.test(text)
-    !== true;' but for the purpose of clarity
+    !== true;' but for the purpose of readability
     I have chosen to show the full statement. */
 }

@@ -19,7 +19,7 @@ if (isset($_POST['taskid']) or isset($_POST['delete_btn'])) {
         /* Matches both taskid and userid to confirm that the logged
            in user created that task and has permission to edit it. */
         $sql = "DELETE FROM Tasks
-                WHERE taskid = ? AND userid = ?";
+                WHERE taskid=? AND userid=?";
 
         $stmt = mysqli_stmt_init($conn);
 
@@ -31,13 +31,14 @@ if (isset($_POST['taskid']) or isset($_POST['delete_btn'])) {
         } else {
             mysqli_stmt_bind_param($stmt, "ii", $taskid, $userid);
             mysqli_stmt_execute($stmt);
-            mysqli_stmt_close($stmt);
-            mysqli_close($conn);
             if (isset($_POST['delete_btn'])) {
                 header("Location: view-tasks.inc.php");
             } else {
+                // echos are returned in javascript function
                 echo "Task deleted successfully.";
             }
+            mysqli_stmt_close($stmt);
+            mysqli_close($conn);
             exit();
         }
     }

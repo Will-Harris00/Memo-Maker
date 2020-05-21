@@ -2,8 +2,8 @@
 session_start();
 
 if (isset($_POST['signup_btn'])){
-    require "../../secure/pepper.php";
     require "handler.inc.php";
+    require "../../secure/pepper.php";
     $user = htmlentities($_POST['username']);
     $pass = htmlentities($_POST['password']);
     $passConfirm = htmlentities($_POST['confirm_password']);
@@ -46,7 +46,9 @@ if (isset($_POST['signup_btn'])){
                 $sql = "INSERT INTO Users
                         (username, password, salt)
                         VALUES (?, ?, ?)";
+
                 $stmt = mysqli_stmt_init($conn);
+
                 if(!mysqli_stmt_prepare($stmt, $sql)) {
                     header("Location: ../sign-up.php?error=sqluserinserterror&user=" . $user);
                     mysqli_stmt_close($stmt);
@@ -54,16 +56,19 @@ if (isset($_POST['signup_btn'])){
                     exit();
                 } else {
                     $salt = md5(rand());
-                    mysqli_stmt_bind_param($stmt, "sss", $user, md5($pass . $salt . pepper), $salt);
+                    mysqli_stmt_bind_param($stmt, "sss", $user, md5($pass . $salt . PEPPER), $salt);
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
                     mysqli_stmt_close($stmt);
 
-                    $userid = mysqli_insert_id($conn);;
+                    $userid = mysqli_insert_id($conn);
+
                     $sql = "INSERT INTO Preferences
                             (userid) 
                             VALUES (?)";
+
                     $stmt = mysqli_stmt_init($conn);
+
                     if(!mysqli_stmt_prepare($stmt, $sql)) {
                         header("Location: ../sign-up.php?error=sqlpreferencesinserterror&user=" . $user);
                         mysqli_stmt_close($stmt);
@@ -72,7 +77,7 @@ if (isset($_POST['signup_btn'])){
                     } else {
                         mysqli_stmt_bind_param($stmt, "i", $userid);
                         mysqli_stmt_execute($stmt);
-                        $_SESSION["userid"] = htmlentities($userid);
+                        $_SESSION['userid'] = htmlentities($userid);
                         header("Location: ../add-tasks.php?signup=success");
                         mysqli_stmt_close($stmt);
                         mysqli_close($conn);

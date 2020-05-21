@@ -3,8 +3,9 @@ session_start();
 
 if (isset($_POST['login_btn'])){
     require "handler.inc.php";
-    $user = htmlentities($_POST["username"]);
-    $pass = htmlentities($_POST["password"]);
+    require "../../secure/pepper.php";
+    $user = htmlentities($_POST['username']);
+    $pass = htmlentities($_POST['password']);
 
     if (empty($user) || empty($pass)) {
         header("Location: ../login.php?error=emptyfields&user=" . $user);
@@ -29,18 +30,15 @@ if (isset($_POST['login_btn'])){
             mysqli_stmt_bind_result($stmt, $fetch_id, $fetch_pass, $salt);
             if (mysqli_stmt_num_rows($stmt) > 0) {
                 mysqli_stmt_fetch($stmt);
-                $pepper = "56d211ada15f43c28b49436908d47468e9f7e25b5c89cd28d3880a100e385299";
-                if (md5($pass . $salt . $pepper) != $fetch_pass) {
+                if (md5($pass . $salt . PEPPER) != $fetch_pass) {
                     header("Location: ../login.php?error=incorrect_password");
-                    mysqli_stmt_close($stmt);
-                    mysqli_close($conn);
-                    exit();
                 } else {
-                    $_SESSION["userid"] = htmlentities($fetch_id);
+                    $_SESSION['userid'] = htmlentities($fetch_id);
                     header("Location: view-tasks.inc.php?login=success");
-                    mysqli_stmt_close($stmt);
-                    exit();
                 }
+                mysqli_stmt_close($stmt);
+                mysqli_close($conn);
+                exit();
             } else {
                 header("Location: ../login.php?error=invalid_user");
                 mysqli_stmt_close($stmt);

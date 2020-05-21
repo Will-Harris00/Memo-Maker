@@ -78,7 +78,7 @@ if (isset($_POST['sync'])) {
                        We are now able to remove this task from the local database. */
 
                     $sql = "DELETE FROM Tasks
-                            WHERE importid = ?";
+                            WHERE importid=?";
 
                     $query = mysqli_stmt_init($conn);
 
@@ -96,13 +96,15 @@ if (isset($_POST['sync'])) {
             mysqli_stmt_close($query);
         }
     }
-    mysqli_stmt_close($stmt);
-    mysqli_close($conn);
     if ($num_removed > 0) {
+        // echo is returned in javascript function
         echo $num_removed . " tasks have been removed.";
     } else {
+        // echo is returned in javascript function
         echo "All tasks are up to date.";
     }
+    mysqli_stmt_close($stmt);
+    mysqli_close($conn);
     exit();
 } else {
     header("Location: ../view-tasks.php");
