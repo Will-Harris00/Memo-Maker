@@ -19,8 +19,8 @@ foreach($xml->task as $task) {
 }
 echo "    </table>
       </form>
-      <a id=\"back2Top\" title=\"Back to top\" href=\"#\">➤</a>
-      <script src=\"../js/scroll-arrow.js\"></script>
+      <a id='back2Top' title='Back to top' href='#'>➤</a>
+      <script src='../js/scroll-arrow.js'></script>
       <script>function countChecked() {return document.querySelectorAll('input[type=\"checkbox\"]:checked').length;}</script>";
 
 require "footer.php";
