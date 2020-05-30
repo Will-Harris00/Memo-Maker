@@ -1,12 +1,13 @@
 <?php
+$domain = ($_SERVER['HTTP_HOST'] != "localhost") ? $_SERVER['HTTP_HOST'] : false;
 if (isset($_POST['apply_prefs_btn'])) {
     if (!empty($_POST['background'])) {
         $bg = str_replace(' ', '', htmlentities($_POST['background']));
-        setcookie('bg', $bg, time() + 31536000, '/wjph202', 'students.emps.ex.ac.uk', 0);
+        setcookie('bg', $bg, time()+60*60*24*7, '/', $domain, false);
     }
     if (!empty($_POST['foreground'])) {
         $fg = str_replace(' ', '', htmlentities($_POST['foreground']));
-        setcookie('fg', $fg, time() + 31536000, '/wjph202', 'students.emps.ex.ac.uk', 0);
+        setcookie('fg', $fg, time()+60*60*24*7, '/', $domain, false);
     }
     header("Location: ../account.php");
 } else {

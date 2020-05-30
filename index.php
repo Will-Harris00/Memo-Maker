@@ -33,7 +33,7 @@ session_start();
     </ul>
 <nav>
     <main>
-        <h1>Memo Maker Incorporated by 680033128</h1><br>
+        <h1>Memo Manager by 680033128</h1><br>
         <h2>Welcome to my website.</h2>
         <h3>Sign-up to begin your journey.</h3>
         <br>
