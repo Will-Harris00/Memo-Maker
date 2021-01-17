@@ -1,2 +1,0 @@
-/* This is going to become a script to test password strength
-   rather than relying purely on the html pattern attribute. */
