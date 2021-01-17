@@ -12,8 +12,6 @@
     <input type="submit">
 </form>
 
-
-
 <p><strong>Note:</strong> type="datetime-local" is not supported in Firefox, Safari or Internet Explorer 12 (or earlier).</p>
 
 </body>

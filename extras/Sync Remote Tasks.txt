@@ -5,7 +5,6 @@ if (!(isset($_SESSION['userid']))) {
     exit();
 }
 
-
 if (isset($_POST['sync'])) {
     $userid = $_SESSION['userid'];
     require "handler.inc.php";

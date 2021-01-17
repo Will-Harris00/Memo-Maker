@@ -16,6 +16,7 @@ echo '<br>';
 $output = Date('Y-m-d\TH:i',strtotime($due));
 echo $output;
 ?>
+
 <html lang="en">
 <head>
     <title>hello</title>
@@ -24,4 +25,3 @@ echo $output;
     <input type="datetime-local" name="name" id="name" value="<?=$output?>">
 </body>
 </html>
-

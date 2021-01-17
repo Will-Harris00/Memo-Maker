@@ -7,7 +7,7 @@ require "header.php";
 <head>
     <meta charset="utf-8">
     <title>Memo Maker</title>
-    <!--<link rel="stylesheet" type='text/css' href="../css/style.php">-->
+    <!-- <link rel="stylesheet" type='text/css' href="../css/style.php"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
 
     <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
@@ -45,7 +45,7 @@ if (!(isset($_SESSION['userid']))) {
             FROM Tasks 
             WHERE userid=1";
 
-    $conn = mysqli_connect(host, user, password, database, port);
+    $conn = mysqli_connect(HOST, USER, PASSWORD, DATABASE, PORT);
 
     if ($stmt = mysqli_prepare($conn, $sql)) {
         /* bind variable to statement */

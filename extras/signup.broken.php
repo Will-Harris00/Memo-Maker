@@ -54,7 +54,7 @@ if (isset($_POST['signup_btn'])){
                     exit();
                 } else {
                     $salt = md5(rand());
-                    mysqli_stmt_bind_param($stmt, "ssss", $userid, $user, md5($pass . $salt . pepper), $salt);
+                    mysqli_stmt_bind_param($stmt, "ssss", $userid, $user, md5($pass . $salt . PEPPER), $salt);
                     mysqli_stmt_execute($stmt);
                     mysqli_stmt_store_result($stmt);
                     mysqli_stmt_close($stmt);

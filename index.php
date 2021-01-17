@@ -12,7 +12,7 @@ session_start();
     <link rel="shortcut icon" href="assets/imgs/favicon.ico" type="image/x-icon">
     <link rel="icon" href="assets/imgs/favicon.ico" type="image/x-icon">
 
-    <meta name="Developer" content="680033128">
+    <meta name="Developer" content="Will-Harris00">
     <meta name="Description" content="Index page for task management system">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=on user-scalable=no">
 
@@ -33,7 +33,7 @@ session_start();
     </ul>
 <nav>
     <main>
-        <h1>Memo Manager by 680033128</h1><br>
+        <h1>Memo Manager</h1><br>
         <h2>Welcome to my website.</h2>
         <h3>Sign-up to begin your journey.</h3>
         <br>
